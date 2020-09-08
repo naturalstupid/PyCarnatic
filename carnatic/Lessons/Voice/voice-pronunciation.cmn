@@ -1,0 +1,108 @@
+
+{ Proununciation Exercise
+{ In this you will sing each note 8 times in Adhi ThaaLa
+{ Then each note 7 times , then 6 times and so on until 1 time.
+#T4
+#J2
+#D60
+#S3
+
+[
+ ssss ssss rrrr rrrr | gggg gggg | mmmm mmmm ||
+ pppp pppp dddd dddd | nnnn nnnn | s's's's' s's's's' ||
+ s's's's' s's's's' nnnn nnnn | dddd dddd | pppp pppp ||
+ mmmm mmmm gggg gggg | rrrr rrrr | ssss ssss ||
+ ssss sssr rrrr rrgg | gggg gmmm | mmmm pppp ||
+ pppd dddd ddnn nnnn | ns's's' s's's's' | s's's's' s's's'n ||
+ nnnn nndd dddd dppp | pppp mmmm | mmmg gggg ||
+ ggrr rrrr rsss ssss | ssss ssrr | rrrr gggg ||
+ ggmm mmmm pppp ppdd | dddd nnnn | nns's' s's's's' ||
+ s's's's' s's'nn nnnn dddd | ddpp pppp | mmmm mmgg ||
+ gggg rrrr rrss ssss | ssss srrr | rrgg gggm ||
+ mmmm pppp pddd ddnn | nnns' s's's's' | s's's's' s'nnn ||
+ nndd dddp pppp mmmm | mggg ggrr | rrrs ssss ||
+ ssss rrrr gggg mmmm | pppp dddd | nnnn s's's's' ||
+ s's's's' nnnn dddd pppp | mmmm gggg | rrrr ssss ||
+ sssr rrgg gmmm pppd | ddnn ns's's' | s's's'n nndd ||
+ dppp mmmg ggrr rsss | ssrr ggmm | ppdd nns's' ||
+ s's'nn ddpp mmgg rrss | srgm pdns' | s'ndp mgrs ||
+]
+
+$$
+{Pronunciation Exercise 2
+{ In this you will sing each note 16 times in Adhi ThaaLa
+{ Then each note 15 times , then 14 times and so on until 1 time
+#T4
+#J2
+#D60
+#S3
+[
+ ssss ssss ssss ssss | rrrr rrrr | rrrr rrrr ||
+ gggg gggg gggg gggg | mmmm mmmm | mmmm mmmm ||
+ pppp pppp pppp pppp | dddd dddd | dddd dddd ||
+ nnnn nnnn nnnn nnnn | s's's's' s's's's' | s's's's' s's's's' ||
+ s's's's' s's's's' s's's's' s's's's' | nnnn nnnn | nnnn nnnn ||
+ dddd dddd dddd dddd | pppp pppp | pppp pppp ||
+ mmmm mmmm mmmm mmmm | gggg gggg | gggg gggg ||
+ rrrr rrrr rrrr rrrr | ssss ssss | ssss ssss ||
+ ssss ssss ssss sssr | rrrr rrrr | rrrr rrgg ||
+ gggg gggg gggg gmmm | mmmm mmmm | mmmm pppp ||
+ pppp pppp pppd dddd | dddd dddd | ddnn nnnn ||
+ nnnn nnnn ns's's' s's's's' | s's's's' s's's's' | s's's's' s's's's' ||
+ s's's's' s's's'n nnnn nnnn | nnnn nndd | dddd dddd ||
+ dddd dppp pppp pppp | pppp mmmm | mmmm mmmm ||
+ mmmg gggg gggg gggg | ggrr rrrr | rrrr rrrr ||
+ rsss ssss ssss ssss | ssss ssss | ssss ssrr ||
+ rrrr rrrr rrrr gggg | gggg gggg | ggmm mmmm ||
+ mmmm mmmm pppp pppp | pppp ppdd | dddd dddd ||
+ dddd nnnn nnnn nnnn | nns's' s's's's' | s's's's' s's's's' ||
+ s's's's' s's's's' s's's's' s's'nn | nnnn nnnn | nnnn dddd ||
+ dddd dddd ddpp pppp | pppp pppp | mmmm mmmm ||
+ mmmm mmgg gggg gggg | gggg rrrr | rrrr rrrr ||
+ rrss ssss ssss ssss | ssss ssss | ssss srrr ||
+ rrrr rrrr rrgg gggg | gggg gggm | mmmm mmmm ||
+ mmmm pppp pppp pppp | pddd dddd | dddd ddnn ||
+ nnnn nnnn nnns' s's's's' | s's's's' s's's's' | s's's's' s's's's' ||
+ s's's's' s'nnn nnnn nnnn | nndd dddd | dddd dddp ||
+ pppp pppp pppp mmmm | mmmm mmmm | mggg gggg ||
+ gggg ggrr rrrr rrrr | rrrs ssss | ssss ssss ||
+ ssss ssss ssss rrrr | rrrr rrrr | gggg gggg ||
+ gggg mmmm mmmm mmmm | pppp pppp | pppp dddd ||
+ dddd dddd nnnn nnnn | nnnn s's's's' | s's's's' s's's's' ||
+ s's's's' s's's's' s's's's' nnnn | nnnn nnnn | dddd dddd ||
+ dddd pppp pppp pppp | mmmm mmmm | mmmm gggg ||
+ gggg gggg rrrr rrrr | rrrr ssss | ssss ssss ||
+ ssss ssss sssr rrrr | rrrr rrgg | gggg gggg ||
+ gmmm mmmm mmmm pppp | pppp pppd | dddd dddd ||
+ ddnn nnnn nnnn ns's's' | s's's's' s's's's' | s's's's' s's's's' ||
+ s's's'n nnnn nnnn nndd | dddd dddd | dppp pppp ||
+ pppp mmmm mmmm mmmg | gggg gggg | ggrr rrrr ||
+ rrrr rsss ssss ssss | ssss ssss | ssrr rrrr ||
+ rrrr gggg gggg ggmm | mmmm mmmm | pppp pppp ||
+ ppdd dddd dddd nnnn | nnnn nns's' | s's's's' s's's's' ||
+ s's's's' s's's's' s's'nn nnnn | nnnn dddd | dddd ddpp ||
+ pppp pppp mmmm mmmm | mmgg gggg | gggg rrrr ||
+ rrrr rrss ssss ssss | ssss ssss | srrr rrrr ||
+ rrgg gggg gggm mmmm | mmmm pppp | pppp pddd ||
+ dddd ddnn nnnn nnns' | s's's's' s's's's' | s's's's' s's's's' ||
+ s'nnn nnnn nndd dddd | dddp pppp | pppp mmmm ||
+ mmmm mggg gggg ggrr | rrrr rrrs | ssss ssss ||
+ ssss ssss rrrr rrrr | gggg gggg | mmmm mmmm ||
+ pppp pppp dddd dddd | nnnn nnnn | s's's's' s's's's' ||
+ s's's's' s's's's' nnnn nnnn | dddd dddd | pppp pppp ||
+ mmmm mmmm gggg gggg | rrrr rrrr | ssss ssss ||
+ ssss sssr rrrr rrgg | gggg gmmm | mmmm pppp ||
+ pppd dddd ddnn nnnn | ns's's' s's's's' | s's's's' s's's'n ||
+ nnnn nndd dddd dppp | pppp mmmm | mmmg gggg ||
+ ggrr rrrr rsss ssss | ssss ssrr | rrrr gggg ||
+ ggmm mmmm pppp ppdd | dddd nnnn | nns's' s's's's' ||
+ s's's's' s's'nn nnnn dddd | ddpp pppp | mmmm mmgg ||
+ gggg rrrr rrss ssss | ssss srrr | rrgg gggm ||
+ mmmm pppp pddd ddnn | nnns' s's's's' | s's's's' s'nnn ||
+ nndd dddp pppp mmmm | mggg ggrr | rrrs ssss ||
+ ssss rrrr gggg mmmm | pppp dddd | nnnn s's's's' ||
+ s's's's' nnnn dddd pppp | mmmm gggg | rrrr ssss ||
+ sssr rrgg gmmm pppd | ddnn ns's's' | s's's'n nndd ||
+ dppp mmmg ggrr rsss | ssrr ggmm | ppdd nns's' ||
+ s's'nn ddpp mmgg rrss | srgm pdns' | s'ndp mgrs ||
+]

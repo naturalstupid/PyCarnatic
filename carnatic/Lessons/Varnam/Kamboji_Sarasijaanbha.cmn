@@ -1,0 +1,113 @@
+{ SARASIJANAABHA
+{Ragam : kAmbOji
+#M28
+{ Talam: Khanda Jathi Ata Talam
+#T6
+#J3
+{ Khanda jaathi Ata Thaalam (Vidhala) - I5 I5 O2 O2 = 14 aksharas
+#S2
+{ Composer: Vadivelu
+{ARO: S R2 G3 M1 P D2 S ||
+{AVA : S N2 D2 P M1 G3 R2 S N3 P D2 S ||
+{Pallavi : SarasIjanAbha ninnu sannuthi jEsEnura chAlA krupayumchutakidi samayamura
+
+{Anupallavi: Nirathamu nee pAdame gathiyani yunnAra Nijamani yenchi na manavi kaikOra
+
+{Charanam: sArvabhouma sakala lOkAbhi Rama
+
+{Pallavi
+ , , , , , , , , M , G , S , , N P , D , |
+S , , , S , , , S R G R R G R R S N D P | 
+M G P D S P D S | R G S R G M G G ||
+R S N P D S R G M M G G R R S S N P D S |
+, M G M P S R S M M G S S D P M G S S S |
+N D P P D R' S' N | D D P M G G R S || 
+
+{ Anupallavi:
+R S N P D S R G N N D , P M D P M G M , |
+P , , , P , , , P P D D N N D D P P M S |
+M P M P D P D S | D R' S' N P , D , ||
+S' , , , P D S' R' N N D , P M D P M G M , |
+P , , , P , , , P P D D N N D D P P M S |
+M P M P D P D S | D R' S' N P , D , ||
+
+S' , , , S' , , , N D S' S' R' RG' G' M' M' G' G' |
+R' R' S' S' N D PM P D S' R' G' S' , N D M P D |
+P , M G R S , R' | S' N D D P M G G ||
+R S N P D S R G N D S S R RG G M M G G |
+R R S S N D PM P D S R G S , N D M P D |
+P , M G R S , R | S N D D P M G G ||
+
+{Mukthayi Swaram
+, , , , , , , , G , , M G G R S S , , R |
+G S R S N D P D S , S P D S R , R D S R |
+G , G S R G R , | R D S R S , S M || 
+G R S N P D S R G M G R S P M G R S D P |
+M G N D P S N D R' S' G' R' M' G' R' G' S' R' D R' |
+S' , , N D M P D | P , , M G R S R || 
+S , N P D S R G G , , M G G R S S , , R |
+G S R S N D P D S , S P D S R , R D S R |
+G , G S R G R , | R D S R S , S M ||
+
+{Charanam
+
+, , , , , , , , S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R' S' , N D D P M ||
+G S , M G M P D S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R S , N D M P D ||
+
+{Chittai Swaram
+{1. 
+S' , , , , , N , , , D , P , , , , , D , |
+M , G , R , G , S , , , R , S , N , P , |
+, , D , , , S , | , , R , , , G , ||
+, , M , P , D , S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R' S' , N D D P M ||
+G S , M G M P D S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R S , N D M P D ||
+
+{2. 
+R , , , , , R , G R R G R R , S N D P D |
+S , , , , , S , P D S R G S , R G M PS |
+, R G M P D S' , | N D M , G S , P |
+D , S R G M P D S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R' S' , N D D P M ||
+G S , M G M P D S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R S , N D M P D ||
+
+{3. 
+M , , , , , P D M , P D N D M , P S N D |
+M , D M , P G M P , , , , , N D P M G R |
+G S , R S N P , | D S , R G M RG |
+M G M R G S P M P G M G N D N P D P S N |
+D R' S' G' R' S' N D P D S' R' G' M' G' S' , N D N |
+P D S' G P D S' R' | R G M P N D S R ||
+G M , P D S' R' G' S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R' S' , N D D P M ||
+G S , M G M P D S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R S , N D M P D ||
+
+{4. 
+S' , , , R' G' R' S' N D P , M G R S , N P D |
+S , , , S , , , P , D P D , S D S , R S |
+R , G R G , M G | M , P M P , D R' ||
+S' R' S' N D P M P D S' N D P M G R S R G R |
+S R S N P D P D S R S R S R G R G M G M |
+P M P D S' N R' S' | N D P D S' , , , ||
+S R G M P D M G P D S N P D S' R' G' R' G' M' |
+G' R' S' N D P M G P D S' R' G' M' G'R' S' , , , |
+P S' N D P M G R | S , , , P D S R || 
+S R G M G M P D S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R' S' , N D D P M ||
+G S , M G M P D S' , , R' S' N D D P M G G |
+S , , , S , , , P D S R G , S R G M P , |
+M G P D S' , D P | R S , N D M P D ||
