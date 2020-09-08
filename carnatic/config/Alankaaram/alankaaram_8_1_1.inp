@@ -1,0 +1,35 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+
+{ 31
+#T1
+#J1
+{ Alankaaram - Thisra jaathi Eka Thaalam (Sudha) - I3 = 3 aksharas
+
+#S1
+U123 ||
+U234 || 
+U345 ||
+U456 ||
+U567 ||
+U678 ||
+D123 ||
+D234 ||
+D345 ||
+D456 ||
+D567 ||
+D678||
+
+#S2
+U12 32 34 ||
+U34 54 56 ||
+U56 76 78 ||
+D12 32 34 ||
+D34 54 56 ||
+D56 76 78||
+
+#S3
+U1232 3434 5456 ||
+U5676 78D12 3234 ||
+D3454 5656 7678 ||

@@ -1,0 +1,22 @@
+{ Duration = 90 beats per minute. Each note is 2/3 seconds long
+
+#D90
+{ 14
+#T2
+#J4
+{ Misra jaathi Rupaka Thaalam (Kula) - O2 I7 = 9 aksharas
+
+#S1
+U1 2 | 1 2 3 , 4 5 6 ||
+U2 3 | 2 3 4 , 5 6 7 ||
+D1 2 | 1 2 3 , 4 5 6 ||
+D2 3 | 2 3 4 , 5 6 7 ||
+
+#S2
+U12 12 | 3, 45 62 32 34 ,5 67 ||
+D12 12 | 3, 45 62 32 34 ,5 67 ||
+
+#S3
+U1212 3,45 | 6232 34,5 67D12 123, 4562 3234 ,567 ||
+
+

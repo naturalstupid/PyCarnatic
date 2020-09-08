@@ -1,0 +1,18 @@
+{ Duration = 90 beats per minute. Each note is 2/3 seconds long
+
+#D90
+{ 24
+#T4
+#J4
+{ Misra jaathi Thriputai Thaalam (Leela/Lila) - I7 O2 O2 = 11 aksharas
+
+#S1
+U1234567 45 67 
+D1234567 45 67
+
+#S2
+U1234567 45 67  D1234567 45 67
+
+#S3
+U1234567 45 67  D1234567 45 67 U1234567 45 67  D1234567 45 67
+

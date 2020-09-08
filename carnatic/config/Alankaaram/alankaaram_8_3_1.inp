@@ -1,0 +1,30 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+
+{ Alankaaram
+{ 16
+#T3
+#J1
+{ Thisra jaathi Jampa Thaalam (Kadhamba) - I3 U1 O2 = 6 aksharas
+
+#S1
+U123 4 5 ,
+u234 5 6 ,
+U345 6 7 ,
+U456 7 8 ,
+D123 4 5 ,
+D234 5 6 ,
+D345 6 7 ,
+D456 7 8 ,
+
+#S2
+U123 4 5 , u234 5 6 ,
+U345 6 7 , U456 7 8 ,
+D123 4 5 , D234 5 6 ,
+D345 6 7 , D456 7 8 ,
+
+#S3
+U123 4 5 , u234 5 6 , U345 6 7 , U456 7 8 ,
+D123 4 5 , D234 5 6 , D345 6 7 , D456 7 8 ,
+

@@ -1,0 +1,20 @@
+{ Duration = 90 beats per minute. Each note is 2/3 seconds long
+
+#D90
+
+{ 34
+#T1
+#J4
+{ Misra jaathi Eka Thaalam (Raga) - I7 = 7 aksharas
+
+#S1
+U1 2 3 4 5 6 7 ||
+D1 2 3 4 5 6 7 ||
+
+#S2
+U12 34 56 7D1 23 45 67|| 
+U12 34 56 7D1 23 45 67|| 
+
+#S3
+U1234 567D1 2345 67U12 3456 7D123 4567 ||
+

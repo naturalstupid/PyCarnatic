@@ -1,0 +1,29 @@
+{ Duration = 90 beats per minute. Each note is 2/3 seconds long
+
+#D90
+{ 16
+#T3
+#J1
+{ Thisra jaathi Jampa Thaalam (Kadhamba) - I3 U1 O2 = 6 aksharas
+
+#S1
+U123 4 5 ,
+u234 5 6 ,
+U345 6 7 ,
+D123 4 5 ,
+D234 5 6 ,
+D345 6 7 ,
+
+#S2
+U12 34 5, 23 45 6,
+U34 56 7, D12 34 5,
+D23 45 6, 34 56 7,
+U12 34 5, 23 45 6,
+U34 56 7, D12 34 5,
+D23 45 6, 34 56 7,
+
+#S3
+U1234 5,23 456, 3456 7,D12 345,
+D2345 6,34 567, U1234 5,23 456,
+U3456 7,D12 345, 2345 6,34 567,
+

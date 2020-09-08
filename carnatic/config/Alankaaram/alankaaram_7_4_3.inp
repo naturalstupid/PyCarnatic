@@ -1,0 +1,23 @@
+{ Duration = 90 beats per minute. Each note is 2/3 seconds long
+
+#D90
+
+{ 23
+#T4
+#J3
+{ Khanda jaathi Thriputai Thaalam (Dhushkara) - I5 O2 O2 = 9 aksharas
+
+#S1
+U12345 34 56
+U23456 45 67
+D12345 34 56
+D23456 45 67
+
+#S2
+U12345 34 56 U23456 45 67
+D12345 34 56 D23456 45 67
+
+#S3
+U12345 34 56 U23456 45 67 D12345 34 56 D23456 45 67
+U12345 34 56 U23456 45 67 D12345 34 56 D23456 45 67
+
