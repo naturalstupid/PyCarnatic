@@ -1,0 +1,177 @@
+{ Duration = 60 beats per minute = 1.5 seconds per beat
+
+#D60
+{ For Sampoorna - Sampoorna raaga (7 notes in ArOganam and 7 notes in avarOganam)
+
+{ Keezh/Mandhra Sthyaai varisai valid for following ThaaLa/Jaathi combinations
+{ Thaala: Chatusra Jaathi EKa ThaaLa
+{ Thaala Symbol: I Aksharas: 4||
+
+{ Thaala: Chatusra Jaathi Thriputa ThaaLa
+{ Thaala Symbol: IOO Aksharas: 4|2|2||
+
+{ Thaala: Thisra Jaathi Matya ThaaLa
+{ Thaala Symbol: IUO Aksharas: 5|1|2||
+
+{ Thaala: Kanda Jaathi Jamp ThaaLa
+{ Thaala Symbol: IOI Aksharas: 3|2|3||
+
+{ Thaala: Misra Jaathi Matya ThaaLa
+{ Thaala Symbol: IOI Aksharas: 7|2|7||
+
+{ Lesson-5: Mandhra Sthaayi Varisai (aka) KeezhSthaayi varisai (Lower Sthaayi)
+
+{ (1)
+#S1
+D12345678
+D8,,,8,,,
+U3217.1234
+U12345678 
+
+#S2
+D12345678
+D8,,,8,,,
+U3217.1234
+U12345678 
+
+#S3
+D12345678
+D8,,,8,,,
+U3217.1234
+U12345678 
+
+{ (2)
+#S1
+D12345678
+D8,,,8,,,
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+#S2
+D12345678
+D8,,,8,,,
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+#S3
+D12345678
+D8,,,8,,,
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+{ (3)
+#S1
+D12345678
+D8,,,8,,,
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+#S2
+D12345678
+D8,,,8,,,
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+#S3
+D12345678
+D8,,,8,,,
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+{ (4)
+#S1
+D12345678
+D8,,,8,,,
+D6782.34.32.
+U17.123454
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+#S2
+D12345678
+D8,,,8,,,
+D6782.34.32.
+U17.123454
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+#S3
+D12345678
+D8,,,8,,,
+D6782.34.32.
+U17.123454
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+{ (5)
+#S1
+D12345678
+D8,,,8,,,
+D6782.34.54.
+U17.123454
+D6782.34.32.
+U17.123454
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+#S2
+D12345678
+D8,,,8,,,
+D6782.34.54.
+U17.123454
+D6782.34.32.
+U17.123454
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 
+
+#S3
+D12345678
+D8,,,8,,,
+D6782.34.54.
+U17.123454
+D6782.34.32.
+U17.123454
+D6782.32.82.
+U17.123454
+D6782.882.8
+U17.123454
+U3217.1234
+U12345678 

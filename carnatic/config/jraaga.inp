@@ -1,0 +1,144 @@
+[Application Details]
+APP_JAR_NAME=JRaaga.jar
+appVersion=2.1.3
+appVersionDate=16-JUL-2017
+appWebsite=https://CarnaticMusicGuru.sourceforge.net/
+appWhatIsNewURL=http://downloads.sourceforge.net/project/carnaticmusicguru/FOR_ADMIN/WhatIsNew.txt
+versionPatternStart = <LatestVersion>
+versionPatternEnd = </LatestVersion>
+historyPatternStart = <WhatIsNew>
+historyPatternEnd = </WhatIsNew>
+downloadLinkPatternStart=<DownloadURL>
+downloadLinkPatternEnd=</DownloadURL>
+KRITHI_URL=http://www.shivkumar.org/music/
+
+[Application Settings]
+# Scale of Notes: 0=> Equal Tempered Notes (Western), 1=> Carnatic Scale of 12 Notes
+# 2=> Carnatic Scale of 16 Notes,  3=> Carnatic Scale of 22 Notes
+# Equaly Tempered notes: Geometric series of 12th root of 2 
+scale_of_notes=2
+
+#Supported Languages: ta=Tamil, te=Telugu, ka=Kannada, hi=Hindi
+#en=English, es=Espianol (Spanish), de=Deutsch (German), fr=French
+language=en
+
+# Choose JRaaga Configuration
+# 1 = Lite Version - no Indian Instrument or Percussion soundbank supported
+# 0 = Full version - Include path of Indian Sound Font file name
+is_jraaga_lite=0
+
+# Specify Indian Sound Font file name in the LIB Folder
+#sound_font_file=file_name.sf2
+sound_font_file=SIWF8.sf2
+
+# Specify Raaga Selection:
+#1 = Load Only MeLakartha Raagas  2= Load All SampoorNa Raagas (Raagas with all 8 notes)
+#3 = Load all raagas that have at least 6 notes
+raaga_selection=3
+
+# Specify whether percussion should be played by default
+#1 = Include ThaaLa  0= Do not inlcude ThaaLa
+include_thaala=1
+
+# Specify default duration of a note
+#0=full note, 1=1/2, 2=1/4, 3=1/8, 4=>1/16, 5=>1/32, 5=>1/64, 6=>1/128
+note_duration=2
+
+# Specify Attack Decay Pattern
+#Format: a<xxx>d<yyy>: a120d30 means attack=120 and decay=30. Range: 0 to 127
+#Leave it empty if you do not want attack/decay
+attack_decay_pattern=a120d30
+
+# Specify default pitch
+# Possible values 0 => 0.5, 1 => 1.0, 2 => 1.5, 3 => 2.0, 4 => 2.5, 5 => 3.0, 6 => 4.0, 7 => 4.5, 8 => 5.0, 9 => 5.5, 10 => 6.0, 11 => 6.5
+default_pitch=2.5
+
+# Specify Default Instrument Index
+#If soundfont loaded 0=Veena, 1=Veena-2, 2=Flute, 3=Sarod, 4=Violin, 5=Sitar, 6=Shenai, 7=Guitar, 8=Piano
+#Otherwise 0=Violin, 1=Sitar, 2=Shenai, 3=Guitar, 4=Piano
+default_instrument=1
+
+# Specify Each Instrument Kattai 
+#(Values: 0 => 0.5, 1 => 1.0, 2 => 1.5, 3 => 2.0, 4 => 2.5, 5 => 3.0, 6 => 4.0, 7 => 4.5, 8 => 5.0, 9 => 5.5, 10 => 6.0, 11 => 6.5 )
+instrument_kattai_0=2.5
+instrument_kattai_1=4.5
+instrument_kattai_2=2.5
+instrument_kattai_3=2.5
+instrument_kattai_4=2.5
+instrument_kattai_5=2.5
+instrument_kattai_6=2.5
+instrument_kattai_7=2.5
+instrument_kattai_8=2.5
+instrument_kattai_9=null
+
+# Specify Each Instrument Volume (Value between 0 and 127=Max)
+#Array element 0=Veena, 8=Piano
+instrument_volume_0=88
+instrument_volume_1=86
+instrument_volume_2=57
+instrument_volume_3=40
+instrument_volume_4=40
+instrument_volume_5=40
+instrument_volume_6=40
+instrument_volume_7=40
+instrument_volume_8=40
+instrument_volume_9=0
+
+# Specify Default Percussion Instrument Index
+#If soundfont loaded 0=Mridangam, 1=EastWestMix
+#Due to bad quality, Tabla removed from 2.0.1 onwards
+percussion_instrument=0
+
+percussion_volume_0=125
+percussion_volume_1=90
+
+# Specify whether LilyPond software is installed in your computer
+#LilyPond is a software to create Music Sheets
+#0 = No and 1= Yes. You can also save notation as LilyPond File.
+is_LilyPond_Installed=0
+
+# Specify Path where LilyPond software is installed in your computer
+# In Windows use \ to separate folder names. Others use /
+#LilyPond_Executable=path_of_lilypond.exe_file
+LilyPond_Executable=path_of_lilypond.exe_file
+
+#Quiz Type 1 =>  Quiz on random raagas showing Aaroganam/Avaroganam and playing them
+#Quiz Type 2 =>  Quiz on random cryptic/multiple choice questions on carnatic music
+quiz_type=2
+
+# Specify whether to check for software updates
+# 1 =>  Check for updates  0 =>  Do not check for updates
+check_for_updates=0
+
+
+# Specify whether to play selected ThaaLa or match swaras
+# 0 =>  Match the beat to swaras,  1=>  Play the selected ThaaLa
+play_to_selected_thaalam=1
+
+# Specify how ThaaLa Patterns to be generated sequential or random
+# 0 =>  Sequenctial   1 =>  Random
+thaaLa_pattern_random=1
+
+# Specify how ThaaLa Patterns to be generated for long notes
+# 1 =>  No rhythm,  2=>  Repeated rhythm  3=> Different Rhythm
+long_note_rhythm_type=4
+
+# specify Just Intonation ratio of carnatic 12 notes separated by comma
+# S R1 R2 G2 G3 M1 M2 P D1 D2 N2 N3 S^
+# Example: 1,16/15,9/8,6/5,5/4,4/3,45/32,3/2,8/5,27/16,9/5,15/8,2
+carnatic_freq_12=1,16/15,9/8,6/5,5/4,4/3,45/32,3/2,8/5,27/16,9/5,15/8,2
+
+# specify Just Intonation ratio of carnatic 16 notes separated by comma
+# S R1 R2 R3 G1 G2 G3 M1 M2 P D1 D2 D3 N1 N2 N3 S^
+# Example: 1,32/31,16/15,10/9,32/27,6/5,5/4,4/3,17/12,3/2,128/81,8/5,5/3,16/9,9/5,15/8,2
+carnatic_freq_16=1,32/31,16/15,10/9,32/27,6/5,5/4,4/3,17/12,3/2,128/81,8/5,5/3,16/9,9/5,15/8,2
+
+# specify Just Intonation ratio of carnatic 22 notes separated by comma
+# S R1 R2 R3 R4 G1 G2 G3 G4 M1 M2 M3 M4 P D1 D2 D3 D4 N1 N2 N3 N4 S^
+# Example: 1,32/31,16/15,10/9,9/8,32/27,6/5,5/4,81/64,4/3,27/20,45/32,64/45,3/2,128/81,8/5,5/3,27/16,16/9,9/5,15/8,31/16,2
+carnatic_freq_22=1,32/31,16/15,10/9,9/8,32/27,6/5,5/4,81/64,4/3,27/20,45/32,64/45,3/2,128/81,8/5,5/3,27/16,16/9,9/5,15/8,31/16,2
+
+
+# Shruthi Detector Setting
+# 0 => Do not include Shruthi Box    1 => Include Shruthi Box
+include_shruthi_box=1
