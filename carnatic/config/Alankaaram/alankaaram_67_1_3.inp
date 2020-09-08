@@ -1,0 +1,38 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+
+{ For aroganam=6 and avaroganam=7 notes
+
+{ 33
+#T1
+#J3
+{ Alankaaram - Khanda jaathi Eka Thaalam (Rata) - I5 = 5 aksharas
+
+#S1
+U1 2 3 4 5 
+U2 3 4 5 6 
+D1 2 3 4 5 
+D2 3 4 5 6 
+D3 4 5 6 7 
+
+$$
+
+#S2
+U12 34 52 34 56 
+D12 34 52 34 56 
+D34 56 7U1 23 45 
+U23 45 6D1 23 45 
+D23 45 63 45 67 
+
+$$
+
+#S3
+U1234 5234 56D12 3452 3456 
+D3456 7U123 4523 456D1 2345 
+D2345 6345 67U12 3452 3456 
+D1234 5234 5634 567U1 2345 
+U2345 6D123 4523 4563 4567  
+
+$$
+

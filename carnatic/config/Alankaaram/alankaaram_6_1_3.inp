@@ -1,0 +1,22 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+
+{ 33
+#T1
+#J3
+{ Alankaaram - Khanda jaathi Eka Thaalam (Rata) - I5 = 5 aksharas
+
+#S1
+U1 2 3 4 5 ||
+U2 3 4 5 6 ||
+D1 2 3 4 5 ||
+D2 3 4 5 6 ||
+
+#S2 
+U12 34 52 34 56 ||
+D12 34 52 34 56 ||
+
+#S3
+U1234 5234 56D12 3452 3456 ||
+

@@ -1,0 +1,24 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+
+{ Alankaaram
+{ 25
+#T4
+#J5
+{ Sankeerna jaathi Thriputai Thaalam (Bhoga) - I9 O2 O2 = 13 aksharas
+
+#S1
+U1,2,3,456 45 67
+U2,3,4,567 56 78
+D1,2,3,456 45 67
+D2,3,4,567 56 78
+
+#S2
+U1,2,3,456 45 67 U2,3,4,567 56 78
+D1,2,3,456 45 67 D2,3,4,567 56 78
+
+#S3
+U1,2,3,456 45 67 U2,3,4,567 56 78 D1,2,3,456 45 67 D2,3,4,567 56 78
+
+

@@ -1,0 +1,28 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+{ Alankaaram - all 35 thaalam
+
+{ aroganam=6 and avaroganam=7 notes
+{ 34
+#T1
+#J4
+{ Misra jaathi Eka Thaalam (Raga) - I7 = 7 aksharas
+
+#S1
+U1 , 2 , 3 4 5 
+U2 , 3 , 4 5 6 
+D1 2 3 , 4 5 6
+D2 3 4 , 5 6 7
+
+$$
+
+#S2
+U1, 2, 34 52 ,3 ,4 56 
+D12 3, 45 62 34 ,5 67
+
+$$
+
+#S3
+U1,2, 3452 ,3,4 56D12 3,45 6234 ,567
+U1,2, 3452 ,3,4 56D12 3,45 6234 ,567

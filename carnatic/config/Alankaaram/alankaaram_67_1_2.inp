@@ -1,0 +1,42 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+{ Aroganam 6 notes, Avaroganam 7 notes
+{ 32
+#T1
+#J2
+{ Alankaaram - Chathusra jaathi Eka Thaalam (Mana) - I4 = 4 aksharas
+
+#S1
+U1 2 3 4 
+U2 3 4 5 
+U3 4 5 6 
+D1 2 3 4 
+D2 3 4 5 
+D3 4 5 6 
+D4 5 6 7 
+
+$$
+
+#S2
+U12 34 U23 45 
+U34 56 D12 34 
+D23 45 D34 56 
+D45 67 U12 34 
+U23 45 U34 56 
+D12 34 D23 45 
+D34 56 D45 67 
+
+$$
+
+#S3
+U1234 U2345 U3456 D1234 
+D2345 D3456 D4567 U1234 
+U2345 U3456 D1234 D2345 
+D3456 D4567 U1234 U2345 
+U3456 D1234 D2345 D3456 
+D4567 U1234 U2345 U3456 
+D1234 D2345 D3456 D4567
+
+$$
+

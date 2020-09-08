@@ -1,0 +1,22 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+
+{ Alankaaram
+{ 24
+#T4
+#J4
+{ Misra jaathi Thriputai Thaalam (Leela/Lila) - I7 O2 O2 = 11 aksharas
+
+#S1
+U1234567 45
+U2345678 56
+D1234567 45
+D2345678 56
+
+#S2
+U1234567 45 U2345678 56
+D1234567 45 D2345678 56
+
+#S3
+U1234567 45 U2345678 56 D1234567 45 D2345678 56

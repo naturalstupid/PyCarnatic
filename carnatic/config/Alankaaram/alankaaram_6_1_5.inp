@@ -1,0 +1,23 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+{ Alankaaram - all 35 thaalam
+
+{ 35
+#T1
+#J5
+{ Sankeerna jaathi Eka Thaalam (Vasu) - I9 = 9 aksharas
+
+#S1
+U1 , 2 , 3 , 4 , 5 ||
+U2 , 3 , 4 , 5 , 6 ||
+D1 , 2 , 3 , 4 , 5 ||
+D2 , 3 , 4 , 5 , 6 ||
+
+#S2
+U1, 2, 3, 4, 52 ,3 ,4 ,5 ,6 ||
+D1, 2, 3, 4, 52 ,3 ,4 ,5 ,6 ||
+
+#S3
+U1,2, 3,4, 52,3 ,4,5 ,6D1, 2,3, 4,52 ,3,4 ,5,6 ||
+

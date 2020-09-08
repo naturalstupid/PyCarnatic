@@ -1,0 +1,47 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+{ Aroganam 6 notes, Avaroganam 7 notes
+
+{ 31
+#T1
+#J1
+{ Alankaaram - Thisra jaathi Eka Thaalam (Sudha) - I3 = 3 aksharas
+
+#S1
+U123 ||
+U234 || 
+U345 ||
+U456 ||
+D123 ||
+D234 ||
+D345 ||
+D456 ||
+D567 ||
+
+$$
+
+#S2
+U123 U234 || 
+U345 U456 ||
+D123 D234 ||
+D345 D456 ||
+D567 U123 ||
+U234 U345 ||
+U456 D123 ||
+D234 D345 ||
+D456 D567 ||
+
+$$
+#S3
+U123 U234 U345 U456 ||
+D123 D234 D345 D456 ||
+D567 U123 U234 U345 ||
+U456 D123 D234 D345 ||
+D456 D567 U123 U234 || 
+U345 U456 D123 D234 ||
+D345 D456 D567 U123 ||
+U234 U345 U456 D123 ||
+D234 D345 D456 D567 ||
+
+$$

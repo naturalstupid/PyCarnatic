@@ -1,0 +1,29 @@
+{ Duration = 90 beats per minute = 1.5 seconds per beat
+
+#D90
+{ Alankaaram - all 35 thaalam
+
+{ 12
+#T2
+#J2
+{ Chathusra jaathi Rupaka Thaalam (Patti) - O2 I4 = 6 aksharas
+#S1
+U1 2 | 1 2 , 3 ||
+U2 3 | 2 3 , 4 ||
+U3 4 | 3 4 , 5 ||
+U4 5 | 4 5 , 6 ||
+D1 2 | 1 2 , 3 ||
+D2 3 | 2 3 , 4 ||
+D3 4 | 3 4 , 5 ||
+D4 5 | 4 5 , 6 ||
+
+#S2
+U12 12 | ,3 23 23 ,4 ||
+U34 34 | ,5 45 45 ,6 ||
+D12 12 | ,3 23 23 ,4 ||
+D34 34 | ,5 45 45 ,6 ||
+
+#S3
+U1212 ,323 | 23,4 3434 ,545 45,6 ||
+D1212 ,323 | 23,4 3434 ,545 45,6 ||
+
