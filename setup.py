@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="carnatic music guru", # Replace with your own username
-    version="0.0.1",
+    version="0.2.0",
     author="Sundar Sundaresan",
     author_email="get.in.touch.with.sundar@gmail.com",
     description="The goal of the carnatic music guru is to provide library for generating carnatic music lessons as notes, parse and play the carnatic music notes using various instruments, fit to the thaaLa",
