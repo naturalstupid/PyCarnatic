@@ -1,0 +1,123 @@
+{Ragam:Hamsadhwani
+{ Krithi Name:vathapi
+#M29
+#S2
+#D144
+#T4
+#J2
+#I2                
+G3,,,        ,-R2,        ,-S,    SR2SN3. |     P.,,R2       ,,N3., |       R2,,-    SN3.SR2 ||
+                
+G3,SR2      G3PR2,        ,-S-    SR2SN3. |     P.,,R2       ,,N3., |       R2,,-    SN3.SR2 ||
+                
+G3,SR2      G3PR2,        ,-S-    SR2SN3. |     P.,,R2       ,,N3., |       R2,,-    SN3.SR2 ||
+                
+G3,P,       N3,P,       G3,R2,    SR2SN3. |     P.,,R2       ,,N3., |       R2,,-    SN3.SR2 ||
+                
+G3,P,       N3,P,       G3,R2,    SR2SN3. |     P.,,R2       ,,N3., |       R2,,-    SN3.SR2 ||
+                
+G3PG3G3     R2SR2G3    R2R2SN3.    SR2SN3. |     P.,,R2       ,,N3., | R2G3R2G3    SN3.SR2 ||
+                
+G3PG3G3     R2SR2G3    R2R2SN3.    SR2SN3. |     P.,,R2       ,,N3., |R2G3R2G3    SN3.SR2 ||
+                
+G3PN3S'    R2',S'N3      PG3R2,    SR2SN3. |P.P.P.N3.   N3.N3.R2R2 |    R2G3G3R2    SN3.SR2 ||
+                
+G3PN3S'    R2',S'N3      PG3R2,    SR2SN3. |P.P.P.N3.   N3.N3.R2R2 |    R2G3G3R2    SN3.SR2 ||
+                
+G3PN3S' R2'G3'P'G3'   R2'S'N3P    G3R2SN3. | P.P.P.R2     R2R2N3., |R2G3R2G3    SN3.SR2 ||
+                
+G3PN3S' R2'G3'P'G3'   R2'S'N3P    G3R2SN3. | P.P.P.R2     R2R2N3., |R2G3R2G3    SN3.SR2 ||
+                
+G3,,,        ,-R2,        ,-S,    SR2SN3. |     P.,,R2       ,,N3., |       R2,,-    SN3.SR2 ||
+                
+G3,,,        ,-R2,        ,-S,         ,,,, |        ,,,,         ---- |        ----         ---- ||
+                
+G3,P,        ,,G3,        ,,R2,        S,,, |   SN3.G3R2       S,S, |      R2,G3,        P,,, ||
+                
+G3,P,        ,,G3,        ,,R2,        S,,, |   SN3.G3R2       S,S, |      R2,G3,        P,,, ||
+                
+P,R2G3      P,PG3     G3R2G3R2        S,,, |SR2G3R2       S,S, |      R2,G3,        P,,, ||
+                
+P,R2G3      P,PG3     G3R2G3R2        S,,, |SR2G3R2       S,S, |      R2,G3,        P,,, ||
+                
+PPS'N3    S'-S'N3 G3'R2'S'R2'     S'N3P, |     P,PG3      PG3R2, |     S,G3G3        R2,,- ||
+                
+PPS'N3    S'-S'N3 G3'R2'S'R2'     S'N3P, |     P,PG3      PG3R2, |     S,G3G3        R2,,- ||
+                
+PN3PN3    S'-N3R2' G3'R2'S'R2'     S'N3P, |    G3PG3P     S'N3P, |    G3PN3P      G3R2S, ||
+                
+PN3PN3    S'-N3R2' G3'R2'S'R2'     S'N3P, |    G3PG3P     S'N3P, |    G3PN3P      G3R2S, ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', |      S',,-        S,,- |      S',,-        S,,- ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', |S'S'S'S'         ---- |    SSSS         ---- ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', |  S'S'R2',      PPN3, |     R2R2G3,    N3.N3.S, ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', |     N3R2',-      N3R2',- |     N3R2',-      N3R2',- ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', |     N3R2',-       PN3,- |      G3P,-      N3.R2,- ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', |  N3N3S'S'   N3N3R2'R2' |  N3N3R2'R2' G3'G3'R2'R2' ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', | (N3N3S'S' PPN3N3 G3G3PP R2R2G3G3) | (SSR2R2 N3.N3.SS P.N3. SR2 N3.N3.SR2) ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', | (N3N3S'S'PPN3N3 G3G3PP R2R2G3G3) |(SSR2R2 N3.N3.SS P.N3.SR2 N3.N3.SR2) ||
+                
+G3,PG3       ,N3P,  S'S'N3S'     ,R2'S', |   R2',S'P       ,N3P, |     G3,R2S       ,G3R2, ||
+                
+G3PN3S' R2'G3'P'G3'   R2'S'N3P    G3R2SN3. |     P.,-R2       ,,N3., |R2G3R2G3   SN3.SR2 ||
+                
+G3,,,        ,-R2,        ,-S,         ,,,, |        ,,,,         ,--- |        ----         ---- ||
+                
+G3,SR2     G3PG3R2      G3R2S,   N3.R2SN3. |      P.,,,         ---- |        ----         ---- ||
+                
+G3,SR2     G3PG3R2      G3R2S,   N3.R2SN3. |      P.,,,         ---- |        ----         ---- ||
+                
+G3,SR2     G3PG3R2      G3R2S,   N3.R2SN3. |      P.,,,         ---- |        ----         ---- ||
+                
+G3,SR2     G3PG3R2      G3R2S,   N3.R2SN3. |      P.,,,         ---- |        ----         ---- ||
+                
+ G3,SR2       G3,R2,        ,,S,         ,,-- |        ----         ---- |        ----         ---- ||
+                
+PG3PG3   R2SN3.P.    N3.SR2G3    R2SN3.S |  R2SN3.P.    N3.SR2G3 |    PG3R2P     G3R2SR2 ||
+                
+G3,SR2       G3,R2,        ,,S,         ,,-- |        ----         ---- |        ----         ---- ||
+                
+,R2'G3'R2'    R2'G3',N3    R2'N3S',  N3S'R2'R2' |R2'G3'G3'R2' S'R2'G3'R2' | G3'R2'S'G3     PG3R2G3 ||
+                
+R2SN3.S     R2SR2G3     R2G3PN3     PG3PN3 |   S'N3PG3     R2G3PN3 |    N3PG3P     G3R2SR2 ||
+                
+G3,,,        ,,R2,        ,,S,         ,,-- |        ----         ---- |        ----         ---- ||
+                
+G3'G3'N3P  N3G3'R2'S'   N3N3G3'R2'    N3R2'N3P |  G3N3G3'R2'    N3R2'N3P |    G3G3R2S    N3.R2G3R2 ||
+                
+SN3.R2G3     N3PG3R2     G3PG3R2    N3.R2PG3 |  PN3S'R2'     S'N3,P |    PG3PN3 S'R2'G3'P' ||
+                
+G3'R2'S'N3     PN3PG3     R2G3R2S    N3.SR2G3 |    PG3R2G3    PN3S'N3 |    S'P,G3      R2S,R2 ||
+                
+G3,SR2       G3,R2,        ,,S,         ,,-- |        ----         ---- |        ----         ---- ||
+                
+,R2'S'N3      ,PG3R2    R2'S'N3,   PG3R2'S' |    N3,PR2'    S'N3,R2' |  S'R2'PN3     S',-R2' ||
+                
+PN3S',    -R2'G3'P      N3S',- R2'G3'P'G3' |  R2'S'N3P       ,G3,S |    R2G3R2S    SN3.SR2 ||
+                
+SR2G3P     G3R2G3R2     SR2G3P  N3S'R2'G3' |P'G3'R2'S'     N3PG3R2 |    SSR2R2     G3R2G3R2 ||
+                
+G3,,,        ,,R2,        ,,S,         ,,-- |        ----         ---- |        ----         ---- ||
+                
+R2',G3P   N3PS'R2' S'R2'G3'P'   G3',R2'S' |     ,N3G3',    R2'S',N3 |   PG3',R2'     S',N3P ||
+                
+G3N3.,N3.      ,SN3.,    P.SR2G3     R2SSR2 |    G3R2SS     R2G3R2S |    G3N3PG3     R2G3PG3 ||
+                
+R2N3.R2G3       P,-G3     G3R2SR2    PN3S'N3 |    PG3G3P     G3R2G3R2 |    SR2G3P    N3S'N3P ||
+                
+N3S'R2'S' R2'G3'P'G3' R2'S'R2'S'  N3S'R2'G3' |  R2'S'N3P     N3PG3R2 |    SN3.G3,    R2SN3.R2 ||
+                
+G3'R2'R2'S'    S'N3N3P     PG3G3R2    R2SSN3. | P.P.P.R2      R2R2S, |    R2R2R2R2     SSSR2 ||
+                
+G3PN3S' R2'G3'P'G3'   R2'S'N3P    G3R2SN3. |     P.,-R2       ,,N3., |R2G3R2G3    SN3.SR2 ||
+                
+G3PG3G3     R2SR2G3    R2R2SN3.    SR2SN3. |     P.,-R2       ,,N3., |       R2,,-    SN3.SR2 ||
+                
+G3,,,        ,-R2,        ,-S,         ,,,, |        ,,,,         ---- |        ----         ---- ||

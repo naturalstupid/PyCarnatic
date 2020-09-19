@@ -1,0 +1,118 @@
+{Mokshamu galada
+#M20
+{ Adi Tala = Triputai thaala chathusra jaathi (chathusra nadai)
+#T4
+#J2
+{ Ragam: sAramathi
+{ #D30
+{ #S1
+{ S R2 G2 M1 P D1 N2 S'
+{ $,
+{ S' N2 D1 M1 G2 S
+{ $,,
+#D72
+#S3
+#I4
+[ S R G S,,,,,,,,,,,  N.D.N.,,,,,,,,,N.D.SN.S,,,,,,,,, SRG,,,,,,M,,,,,,,,,RG,MGM,,,,,,, PDNDM,,,,,,,, 
+ G,,,,,,,, SRG,,,M,,,,,,P,,,,,,,,PDND,,,,,N,,,,,,,DN,,DM,,,,,,GM,,GS R,G,,,,M,,, PDM,,,, 
+ MP,,,,,,DN,,,,,,,,S',,,,,,S'ND NDM DMG MGS,,,, SRG RGM GMP MPD PDN,,,N S',,,, 
+ R'G'M'G'S',,,,, N'D'N',,, S',,,,R'G' R'G'S',,,, DNS' NDM,,,PDNS'R',R',,,, G'R'S'NDM,,,, PDNS'R' 
+ S'R'G',,,, M'M' G'G' S',,,, S'S' NN DD M,,,,, MG MG,,S,,,,R,,,,,,G'S',,,,,N'D'N',,,, 
+ ND ND DM GM GS,,,G'S'N'D'N',,,S'N'D'M',,,,P'D'N'S'N'D'M',,,G',,,, S,,,,,,,
+ SRGS,,,,   RGMGM,,,,, MNN DDN DD MM G,,,,,S,,,,,N.D.,,,N.,,, SRG,,,,,,MGS,,,,,,
+]
+{ $
+#I0
+{Pallavi
+; R, , G S, R, G, M, ; ; P D N, ; ND DM GR GR
+
+GS R , G S, R, G, M, P, D , N N S', , S'N ND DM GR
+
+GSR, , G S, (GRR,) (MGG,) (PMM,) ; ; P D (NS'R'G') S', S'N ND DM GR
+
+GS R , G S, R, G, M, P, D, , N (S'R'G',) S', S'N ND DM GR
+
+GS
+
+$
+{Anu Pallavi
+#I2
+; NS' R', ; R', ; (S',,R') G', ; G' M' , G' S', S'N ND DM MP
+
+DN S', , R' , (R'S'ND) ; NS' (NS'R'G') ; (R',G'M') G'M' (G'S',,) S'N ND DM MP
+DN P, , D, , N, ; ND ND ND DN S,' ; S'N ND DM GR
+GS
+
+$
+{ cHARANAM
+#I4
+; P, , P, , P, P, PD (PDN,) ; (D,NS') N D M, GR GR GS (R',R',)
+
+M, N N N, (D,NS') N D M, GR GR GS S R, G S, R, G, M, ;
+
+; NS' R', ; R' ; (S,,R') G', ; G' M' , G' S', S'N ND DM MP
+
+DN NS' R' ; (R'S'ND) ; NS' (NS'R'G') ; (R',G'M') G'M' G', S', S'N ND DM MP
+
+DN P P, D D, ND ND DN S', ; NS'N DND DM MG GR GR
+
+GS
+
+$
+{ Niraval
+#I5
+S'R' G' M'G'S' ND | S'NDM,, PD || NS'
+$
+#I0
+MGMGS, N.D. | N.S RGMP D, || NS'
+$
+#I2
+R'G'S'R' | ,, G'S'ND S', | ND  N,DM GS || G'S'
+$
+#I4
+S',R'G' S'R'G'M' | G'M'G'S' S'N,N | D,DM, MGS || G'S',
+$
+#I5
+PDNS'R'G'M' G' | S' , , PDND M | , , | RGMGS , || G'S'
+$
+{ Samam
+#I2
+PDN S'R'G'S', PDNS , , ND | M , , , SRGM | PDND MGS, || G'S'
+{ RAJI: 
+#I5
+PDNS'R'G' ,, S'R'G'M'G'S' , , | PDNS'ND ,, | MPDMGS , , || G'S'
+$
+{ Last drutam 
+#I0
+MPDM , M , , || MPDNS'M , , MPDNS'R'G'M' | G'S'NDM , PD| SRGM  MP PD || NS'
+$
+{ Last drutam
+#I2
+MPDN DMGS SR, RG, GM || PDNS' 
+$
+#I3
+SRGM GSN.D. N.SRG MPDN || S'NDM 
+$
+{ full drutam
+#I4
+S, , RGMGS  R , , GMDMG  | M , , PDNS'N S'N,D ND,M || PDNS' 
+$
+#I5
+M'G'S'NDM PDNS'R'G' R'G'M'G' | SRRG RGGM  | GMMP PDDN || PDNS'
+,G'S' , , , , , R'G'M'G' M'G'S' , , , , , SRGM PDNS' , , , | S'ND NDM  DMG MGS , , , , | SR, RG, GMMP PDNS' R'G' || S'R'G'M' G'S'ND S,ND N,DM  DMGS SRGM PDNS' , , , , RGMP DNS'R' G'S' 
+$
+{ TURN 
+#I0;2;3;4;5
+G',,S',,N,,D,,M,, G',S',N,D,M, G'S'NDM S,,R,,,G,,,M,,,P,,, S,R,G,M,P, SRGMP P,,D,,,N,,,S',,R',,,P,D,N,S',R', P DNS'R' 
+$
+#I0
+{Pallavi
+; R, , G S, R, G, M, ; ; P D N, ; ND DM GR GR
+
+GS R , G S, R, G, M, P, D , N N S', , S'N ND DM GR
+
+GSR, , G S, GRR, MGG, PMM, ; ; P D NS'R'G' S', S'N ND DM GR
+
+GS R , G S, R, G, M, P, D, , NS'R'G' S', S'N ND DM GR
+
+GS

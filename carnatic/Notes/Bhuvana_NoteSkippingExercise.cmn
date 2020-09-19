@@ -1,0 +1,29 @@
+{ Anything that starts with { is a comment.
+{ Following is Lower- Pa to Higher Pa without skipping any notes...
+#D30
+#M15
+#I4
+#S1
+[
+P. D1. D2. N2. N3. S R1 R2 G2 G3 M1 M2 P D1 D2 N2 N3 S^ R1^ R2^ G2^ G3^ M1^ M2^ P^
+
+{ Following is notation of SILENCE ($ symbol) for three notes
+]
+$ , , 
+{ -------------------------------------------------------------------------------
+{Following is Lower-Pa to Higher Pa skipping one note
+[
+P.  D2.  N3. R1 G2 M1  P D2 N3 R1^ G2^ M1^ P^
+]
+$ , , 
+{ -------------------------------------------------------------------------------
+{Following is Lower-Pa to Higher Pa skipping two notes
+[
+P. N2. R1 G3 P N2 R1^ G3^ P^
+]
+$ , , 
+{ -------------------------------------------------------------------------------
+{ Following is Lower- Pa to Higher Pa skipping three notes...
+[
+P. N3. G2 P  N3  G2^ P^
+]
