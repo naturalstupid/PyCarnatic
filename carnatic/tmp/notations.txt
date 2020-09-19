@@ -1,0 +1,8 @@
+#M15
+#D60
+#T4
+#J2
+#I1
+#S1
+{This is a comment
+S R G M P D N S'
