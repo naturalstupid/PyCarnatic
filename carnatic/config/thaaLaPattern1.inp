@@ -1,0 +1,19 @@
+#This file has thaaLa Patterns for each 1 to 4 beats
+#This file contains only first speed syllables
+# Separate each pattern with ; and end it with |
+# The complete pattern should not be in multiple lines.
+# To add korvai (silence) include patterns with comma
+# To 2nd kalai or 3rd kala use paranthesis notations e.g. (tha ri ki ta) or ((tha ri ki ta))
+
+# pattern for 1 beat
+[Thaala Patterns]
+tha;thi;thom;num;ki;ta;ka;na;chap;dhin;ta*thom;num*thom;chap*thom;dhin*thom;dhin*tha;|
+
+# pattern for 2 beat combinations
+tha ka;tha ri;dhi mi;ki ta;tha ,;ta*thom num*thom;chap*thom dhin*thom;ta*thom chap*thom;ta*thom dhin*thom;|
+
+# pattern for 3 beat combinations
+tha ki ta;tha , gu;tha , ki;tha chap tha;tha chap*thom tha;tha num*thom tha; tha ta*thom tha;tha dhi mi;|
+
+# pattern for 4 beat combinations
+tha ri ki ta;tha ka jo nu;dhi mi ki ta;tha , ki ta;tha , , ki;tha ka dhi mi;ki ta tha ka;tha dhin*thom num*thom ta;tha ta*thom chap*thom ta;|

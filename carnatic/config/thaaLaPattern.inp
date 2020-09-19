@@ -1,19 +1,19 @@
 #This file has thaaLa Patterns for each 1 to 4 beats
-#This file contains first, second and third speed syllables
-# which means for third speed, it can go up to 6 speed equivalent
+#This file contains only first and second speed syllables
+# which means for third speed, it can go up to 5 speed equivalent
 # Separate each pattern with ; and end it with |
 # The complete pattern should not be in multiple lines.
 # To add korvai (silence) include patterns with comma
-# To 2nd kalai or 3rd kala use paranthesis notations e.g. (tha ri ki ta) or ((tha ri ki ta))
+# To 2nd kalai or 3rd kala use paranthesis notations e.g. ( tha ri ki ta ) or ( ( tha ri ki ta ) )
 # pattern for 1 beat
 [Thaala Patterns]
-1 = tha;thi;thom;num;ki;ta;ka;na;chap;dhin;ta*thom;Num*thom;chap*thom;dhin*thom;Dhin*Tha;|
+1 = tha;thi;thom;num;ki;ta;ka;na;chap;dhin;ta*thom;num*thom;chap*thom;dhin*thom;dhin*tha;|
 
 # pattern for 2 beat combinations
-2 = tha ka;tha ri;dhi mi;ki ta;tha ki;ta*thom Num*thom;chap*thom Dhin*thom;ta*thom chap*thom;ta*thom Dhin*thom;(tha ka dhi mi );( dhi mi ki ta );( tha ka tha ri ); ( tha ri ki ta );( ta*thom Num*thom );( chap*thom Dhin*thom ta*thom chap*thom );|
+2 = tha ka;tha ri;dhi mi;ki ta;tha ki;ta*thom num*thom;chap*thom dhin*thom;ta*thom chap*thom;ta*thom dhin*thom;( tha ka dhi mi );( dhi mi ki ta );( tha ka tha ri ); ( tha ri ki ta );( ta*thom num*thom );( chap*thom dhin*thom ta*thom chap*thom );|
 
 # pattern for 3 beat combinations
-3 = tha ki ta;tha ri gu;tha chap tha;tha chap*thom tha;tha num*thom tha; tha ta*thom tha;tha dhi mi;( tha ki ta tha ri gu );( tha chap*thom tha dhi mi ki );(( tha ki ta tha ri gu  tha chap*thom tha dhi mi ki ));|
+3 = tha ki ta;tha ri gu;tha chap tha;tha chap*thom tha;tha num*thom tha; tha ta*thom tha;tha dhi mi;( tha ki ta tha ri gu );( tha chap*thom tha dhi mi ki );|
 
 # pattern for 4 beat combinations
-4 = tha ri ki ta;tha ka jo nu; tha ka dhi mi; dhi mi ki ta;  tha dhim*thom num*thom ta; ki ta tha ka;tha dhin*thom num*thom ta;tha ta*thom chap*thom ta; ( tha ri ki ta tha ka jo nu );  ( tha ka dhi mi dhi mi ki ta ); (dhi mi ki ta tha dhim*thom num*thom ta);(tha ka jo nu dhi mi ki ta); (ki ta tha ka tha dhin*thom num*thom ta); (tha ta*thom cha*thom ta tha dhim*thom num*thom ta);(( tha ri ki ta tha ka jo nu )( tha ka dhi mi dhi mi ki ta );((dhi mi ki ta tha dhim*thom num*thom ta) (tha ka jo nu dhi mi ki ta));|
+4 = tha ri ki ta;tha ka jo nu; tha ka dhi mi; dhi mi ki ta;  tha dhin*thom num*thom ta; ki ta tha ka;tha dhin*thom num*thom ta;tha ta*thom chap*thom ta; ( tha ri ki ta tha ka jo nu );  ( tha ka dhi mi dhi mi ki ta ); ( dhi mi ki ta tha dhin*thom num*thom ta );( tha ka jo nu dhi mi ki ta ); ( ki ta tha ka tha dhin*thom num*thom ta ); ( tha ta*thom chap*thom ta tha dhin*thom num*thom ta );|
