@@ -1,4 +1,4 @@
-# PyCarntic / Carnatic Music Guru
+# PyCarntic / Carnatic Music Guru - V0.6.0
 This provides a python package to <br>
 	<li>Generate Music Lessons (SaraLi, Jantai, Dhaattu, Keezh/mEl sthaayi and Alankaaram) for about 400 raagas
 	<li>Defines a notation system for carnatic music notes
