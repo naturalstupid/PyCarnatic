@@ -1,4 +1,4 @@
-# PyCarntic / Carnatic Music Guru - V0.6.0
+# PyCarnatic / Carnatic Music Guru - V0.6.0
 ## This package was inspired from the Java Application: JRaaga / Carnatic Music Guru
 ** https://sourceforge.net/projects/carnaticmusicguru/ **
 
