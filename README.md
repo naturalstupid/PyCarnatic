@@ -1,5 +1,9 @@
 # PyCarntic / Carnatic Music Guru - V0.6.0
-This provides a python package to <br>
+## This package was inspired from the Java Application: JRaaga / Carnatic Music Guru
+** https://sourceforge.net/projects/carnaticmusicguru/ **
+
+<br>
+<br>This provides a python package to <br>
 	<li>Generate Music Lessons (SaraLi, Jantai, Dhaattu, Keezh/mEl sthaayi and Alankaaram) for about 400 raagas
 	<li>Defines a notation system for carnatic music notes
 		<li>- Will automatically use appropriate notes according to the melakartha
