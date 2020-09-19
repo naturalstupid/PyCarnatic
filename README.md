@@ -31,6 +31,10 @@
 <li> Carnatic notes can be written as S R R1 R2 etc 
 <li> Lower octaves should have "period"/"dot" . as a suffix. Example: S. R1. M2. etc
 <li> Upper octave notes should have single quote ' or caret ^. Example: S' R1^ M1 ' etc
+<li> Microtone notations can S>1 S>2 R1>3 - 10%, 20% 30% respectively more than the pitch of the note
+<li> Similarly notations like G3<1 M2<4 have 10% 40% respectively less than the pitch of the note
+<li> Gliding notes:  S / R - will glide from S to R and sustain at R for its duration
+<li> Gliding notes:  M ! P - will glide down from M to P and sustain at P for its duration
 
 
 ## Lessons
@@ -120,3 +124,17 @@ play_notations_from_file(notation_file,instrument="Flute")
     notation_file = "../Notes/PancharathnaKrithi-jagadhaandhakaaraka.cmn"
     play_notations_from_file(notation_file,"Sarod")
 ```
+#### Song
+```
+	 s = Song()
+    s.set_melakartha(15)
+    s.set_tempo(60)
+    s.set_thaaLam("Thriputai ThaaLa", "Chathusra Jaathi")
+    s.add_instrument("Veena2")
+    s.set_speed(1)
+    s.set_notation_type(1)
+    s.add_comment("This is a comment")
+    s.add_notes("S R G M P D N S'")
+    s.play()
+    s.save("delme.txt")
+   ```
