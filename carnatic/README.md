@@ -15,6 +15,23 @@
 	<li> 	-	DEFAULT_INSTRUMENTS = ["Violin","Sitar","Shenai","Piano","Guitar"]
 	<li> 	-	PERCUSSION_INSTRUMENTS = ["Mridangam","EastWestMix"]
 	
+## Notations
+<li> { Comments start with "{"
+<li> { Commands start with "#" followed by a number
+<li> { #S<number> Speed of the song values 1 to 5 - Example:
+<li> #S1
+<LI> { #M<number> Specify MElakaratha of the song values 1 to 72 - Example:
+<li>#M15
+<li> { #D<number> Duration - values 1 - 200. Example:
+<li> #D60
+<li> { #T - specify thaala - values 1 to 7 (1-Eka ... 7-Dhurva ThaaLam). Example:
+<li> #T4
+<li> { #J - specify jaathi - values 1 to 5 (1-Thisra ... 7-Samkeerna). Example:
+<li> #T2
+<li> Carnatic notes can be written as S R R1 R2 etc 
+<li> Lower octaves should have "period"/"dot" . as a suffix. Example: S. R1. M2. etc
+<li> Upper octave notes should have single quote ' or caret ^. Example: S' R1^ M1 ' etc
+
 
 ## Lessons
 ```
