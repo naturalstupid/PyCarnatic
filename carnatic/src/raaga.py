@@ -1,6 +1,11 @@
+"""
+    Module for 
+            - setting raaga / melakartha
+            - searching for raaga, getting attributes of raaga (e.g. is janya, is sampoorna, get parent etc
+"""
 import re
-#from settings import *
 import settings
+import cparser
 
 #settings.RAAGA_DICT = get_raaga_dictionary()
 def _get_raaga_attribute(field,ri=None):
@@ -73,9 +78,17 @@ def get_parent_raaga_id(ri=None):
     filter_options = {'mELakartha' : str(melakartha_number), 'Melakartha_or_Janya':"mELakartha-"+str(melakartha_number)}
     parent_raaga_id = search_for_raaga_by_attributes(filter_options)[0]
     return parent_raaga_id
-def get_default_raaga():
+def get_raaga_list():
+    return settings.RAAGA_NAMES
+def set_raagam(raagam):
+    if not raagam in settings._RAAGA_NAMES:
+        raise ValueError(raagam,'not in supported raagas. Use get_raaga_list() for the list.')
+    raaga_id = search_for_raaga_by_name(raagam,is_exact=True)[0]
+    set_default_raaga_id(raaga_id)
+def get_default_raaga_id():
     return settings.RAAGA_INDEX
-def set_default_raaga(ri):
+def set_default_raaga_id(ri):
+    print("INFO:Setting raaga will change the melakartha to that of the raaga")
     raaga_dict_length = len(settings.RAAGA_DICT)
     if ri >= raaga_dict_length:
         raise ValueError("Raaga ID should be in the range 0.."+str(raaga_dict_length))
@@ -85,25 +98,26 @@ def set_default_raaga(ri):
 def get_melakartha(ri=None):
     if ri==None:
         ri=settings.RAAGA_INDEX
-    return settings.MELAKARTHA_LIST.index(ri)+1
+    return _get_raaga_attribute('mELakartha',ri)
+    #return settings.MELAKARTHA_LIST.index(ri)+1
 def set_melakartha(melakartha_number):
-    """ Setting melakartha will change the raaga to melakartha raaga """
-    if melakartha_number <= 0 or melakartha_number > 72:
+    print("INFO:Setting melakartha will change the raaga to melakartha raaga")
+    if melakartha_number < 1 or melakartha_number > 72:
         raise ValueError("Melakartha number should be in the range 1..72")
     settings.MELAKARTHA_INDEX = melakartha_number
     settings.RAAGA_INDEX = settings.MELAKARTHA_LIST[melakartha_number-1]
-def get_krithis(ri=None):
+def __get_krithis(ri=None):
+    """ TODO: Krithi support not implemented """
     if ri==None:
         ri=settings.RAAGA_INDEX
     return _get_raaga_attribute("Krithi_IDs",ri).split(";")
 
 if __name__ == '__main__':
-    exit()
     """
     print(get_parent_raaga_id(290))
     exit()
     """
-    #"""
+    """
     set_melakartha(10)
     print('raaga index',settings.RAAGA_INDEX)
     print(is_melakartha(115))
@@ -111,19 +125,19 @@ if __name__ == '__main__':
     print(get_melakartha())
     print(get_parent_raaga_id())
     exit()
-    #"""
-    #"""
+    """
+    """
     #filter_options = {'mELakartha' : '15', 'Melakartha_or_Janya':"mELakartha-15"}
     filter_options = {'Krithi_IDs' : '1000'}
     print(_search_raaga_for_values('Krithi_IDs','1000'))
     print(search_for_raaga_by_attributes(filter_options))
     exit()
-    #"""
-    #"""
+    """
+    """
     #print(_get_raaga_attribute("Krithi_IDs"))
     print(get_krithis())
     exit()
+    """
     #"""
-    #"""
-    print(search_for_raaga_by_name("hamsa"))
+    print(search_for_raaga_by_name("hamsad"))
     #"""

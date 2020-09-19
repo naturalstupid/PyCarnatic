@@ -1,23 +1,40 @@
-import settings
+"""
+    Module for 
+            - setting thaaLam/jaathi/nadai
+            - getting solkattu patterns for mridangam accompaniement - per music notation
+"""
 import configparser
 import random
 import itertools
+import settings
+import cparser
+import cplayer
 
-def set_thaaLa(thaaLa_index):
-    if thaaLa_index > 0 and thaaLa_index < 8:
-        settings.THAALA_INDEX = thaaLa_index
-    else:
-        raise ValueError("Thaala Index should be in the range 1..7")
-def set_jaathi(jaathi_index):
-    if jaathi_index > 0 and jaathi_index < 6:
-        settings.JAATHI_INDEX = jaathi_index
-    else:
-        raise ValueError("Jaathi Index should be in the range 1..5")
-def set_nadai(nadai_index):
-    if nadai_index > 0 and nadai_index < 6:
-        settings.NADAI_INDEX = nadai_index
-    else:
-        raise ValueError("Nadai Index should be in the range 1..5")
+def _get_thaaLa_index(thaaLam):
+    return settings.THAALA_NAMES.index(thaaLam)
+def _get_jaathi_index(jaathi):
+    return settings.JAATHI_NAMES.index(jaathi)
+def _get_nadai_index(nadai):
+    return settings.NADAI_NAMES.index(nadai)
+def get_thaaLam_names():
+    return settings.THAALA_NAMES
+def get_jaathi_names():
+    return settings.JAATHI_NAMES
+def set_thaaLam(thaaLam):
+    if thaaLam not in settings.THAALA_NAMES:
+        raise ValueError(thaaLam, "Not in allowed ThaaLam Names:",settings.THAALA_NAMES)
+    thaaLa_index = _get_thaaLa_index(thaaLam)
+    settings.THAALA_INDEX = thaaLa_index
+def set_jaathi(jaathi):
+    if jaathi not in settings.JAATHI_NAMES:
+        raise ValueError(jaathi,"Not in allowed Jaathi Names:",settings.JAATHI_NAMES)
+    jaathi_index = _get_jaathi_index(jaathi)
+    settings.JAATHI_INDEX = jaathi_index
+def set_nadai(nadai):
+    if nadai not in settings.NADAI_NAMES:
+        raise ValueError(nadai,"Not in allowed Nadai Names:",settings.NADAI_NAMES)
+    nadai_index = _get_nadai_index(nadai)
+    settings.NADAI_INDEX = nadai_index
 def total_akshara_count(thaaLa_index=None, jaathi_index=None, nadai_index=None): 
     if thaaLa_index==None:
         thaaLa_index=settings.THAALA_INDEX
@@ -54,9 +71,15 @@ def get_thaaLa_patterns_for_beat_string(thaaLa_beat_string,generate_random=True)
     lst = []
     for c in thaaLa_beat_string:
         ci = int(c)
-        rn = random.randint(0,settings.THAALA_PATTERN_COUNTS[ci-1])
-        lst.append(settings.THAALA_PATTERNS[ci-1][rn])
-    return ' '.join(lst)
+        #print('ci=',ci)
+        tpc = settings.THAALA_PATTERN_COUNTS[ci-1]
+        #print('tpc=',tpc)
+        rn = random.randint(0,tpc-1)
+        #print('ci,rn',ci,rn)
+        tp = settings.THAALA_PATTERNS[ci-1][rn].split()
+        #print("thaal beat",c,'pattern',tp)
+        lst.append(tp)
+    return lst
 def get_thaaLa_patterns_for_thaaLa_jaathi_nadai(thaaLa_index=None, jaathi_index=None, nadai_index=None):
     if thaaLa_index==None:
         thaaLa_index=settings.THAALA_INDEX
@@ -71,7 +94,7 @@ def get_thaaLa_patterns_for_thaaLa_jaathi_nadai(thaaLa_index=None, jaathi_index=
     ret2 = str("".join(map(str, ret1[0])))
     thaaLa_patterns = get_thaaLa_patterns_for_beat_string(ret2,True)
     return thaaLa_patterns
-def get_thaaLa_patterns():
+def __get_thaaLa_patterns():
     thaaLa_config = configparser.ConfigParser()
     thaala_settings = thaaLa_config.read(settings.THAALA_PATTERN_FILE)
     sections = thaaLa_config.sections()
@@ -119,17 +142,32 @@ def get_thaaLa_positions(thaaLa_index=None, jaathi_index=None):
         jaathi_index = settings.JAATHI_INDEX
     #print('inside thaaLa',thaaLa_index,jaathi_index)
     return settings.THAALA_LOC[thaaLa_index][jaathi_index]
-
+def get_thaaLa_patterns_for_avarthanam(avarthanam_count,thaaLa_index=None, jaathi_index=None, nadai_index=None):
+    result = []
+    for a in range(avarthanam_count):
+        res = []
+        res = get_thaaLa_patterns_for_thaaLa_jaathi_nadai(thaaLa_index, jaathi_index, nadai_index)
+        result = result + res
+    return result
 if __name__ == '__main__':
+    """
     for t in range(1,8):
         for j in range(1,6):
             print(settings.THAALA_NAMES[t], settings.JAATHI_NAMES[j], settings.THAALA_LOC[t][j])
     exit()
-    settings.THAALA_PATTERNS = get_thaaLa_patterns()
-    print(settings.THAALA_PATTERN_COUNTS)
+    """
+    #"""
+    settings.THAALA_PATTERNS = __get_thaaLa_patterns()
+    #print(settings.THAALA_PATTERN_COUNTS)
     thaaLa_index = 2
     jaathi_index = 2
     nadai_index = 2
-    print(get_thaaLa_patterns_for_thaaLa_jaathi_nadai(thaaLa_index, jaathi_index, nadai_index))
-        
-                                  
+    #tp = get_thaaLa_patterns_for_thaaLa_jaathi_nadai(thaaLa_index, jaathi_index, nadai_index)
+    tp = get_thaaLa_patterns_for_avarthanam(2,thaaLa_index, jaathi_index, nadai_index)
+    print(tp)
+    sk = cparser.parse_solkattu(tp)
+    print(sk)
+    td = cparser.total_duration(sk)
+    print('total duration',td)
+    #cplayer.play_notes(sk)
+    #"""
