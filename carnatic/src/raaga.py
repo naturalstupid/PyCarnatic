@@ -26,7 +26,36 @@ def _search_raaga_for_values(search_key, search_str,is_exact=False):
             if search_str.lower() in settings.RAAGA_DICT[k][search_key].lower():
                 name = settings.RAAGA_DICT[k]['Name']
                 matching_keys.append([k,name])
-    return matching_keys    
+    return matching_keys
+def get_previous_note(carnatic_note,note_step=1,ri=None):
+    note,oct_str,pitch_str = cparser._split_carnatic_note_to_parts(carnatic_note)
+    note = re.sub("\d+","",note)
+    if ri==None:
+        ri=settings.RAAGA_INDEX
+    aroganam = get_aroganam(ri)
+    aro_len = len(aroganam)
+    aroganam_copy = [re.sub("\d","",a.upper()) for a in aroganam[:]]
+    note_index = aroganam_copy.index(note.upper())
+    if note_index > note_step-1:
+        return aroganam[note_index-note_step]+oct_str
+    else:
+        return aroganam[aro_len-note_step-1]+"."
+    return None
+def get_next_note(carnatic_note,note_step=1,ri=None):
+    note,oct_str,pitch_str = cparser._split_carnatic_note_to_parts(carnatic_note)
+    note = re.sub("\d+","",note)
+    #note = re.sub("\d","",note)
+    #note = re.sub("[\\.\\^\\']","",note)
+    if ri==None:
+        ri=settings.RAAGA_INDEX
+    aroganam = get_aroganam(ri)
+    aroganam_copy = [re.sub("\d","",a.upper()) for a in aroganam[:]]
+    note_index = aroganam_copy.index(note.upper())
+    if note_index < len(aroganam)-note_step:
+        return aroganam[note_index+note_step]+oct_str
+    else:
+        return aroganam[note_step-1]+"^"
+    return None
 def get_aroganam(ri=None):
     if ri==None:
         ri=settings.RAAGA_INDEX
@@ -113,6 +142,8 @@ def __get_krithis(ri=None):
     return _get_raaga_attribute("Krithi_IDs",ri).split(";")
 
 if __name__ == '__main__':
+    print(get_next_note("N",1),get_previous_note("S",1))
+    exit()
     """
     print(get_parent_raaga_id(290))
     exit()

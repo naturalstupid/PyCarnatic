@@ -2,6 +2,8 @@
     Module for 
             - parsing notations file and generating SCAMP list of pitches, durations and instruments
 """
+import numpy as np
+from scamp import Envelope
 import math
 import re
 import regex
@@ -225,7 +227,7 @@ def _w_index_mk(carnatic_note, melakartha_number):
             result = settings.CARNATIC_NOTES_LIST_16.index("M1")
     #result = WEST_MIDI_NOTES[result]
     return result
-def _get_midi_note_number(midi_note, micro_tone_factor = 0.0):
+def _get_midi_note_number(midi_note):
     is_carnatic_note=(settings.CURRENT_INSTRUMENT in settings._DEFAULT_INSTRUMENTS)
     octave = int(midi_note[-1])
     note = midi_note[0:-1]
@@ -238,15 +240,9 @@ def _get_midi_note_number(midi_note, micro_tone_factor = 0.0):
         fractional_note = 12.0 * math.log2(settings.C12_FREQ_RATIO[settings.WEST_MIDI_NOTES_LIST_12.index(note)])
     else:
         fractional_note = settings.WEST_MIDI_NOTES_LIST_12.index(note)
-    note_number = (base_note_number + fractional_note) * (1+micro_tone_factor)
-    """
-    if is_carnatic_note:
-        note_number = kattai_index + (octave+1)*12 + (settings.C16_FREQ_RATIO[settings.WEST_MIDI_NOTES_LIST_16.index(note)] - 1.0)*12*(1+micro_tone_factor)
-    else:
-        note_number = kattai_index + (octave+1)*12 + settings.WEST_MIDI_NOTES_LIST_12.index(note)*(1+micro_tone_factor)
-    """
+    note_number = (base_note_number + fractional_note)
     return note_number
-def _get_midi_note(carnatic_note):
+def _split_carnatic_note_to_parts(carnatic_note):
     p = re.compile(_NOTES_PATTERN_1)
     m = p.match(carnatic_note)
     m1 = m.groups()
@@ -256,6 +252,9 @@ def _get_midi_note(carnatic_note):
     pitch_str = ''
     if m1[3] != '':
         pitch_str = m1[3][0]
+    return m1[1],m1[2],m1[3]
+def _get_midi_note(carnatic_note):
+    note,oct_str,pitch_str = _split_carnatic_note_to_parts(carnatic_note)
     instrument_base_note = settings.INSTRUMENT_BASE_NOTES[settings.INSTRUMENT_INDEX]
     octave = int(instrument_base_note[-1]) #settings.BASE_OCTAVE
     #print(instrument_base_note, octave)
@@ -263,17 +262,35 @@ def _get_midi_note(carnatic_note):
         octave += -1
     elif oct_str.strip() == "'" or oct_str.strip() == "^":
         octave += 1
-    micro_pitch = 0.0
-    glide=False
-    if pitch_str == ">":
-        micro_pitch += int(carnatic_note[-1])*0.1
-    elif pitch_str == "<":
-        micro_pitch -= int(carnatic_note[-1])*0.1
     midi_note = _get_western_note(note)
     midi_note = re.sub("\d",str(octave),midi_note)
-    midi_note_number = _get_midi_note_number(midi_note,micro_tone_factor=micro_pitch)
+    midi_note_number = _get_midi_note_number(midi_note)
     #print(carnatic_note,'groups',note,oct_str,pitch_str,micro_pitch,midi_note_number)
     return midi_note_number
+def _get_microtone_pitch(carnatic_note):
+    pitch_no = 0.0
+    micro_tone_pitch = 0.0
+    if carnatic_note[-1].isdigit():
+        pitch_no = int(carnatic_note[-1])*settings._MICROTONE_PITCH_INCREMENT
+    note = carnatic_note[:]
+    #note_s = re.sub("\d","",note)
+    #note_s = re.sub("[><]","",note_s)
+    note_freq = _get_midi_note(carnatic_note)
+    if ">" in carnatic_note:
+        next_note = raaga.get_next_note(note)
+        #print('next_note',next_note,note_s)
+        next_note_freq = _get_midi_note(next_note)
+        micro_tone_pitch = pitch_no * (next_note_freq - note_freq)
+        #print(note_freq,next_note_freq,micro_tone_pitch)
+    elif "<" in carnatic_note:
+        previous_note = raaga.get_previous_note(note)
+        #print('prev_note',previous_note,note_s)
+        previous_note_freq = _get_midi_note(previous_note)
+        micro_tone_pitch = -1.0 * pitch_no * (note_freq-previous_note_freq)
+        #print(previous_note_freq,note_freq,micro_tone_pitch)
+    micro_tone_pitch = note_freq + micro_tone_pitch
+    #print(carnatic_note,micro_tone_pitch)
+    return micro_tone_pitch
 def _group_notes_by_speed(notes_list, speed):
     results = []
     for i in range(0, len(notes_list), speed):
@@ -318,7 +335,7 @@ def _parse_notes_to_thaala(note_string):#, thaaLa_index=settings.THAALA_INDEX, j
     #note_string = [word.ljust(col_width) for row in note_string for word in row]
     return result
 def _get_note_frequency_duration(note_array):
-    #print('note_array',note_array)
+    print('note_array',note_array)
     global glide_next_note
     result = []
     speed = settings.PLAY_SPEED
@@ -327,7 +344,17 @@ def _get_note_frequency_duration(note_array):
     for i,note in enumerate(note_array):
         res_arr = []
         if (re.match(_NOTES_PATTERN_1,note)):
-            freq = _get_midi_note(note)
+            #"""
+            if "~" in note:
+                kampitam_note_increment = 1
+                if note[-1].isdigit():
+                    kampitam_note_increment = int(note[-1])
+                note = note.split("~")[0]
+                freq = _kampitam(note, kampitam_note_increment)
+            else:
+                freq = _get_microtone_pitch(note) # _get_midi_note(note)
+            #"""
+            #freq = _get_midi_note(note)
             durn = duration / ( ( 2 ** (speed-1) ) *1.0 ) 
             inst = settings.CURRENT_INSTRUMENT
             res_arr = [note,[inst,freq,durn]]
@@ -355,8 +382,37 @@ def _get_note_frequency_duration(note_array):
         elif note.strip() == "/" or note.strip() == "!":
             #print("glide note set to True")
             glide_next_note =True
+        """
+        elif "~" in note:
+            kampitam_note_increment = 1
+            if note[-1].isdigit():
+                kampitam_note_increment = int(note[-1])
+            note = result[-1][0]
+            freq = _kampitam(note, kampitam_note_increment)
+        """    
         #print('note',note,res_arr)
     return result
+def _kampitam(note, kampitam_note_increment=1,pitch_step=settings._KAMPITAM_NOTE_STEP):
+    pitch = _get_midi_note(note)
+    previous_note = raaga.get_previous_note(note,kampitam_note_increment)
+    next_note = raaga.get_next_note(note,kampitam_note_increment)
+    pitch_low = _get_midi_note(previous_note)
+    pitch_high = _get_midi_note(next_note)
+    print('kampitam',previous_note,pitch_low,note,pitch,next_note,pitch_high)
+    return _shake(pitch_low,pitch_high)
+def _shake(pitch_low,pitch_high,pitch_step=settings._KAMPITAM_NOTE_STEP):
+    result = []
+    while pitch_high > pitch_low:
+        pitch = list(np.arange(pitch_low,pitch_high,pitch_step))
+        result += pitch
+        #print('up',result)
+        pitch = list(np.arange(pitch_high,pitch_low,-pitch_step))
+        result += pitch
+        #print('down',result)
+        pitch_high -= 1.0
+    #print('result',result)
+    env = Envelope.from_levels(result)
+    return env
 def total_duration(final_note_list):
     sum = 0.0
     for note in final_note_list:
@@ -394,8 +450,10 @@ def parse_solkattu(solkattu_list):
     return result
                 
 if __name__ == '__main__':
+    #print(_split_carnatic_note_to_parts("R3.>5"))
+    #exit()
     """
-    cn = ["S", "/" , "R", "/", "G", "M", "P", "D", "N", "S^"]
+    cn = ["S", "/" , "R", "/", "G", "~", "M", "P", "D", "~2", "N", "S^"]
     mk = settings.MELAKARTHA_INDEX
     for c in cn:
         w_ind = _w_index_mk(c,mk)
@@ -407,8 +465,10 @@ if __name__ == '__main__':
     exit()
     """
     #"""
+    
     lesson_file = "../Notes/PancharathnaKrithi-jagadhaandhakaaraka.cmn"
     #lesson_file = "../Notes/vAtApi_Adhi_1.cmn"
+    lesson_file = "../test_notes.inp"
     c_note_arr,result = parse_file(lesson_file,fit_notes_to_speed_and_thaaLa = True)
     total_note_count_in_file = len(c_note_arr)
     total_duration_of_notes=total_duration(c_note_arr)

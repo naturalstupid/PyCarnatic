@@ -29,6 +29,14 @@ def _get_player():
         for inst in settings._PERCUSSION_INSTRUMENTS:
             available_instruments[inst] = player.new_part(inst,soundfont=settings._SOUND_FONT_FILE) 
     return player
+def get_instrument(instrument_name):
+    global available_instruments,player
+    player = _get_player()
+    if available_instruments:
+        if instrument_name in settings._CARNATIC_INSTRUMENTS + settings._DEFAULT_INSTRUMENTS:
+            return available_instruments[instrument_name]
+    return None
+        
 def __play_notes(scamp_note_list):
     global available_instruments, player
     if player==None:
@@ -67,33 +75,31 @@ def play_notes(scamp_note_list,include_percussion_layer=False):
     if include_percussion_layer:
         player.wait_for_children_to_finish()
 
-def play_notations_from_file(notation_file,instrument="Flute"):
+def play_notations_from_file(notation_file,instrument="Flute",include_percussion_layer=False):
     """
         To play notes from the notation file
         :param: notation_file    File containing commands, notations - see help
-        :instrument:             Play using the instrument specified. 
+        :param: instrument:             Play using the instrument specified. 
                                     Will be overwritten by instruments if specified in the notation_file 
+        :param: include_percussion_layer    True: Includes Percussion according to the set ThaaLam and Jaathi
+                                            ThaaLam and Jaathi can be set using thaaLa.set_thaaLam(thaaLam_Name, Jaathi_Name) 
     """
     file_carnatic_note_list,_ = cparser.parse_file(notation_file, fit_notes_to_speed_and_thaaLa=True)
-    __play_notes(file_carnatic_note_list)
+    play_notes(file_carnatic_note_list,include_percussion_layer)
 
 if __name__ == '__main__':
-    """
-    inst = get_instrument("Violin")
-    inst.play_note(71,1,1)
-    exit()
-    """
-    """
-    lesson_file = "test_lesson.inp"
-    play_notations_from_file(lesson_file,"Sarod")
-    exit()
-    """
+    from scamp import Envelope
+    def _float_range(start, stop, step):
+      while start < stop:
+        yield float(start)
+        start += step #decimal.Decimal(step)
+
+if __name__ == '__main__':
     #"""
-    #lesson_file = "../test_lesson.inp"
-    #lesson_file = "../Notes/vAtApi_Adhi_1.cmn"
     lesson_file = "../Notes/PancharathnaKrithi-jagadhaandhakaaraka.cmn"
-    #lesson_file="../test_notes.inp"
+    lesson_file = "../test_notes.inp"
     scamp_note_list,_= cparser.parse_file(lesson_file)
-    play_notes(scamp_note_list,True)
+    print(scamp_note_list)
+    play_notes(scamp_note_list,False)
     #"""
     
