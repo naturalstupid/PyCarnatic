@@ -201,7 +201,7 @@ print(result)
 ```
 #### cplayer - Example
 ```
-notation_file = "../Notes/PancharathnaKrithi-jagadhaandhakaaraka.cmn"
+notation_file = settings._APP_PATH + "/Notes/PancharathnaKrithi-jagadhaandhakaaraka.cmn"
 play_notations_from_file(notation_file,"Sarod")
 ```
 #### Song - Example
