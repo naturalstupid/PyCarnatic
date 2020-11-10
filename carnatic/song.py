@@ -8,11 +8,8 @@
 """
 import re
 import os.path
-from carnatic import settings
-from carnatic import raaga
-from carnatic import thaaLa
-from carnatic import cparser
-from carnatic import cplayer
+from carnatic import settings, raaga, thaaLa, cparser, cplayer
+
 _temp_file = settings._APP_PATH+"/tmp/notations.txt"
 class Song(object):
     """
@@ -147,7 +144,7 @@ class Song(object):
             *********************
             @param thaaLam_speed: thaaLam speed (also called kalai)
          """
-         thaaLam.set_thaaLam_speed(thaaLam_speed)
+        thaaLam.set_thaaLam_speed(thaaLam_speed)
     def save(self,output_file_name):
         """
             @param output_file_name:    Saves the song elements as as text file.

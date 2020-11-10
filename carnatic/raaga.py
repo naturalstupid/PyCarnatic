@@ -5,8 +5,7 @@
 """
 import re
 
-from carnatic import settings
-from carnatic import cparser
+from carnatic import settings, cparser
 
 #settings.RAAGA_DICT = get_raaga_dictionary()
 def _get_raaga_attribute(field,raagam_index=None):
@@ -43,7 +42,7 @@ def get_previous_note(carnatic_note,note_step=1,raagam_index=None):
     note = re.sub("\d+","",note)
     result = None
     if raagam_index==None:
-        raagam_index=raagam_indexttings.RAAGA_INDEX
+        raagam_index=settings.RAAGA_INDEX
     aroganam = get_aroganam(raagam_index)
     aro_len = len(aroganam)
     aroganam_copy = [re.sub("\d","",a.upper()) for a in aroganam[:]]
@@ -212,6 +211,7 @@ def set_raagam(raagam):
     raaga_id = search_for_raaga_by_name(raagam,is_exact=True)[0][0]
     #print('ragam search raaga id',raaga_id)
     set_default_raaga_id(raaga_id)
+    return raaga_id
 def get_default_raaga_id():
     """
         Get the id of the default of raaga
@@ -262,35 +262,4 @@ def __get_krithis(raagam_index=None):
     return _get_raaga_attribute("Krithi_IDs",raagam_index).split(";")
 
 if __name__ == '__main__':
-    """
-    print(get_next_note("N",1),get_previous_note("S",1))
-    exit()
-    """
-    """
-    print(get_parent_raaga_id(290))
-    exit()
-    """
-    """
-    set_melakartha(10)
-    print('raaga index',settings.RAAGA_INDEX)
-    print(is_melakartha(115))
-    set_default_raaga(71)
-    print(get_melakartha())
-    print(get_parent_raaga_id())
-    exit()
-    """
-    """
-    #filter_options = {'mELakartha' : '15', 'Melakartha_or_Janya':"mELakartha-15"}
-    filter_options = {'Krithi_IDs' : '1000'}
-    print(_search_raaga_for_values('Krithi_IDs','1000'))
-    print(search_for_raaga_by_attributes(filter_options))
-    exit()
-    """
-    """
-    #print(_get_raaga_attribute("Krithi_IDs"))
-    print(get_krithis())
-    exit()
-    """
-    """
-    print(search_for_raaga_by_name("hamsad"))
-    """
+    pass

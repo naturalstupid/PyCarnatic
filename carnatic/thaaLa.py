@@ -6,10 +6,7 @@
 import configparser
 import random
 import itertools
-
 from carnatic import settings
-from carnatic import cparser
-from carnatic import cplayer
 
 def _get_thaaLa_index(thaaLam):
     return settings.THAALA_NAMES.index(thaaLam.upper())
@@ -189,24 +186,4 @@ def get_thaaLa_patterns_for_avarthanam(avarthanam_count,thaaLa_index=None, jaath
         result = result + res
     return result
 if __name__ == '__main__':
-    """
-    for t in range(1,8):
-        for j in range(1,6):
-            print(settings.THAALA_NAMES[t], settings.JAATHI_NAMES[j], settings.THAALA_LOC[t][j])
-    exit()
-    """
-    """
-    settings.THAALA_PATTERNS = __get_thaaLa_patterns()
-    #print(settings.THAALA_PATTERN_COUNTS)
-    thaaLa_index = 2
-    jaathi_index = 2
-    nadai_index = 2
-    #tp = get_thaaLa_patterns_for_thaaLa_jaathi_nadai(thaaLa_index, jaathi_index, nadai_index)
-    tp = get_thaaLa_patterns_for_avarthanam(2,thaaLa_index, jaathi_index, nadai_index)
-    print(tp)
-    sk = cparser.parse_solkattu(tp)
-    print(sk)
-    td = cparser.total_duration(sk)
-    print('total duration',td)
-    #cplayer.play_notes(sk)
-    """
+    pass

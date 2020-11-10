@@ -12,10 +12,7 @@ import warnings
 from scamp import *
 playback_settings.soundfont_search_paths.append("Lib/")
 playback_settings.make_persistent()
-from carnatic import settings
-from carnatic import raaga
-from carnatic import thaaLa
-from carnatic import cparser
+from carnatic import settings, raaga, thaaLa, cparser
 
 player=None
 available_instruments = {}
@@ -42,7 +39,7 @@ def _get_player():
             available_instruments[inst] = player.new_part(inst,soundfont="default") 
         for inst in settings._PERCUSSION_INSTRUMENTS:
             available_instruments[inst] = player.new_part(inst,soundfont=settings._SOUND_FONT_FILE) 
-        available_instruments["silent"] = player.new_silent_part("silent")
+        #available_instruments["silent"] = player.new_silent_part("silent")
     return player
 def _get_instrument(instrument_name):
     global available_instruments,player

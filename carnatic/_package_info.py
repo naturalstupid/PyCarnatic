@@ -16,7 +16,7 @@
 
 name = "carnatic"
 
-version = "0.6.4"
+version = "0.8.0"
 
 author = "Sundar Sundaresan"
 
@@ -39,7 +39,7 @@ install_requires = ['itertools', "configparser", 'operator', 'collections', 'enu
 #extras_require = { }
 
 package_data = {
-    'carnatic': ['config/*', 'config/*/*', 'Lib/*', 'Lessons/*', 'Lessons/*/*','Notes/*', 'tmp/*']
+    'carnatic': ['config/*', 'config/*/*', 'Lib/*', 'Lessons/*', 'Lessons/*/*','Notes/*', 'tmp/*', 'model_weights/*']
 }
 
 classifiers = [

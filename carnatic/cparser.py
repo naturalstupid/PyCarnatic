@@ -7,12 +7,7 @@ from scamp import Envelope
 import math
 import re
 import regex
-
-from . import settings
-from . import raaga
-from . import thaaLa
-from . import cplayer
-
+from carnatic import settings, raaga, thaaLa, cplayer
 
 _NOTES_PATTERN_1 = settings._NOTES_PATTERN_1 # "(([SsPp]|[RrGgMmDdNn][1-4]?)([\\.\\'^]?)([</!~>]?[1-5]?))"
 _NOTES_PATTERN = settings._NOTES_PATTERN # "([SsRrGgMmPpDdNn,;\(\)/!][1-4]?[\\.\\'^]?[<~>]?[1-5]?)"
@@ -23,7 +18,7 @@ _DIRECTION_PATTERN = settings._DIRECTION_PATTERN # r"^\s*(?P<dir_key>[UD])(?P<di
 _RE_DICT = {
     'comment': re.compile(_COMMENT_PATTERN),
     'command':re.compile(_COMMAND_PATTERN),
-    'silent':re.compile(_SILENT_PATTERN),
+    #'silent':re.compile(_SILENT_PATTERN),
     'dirn':re.compile(_DIRECTION_PATTERN),
     "car_notes": re.compile(_NOTES_PATTERN + ".*")
     }
@@ -58,6 +53,7 @@ def _parse_commands(cmd_key, cmd_value):
         settings.PLAYER_MODE = cmd_value
     elif cmd_key == "S":
         settings.PLAY_SPEED = cmd_value
+        settings.THAALAM_SPEED = cmd_value
     elif cmd_key == "T":
         settings.THAALA_INDEX = cmd_value
     elif cmd_key == "[":
@@ -65,6 +61,7 @@ def _parse_commands(cmd_key, cmd_value):
             settings.THAALAM_SPEED = cmd_value
         else:
             settings.THAALAM_SPEED = 0 ## Mean do not play percussion
+        print("thaaLam Speed set to", settings.THAALAM_SPEED)
     elif cmd_key == "]":
         if settings.THAALAM_SPEED == 0:
             settings.THAALAM_SPEED = 1
@@ -103,10 +100,24 @@ def _parse_UD_digits(text):
         elif c=="," or c == ";":
             c_note_arr.append(c)
             result += c
+        elif c=="." or c == "'" or c =="^" and c_note_arr[-1][-1] != c:
+            c_note_arr[-1] += c
+            result += c
         else:
             result += c
     return result,c_note_arr   
-
+def _get_notes_from_file(notations_file):
+    c_note_arr =[]
+    with open(notations_file,"r") as file_object:
+        line = file_object.readline()
+        while line:
+            key, match = _parse_line(line)
+            if key == "car_notes":
+                notes = regex.findall(_NOTES_PATTERN, line)
+                c_note_arr += notes
+            line = file_object.readline()
+    file_object.close()
+    return c_note_arr
 def parse_file(file_name,arrange_notes_to_speed_and_thaaLa = True):
     """
         To parse a notation file and generate SCAAMP list
@@ -184,11 +195,13 @@ def parse_file(file_name,arrange_notes_to_speed_and_thaaLa = True):
                 c_note_arr = regex.findall(_NOTES_PATTERN, line)
                 carnatic_note_array = carnatic_note_array+c_note_arr
                 carnatic_note_counter += len(c_note_arr)
+            """
             elif key == "silent":
                 silent_note_arr = regex.findall(_SILENT_PATTERN, line)
                 carnatic_note_array = carnatic_note_array+silent_note_arr
                 carnatic_note_counter += len(silent_note_arr)
                 #print("Processing silent note",silent_note_arr)
+            """
             line = file_object.readline()
         if carnatic_note_counter >0:
             if arrange_notes_to_speed_and_thaaLa:
@@ -202,11 +215,11 @@ def parse_file(file_name,arrange_notes_to_speed_and_thaaLa = True):
     file_object.close()
     result = result.replace("||", "||\n")
     return file_carnatic_note_array,result
-def _arrange_notes_to_thaaLa(note_array):
+def _arrange_notes_to_thaaLa(note_array, play_speed=settings.PLAY_SPEED):
     note_count = 0
     thaaLa_count = 0
     s = 0
-    speed = 2 ** (settings.PLAY_SPEED-1)
+    speed = 2 ** (play_speed-1)
     thaaLa_loc = thaaLa.get_thaaLa_positions()
     thaaLa_length = int(list(thaaLa_loc)[len(thaaLa_loc)-1])*speed
     #print('thaaLa_loc',thaaLa_loc,len(thaaLa_loc),thaaLa_length)
@@ -401,6 +414,7 @@ def _get_note_frequency_duration(note_array):
         elif note.strip() == "/" or note.strip() == "!":
             #print("glide note set to True")
             glide_next_note =True
+        """
         elif note.strip() == "$":
             inst = "silent"
             freq = 60.0
@@ -408,14 +422,6 @@ def _get_note_frequency_duration(note_array):
             res_arr = [note,[inst,freq,durn]]
             result.append(res_arr)
         """
-        elif "~" in note:
-            kampitam_note_increment = 1
-            if note[-1].isdigit():
-                kampitam_note_increment = int(note[-1])
-            note = result[-1][0]
-            freq = _kampitam(note, kampitam_note_increment)
-        """    
-        #print('note',note,res_arr)
     return result
 def _kampitam(note, kampitam_note_increment=1,pitch_step=settings._KAMPITAM_NOTE_STEP):
     invalid_end_note = "S." in note.upper()
