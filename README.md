@@ -1,8 +1,9 @@
-# PyCarnatic / Carnatic Music Guru - V0.6.5
+# PyCarnatic / Carnatic Music Guru - V0.7.4
 ## This package was inspired from the Java Application: [JRaaga / Carnatic Music Guru](https://sourceforge.net/projects/carnaticmusicguru/)
 <br>
 <br>This provides a python package to <br>
 	<li>Generate Music Lessons (SaraLi, Jantai, Dhaattu, Keezh/mEl sthaayi and Alankaaram) for about 400 raagas
+	<li> Generate kalpana swarams using either Markov or Deep Learning <b>(V0.7.42)</b>
 	<li>Defines a notation system for carnatic music notes
 		<li>- Will automatically use appropriate notes according to the melakartha
 		<li>- notation for micro tones and gliding
@@ -12,14 +13,26 @@
 	<li> 	-	CARNATIC_INSTRUMENTS = ["Veena","Veena2","Flute","Sarod",]
 	<li> 	-	DEFAULT_INSTRUMENTS = ["Violin","Sitar","Shenai","Piano","Guitar"]
 	<li> 	-	PERCUSSION_INSTRUMENTS = ["Mridangam","EastWestMix"]
-	
+
+### Release History 
+
+#### V0.7.4 
+<li> A bug in raaga.get_previous_note fixed
+<li> cparser.parse_command() #S command will also set thaaLam speed to be the same
+<li> cparser._get_notes_from_file() added and used in cmarkov and cdeeplearn modules
+<li> cparser._arrange_notes_to_thaaLa() play_speed=settings.PLAY_SPEED argument added
+<li> lessons - LESSON_TYPES changed from list to dictionary
+<li> save_to_file=None argument added for methods of lessons modules
+<li> lessons.generate_kalpana_swaram() function added
+<li> cmarkov and cdeeplearn modules added to support generating kalpana swaram
+ 
 ## Notations
 ### Comments
 <li> Comments start with "{"
 <li> Example: { This is a comment  
 
 ### Commands
-<li> Commands start with "#" followed by a number or [[<number> with closing ]] somewhere in following lines
+<li> Commands start with "#" followed by a number or [[<number> with closing ]]
 <li> #S<number> Speed of the song values 1 to 5 - Example:
 <li> 	#S1
 <LI> #M<number> Specify MElakaratha of the song values 1 to 72 - Example:
@@ -31,7 +44,7 @@
 <li> #J - specify jaathi - values 1 to 5 (1-Thisra ... 7-Samkeerna). Example:
 <li> 	#J2
 <li> [[<number> ThaaLam Speed values 1 to 3. If number is missing, it will be considered as to Exclude Percussion from this point onwards until closing ]
-<li> Need not specify [[1 .. ]] - which is default
+<li> If no number specified - no thaaLa played between [[...]]
 <li> [[3
 <li> S R G M 
 <li> ]]
@@ -44,14 +57,85 @@
 ### Carnatic Notes
 <li> Carnatic notes can be written as S R R1 R2 etc 
 <li> Or can be written in lower case with/without numbers Example: s r1, g m pd n'
+<li> Note: If a raaga has both R1 and R2 or M1 and M2 etc - then you should suffix with corresponding numbers.
 <li> Lower octaves should have "period"/"dot" . as a suffix. Example: S. R1. M2. etc
 <li> Upper octave notes should have single quote ' or caret ^. Example: S' R1^ M1 ' etc
 <li> Additional duration to notes can be using comma or semicolon. Example: s,, r;, etc
-<li> Microtone notations can S>1 S>2 R1>3 - 10%, 20% 30% respectively more than the pitch of the note
+<li> Microtone notations: S>1 S>2 R1>3 - 10%, 20% 30% respectively more than the pitch of the note
 <li> Similarly notations like G3<1 M2<4 have 10% 40% respectively less than the pitch of the note
 <li> Gliding notes:  S / R - will glide from S to R and sustain at R for its duration
 <li> Gliding notes:  M ! P - will glide down from M to P and sustain at P for its duration
 <li> Shaking notes:  Suffix tilde symbol to notes to shake the note. Example: S~ R2~ P^~ etc
+
+## Kalpana Swaram Generation (V0.7.4)  
+In this version, three new modules have been added namely, cmarkov, cmarkovn and cdeeplearn. 
+Both these modules have a function called generate_notes_from_corpus.
+These model functions are called by he lessons module function
+generate_kalpana_swarams function
+which has an argument "method" which should be either "markov" or "deeplearn". 
+The kalpana swaram can be generated also either using user's own corpus files that contain note sequences OR using the lessons such saraLi, jantai, alankaaram etc. The former needs corpus_files argument and the latter instead requires raagam_name and lesson_types to be used for generating kalpana swaram.  
+<b> A note of caution: This is just an experimental stuff. The notes generated may not represent the "signature of the raaga". </b>
+
+method="markov" generates kalpana swaram using the Markov model  
+method="deeplearn" generates kalpana swaram using deep learning LSTM
+
+### cmarkov code  
+
+```
+generate_notes_from_corpus(corpus_files:list,starting_note:str, ending_note:str, length:int=32, save_to_file=None):
+    """
+    Generate note sequence of defined length from corpus text files
+    @param corpus_files: List of corpus file paths that contain sequence of notes
+    @param starting_note: Starting note (should be one of aarognam/avaroganam notes). Default=None
+    @param ending_note: Ending note (should be one of aarognam/avaroganam notes). Default=None
+    @param length: desired length of notes to be generated. 
+            Note: Not always exact number of notes may be generated
+    @param save_to_file: File name to which generated notes are to be written. Default=None
+    """
+```
+### cmarkovn code. 
+This has addtional parameter width.  
+
+```
+generate_notes_from_corpus(corpus_files,starting_note=None, ending_note=None, length:int=32, width:int=4, save_to_file=None):
+    """
+    Generate note sequence of defined length from corpus text files
+    @param corpus_files: List of corpus file paths that contain sequence of notes
+    @param starting_note: Starting note (should be one of aarognam/avaroganam notes). Default=None
+    @param ending_note: Ending note (should be one of aarognam/avaroganam notes). Default=None
+    @param length: desired length of notes to be generated. 
+            Note: Not always exact number of notes may be generated
+    @param save_to_file: File name to which generated notes are to be written. Default=None
+    @param width: integer. 1 means single note pair, 2 means two-note pair (SR RG GM), 4 means four note pair (SRGM RGMD) etc.
+        Avoid specifying more than 4  
+    """
+```
+### cdeeplearn code.  
+```
+set_parameters(batch_size=None, number_of_epochs=None,model_weights_folder= None,
+                   json_file=None, model_weights_file=None):
+    """
+    Set parameters of deep learning method:
+    @param batch_size: Batch size for training. Default=16
+    @param number_of_epochs: Default 90
+    @param model_weights_folder: Default: "model_weights/"
+    @param json_file: File containing dictionary of unique notes. Default:"<raagam_name>_corpus|lessons.json"
+    @param model_weights_file: File containing trained weights. Default:"<raagam_name>_corpus|lessons.h5"
+    """
+    
+generate_notes_from_corpus(corpus_files:list,starting_note:str, ending_note:str, length:int=32, save_to_file=None,perform_training=False):
+    """
+    Generate note sequence of defined length from corpus text files
+    @param corpus_files: List of corpus file paths that contain sequence of notes
+    @param starting_note: Starting note (should be one of aarognam/avaroganam notes). Default=None
+    @param ending_note: Ending note (should be one of aarognam/avaroganam notes). Default=None
+    @param length: desired length of notes to be generated. 
+            Note: Not always exact number of notes may be generated
+    @param save_to_file: File name to which generated notes are to be written. Default=None
+    @param perform_training: True/False. Default = False. 
+        If True, training weights are generated even if model weight file is found  
+    """
+```
 
 
 ## Lessons
@@ -92,6 +176,49 @@ alankaara_varisai_from_algorithm(arrange_notes_to_speed_and_thaaLa=True, raaga_n
             :return:   alankaara varisai for the selected raaga
     """
     
+```
+<b>New to V0.7.4</b> 
+ 
+```
+generate_kalpana_swarams(method="markov", corpus_files=None, raaga_name=None, thaaLa_name=None,
+ jaathi_name=None, song_speed=3, save_to_file=None, starting_note='S', ending_note=None, 
+ length=160, line_break_at=32, arrange_notes_to_thaaLa=True, jraaga_notation=True, 
+ lesson_types_for_kalpana_swaram = ["JANTAI_VARISAI", "DHAATTU_VARISAI", "MELSTHAAYI_VARISAI", "KEEZHSTHAAYI_VARISAI", "ALANKAARA_VARISAI_FROM_BOOK"], perform_training=False)
+    """
+            - generating kalpana swaram either from the corpus notation files
+                Or from music lessons for specified raaga and thaaLa.
+            @param method: method="deeplearn" will use deep learning to learn the notation(slower method)
+                   method="markov" will use markov chain random walk - default
+            @param corpus_files: List of notation file names to be used for learning 
+                If you specify corpus files you need not specify thaaLa and song speed arguments
+                Instead of corpus files you can generate from music lessons in which case you 
+                should specify raaga, thaaLam, jaathi and song speed arguments 
+            @param    raaga_name    If not specified default raaga from settings will be used
+            @param    thaaLa_name   If not specified default thaaLa from settings will be used
+            @param    jaathi_name   If not specified default jaathi from settings will be used
+                       Use raaga.get_raaga_list() to get the list of raaga names
+                       Use thaaLa.get_thaaLam_names() to get the list of thaaLa names
+                       Use thaaLa.get_jaathi_names() to get the list of jaathi names
+            @param    song_speed    Song Speed 1 .. 3 - default = 3
+            @param    save_to_file - File name (if specified) to save the results to.
+            @param    starting_note    Starting note - default = "S". 
+                      If you specify raaga_name the default will be first note of arogana 
+            @param    ending_note    ending note - default = None
+                      If you specify raaga_name the default will be last note of arogana 
+            @param    length    number of notes to be generated - default = 160
+                      Preferably be multiple of thaLa count (avarthana)
+            @param    line_break_at    insert line break at - default at thaaLa end
+                      this is needed only for generating using corpus text files
+            @param    arrange_notes_to_thaaLa True/False - Default = True
+            @param    jraaga_notation  True/False - default True
+            @param    lesson_types_for_kalpana_swaram list of lesson types that should be used 
+            			  to generate kalpana swarams
+                      Default: ["JANTAI_VARISAI", "DHAATTU_VARISAI", "MELSTHAAYI_VARISAI", 
+                                "KEEZHSTHAAYI_VARISAI","ALANKAARA_VARISAI_FROM_BOOK"]
+            @param perform_training: True/False. 
+            			Force performing training even if model weights are found. 
+                    Default = False. Applicable only for method="deeplearn" 
+            :return:    kalpana swaram for the specified raaga/thaaLa
 ```
 ## cparser
 ```
@@ -197,6 +324,34 @@ result = lessons.alankaara_varisai_from_book(arrange_notes_to_speed_and_thaaLa=T
 # Example - 3
 result =lessons.alankaara_varisai_from_algorithm(arrange_notes_to_speed_and_thaaLa=True, raaga_name="mohanam",thaaLa_name="ata",jaathi_name="misra")
 
+""" Example - 4
+notations_file = "../carnatic/Lessons/Varnam/Kamboji_Sarasijaanbha.cmn"
+notations_file = "../carnatic/Lessons/Varnam/Mohanam_Ninnukori.cmn"
+result = lessons.generate_kalpana_swaram(raaga_notations_file=notations_file,starting_note='S',ending_note='D',length=160,line_break_at=16,jraaga_notation=True)
+"""
+""" Example - 5 - generate kalapna swaram from corpus notation files
+method = "deeplearn"
+cdeeplearn.set_parameters(batch_size=20, number_of_epochs=100, model_weights_folder="../carnatic/model_weights/")
+raagam= "mohanam"
+jraaga_notation=False
+notations_files = ["../data/varnam.txt", "../data/varaveena.txt", "../data/valachi_vacchi.txt"]
+result = lessons.generate_kalpana_swarams(method=method, raaga_name=raagam,
+					corpus_files=notations_files,starting_note='s',ending_note='d',length=160,
+					line_break_at=16,jraaga_notation=jraaga_notation)
+"""
+#""" Example - 6 - generate kalapna swaram from music lessons of the raga
+method = "deeplearn"
+perform_training = False
+jraaga_notation=True
+raagam= "mohanam"
+thaaLa_name="Mathya"
+jaathi_name="Chathusra"
+cdeeplearn.set_parameters(batch_size=20, number_of_epochs=100, model_weights_folder="../carnatic/model_weights/")
+result = lessons.generate_kalpana_swarams(method=method, raaga_name=raagam, thaaLa_name=thaaLa_name,
+ 		jaathi_name=jaathi_name,starting_note='R',ending_note='G',length=160,
+ 		arrange_notes_to_thaaLa=True, jraaga_notation=jraaga_notation, 
+ 		save_to_file="../score_output.txt", perform_training=perform_training)
+#"""
 print(result)
 ```
 #### cplayer - Example
@@ -206,15 +361,27 @@ play_notations_from_file(notation_file,"Sarod")
 ```
 #### Song - Example
 ```
-s = Song()
+from carnatic import settings, song, cparser
+""" Example building a song from scratch ...
+s = song.Song()
+ss = "S R1     G2 M1 P D2 N3 S^"
+#print(s._overline(ss))
+#ss = ' '.join(["S.~", "R.~", "G.~", "M.~", "P.~", "D.~", "N.~", "S~", "R~", "G~", "M~",  "P~","D~", "N~", "S^~", "R^~", "G^~", "M^~", "P^~", "D^~", "N^~"])
 s.set_melakartha(15)
 s.set_tempo(60)
-s.set_thaaLam("Thriputai ThaaLa", "Chathusra Jaathi")
-s.add_instrument("Veena2")
+s.set_thaaLam_index(4,2)
+s.add_instrument("Veena")
 s.set_speed(1)
 s.set_notation_type(1)
 s.add_comment("This is a comment")
-s.add_notes("S R G M P D N S'")
+s.add_notes(ss)
 s.play()
 s.save("delme.txt")
+"""
+#""" Example reading a song from a notation file and play 
+song_file = settings._APP_PATH + "/Notes/PancharathnaKrithi-jagadhaandhakaaraka.cmn"
+s = song.Song()
+s.read(song_file)
+s.play(instrument="Flute",include_percussion_layer=True)
+#"""
 ```

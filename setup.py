@@ -1,35 +1,50 @@
+#  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
+#  Carnatic Music Guru (PyCarnatic)                                                              #
+#  Copyright © 2020 Sundar Sundaresan <Sundaram.Sundaresan@gmail.com>.                           #
+#                                                                                                #
+#  This program is free software: you can redistribute it and/or modify it under the terms of    #
+#  the GNU General Public License as published by the Free Software Foundation, either version   #
+#  3 of the License, or (at your option) any later version.                                      #
+#                                                                                                #
+#  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;     #
+#  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.     #
+#  See the GNU General Public License for more details.                                          #
+#                                                                                                #
+#  You should have received a copy of the GNU General Public License along with this program.    #
+#  If not, see <http://www.gnu.org/licenses/>.                                                   #
+#  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
+
 import setuptools
+import os
+from types import SimpleNamespace
+
+# load _package_info.py into a SimpleNamespace, without having to import the whole carnatic package
+# (this is similar to the way scamp handles things)
+package_info_file_path = os.path.join(os.path.dirname(__file__), "carnatic", "_package_info.py")
+with open(package_info_file_path, "r") as f:
+    file_contents_string = f.read()
+package_info_dict: dict = {}
+exec(file_contents_string, None, package_info_dict)
+package_info = SimpleNamespace(**package_info_dict)
+
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="carnatic music guru", # Replace with your own username
-    version="0.6.1",
-    author="Sundar Sundaresan",
-    author_email="get.in.touch.with.sundar@gmail.com",
-    description="The goal of the carnatic music guru is to provide library for generating carnatic music lessons as notes, parse and play the carnatic music notes using various instruments, fit to the thaaLa",
+    name=package_info.name,
+    version=package_info.version,
+    author=package_info.author,
+    author_email=package_info.author_email,
+    description=package_info.description,
+    #include_package_data=True,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/naturalstupid/carnatic_music_guru",
-    # project_urls={
-    #     "Bug Tracker": "https://bugs.example.com/HelloWorld/",
-    #     "Documentation": "https://docs.example.com/HelloWorld/",
-    #     "Source Code": "https://code.example.com/HelloWorld/",
-    # },    
+    url=package_info.url,
+    project_urls=package_info.project_urls,
     packages=setuptools.find_packages(),
-    license='MIT',
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    python_requires='>=3.5',
-    download_url='https://github.com/naturalstupid/carnatic_music_guru/archive/master.zip',
-    install_requires=[
-        'itertools',
-        'operator',
-        'collections',
-        'enum',
-    ]
+    install_requires=package_info.install_requires,
+    #extras_require=package_info.extras_require,
+    package_data=package_info.package_data,
+    classifiers=package_info.classifiers,
 )
