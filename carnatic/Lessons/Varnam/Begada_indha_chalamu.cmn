@@ -1,10 +1,10 @@
 { INTHA CHALAMU
-{ Ragam: BEGADA (29th Mela Janyam)
+{ Ragam: Begada (29th Mela Janyam)
 #M29
 { Talam : ADI 
 #T4
 #J2
-#S2
+#S3
 {Composer: Veenai Kuppaiyer
 { Arohanam : S G2 R2 G2 M1 P D2 P S Avarohanam: S N2 D2 P M1 G2 R2 S
 { Pallavi : Intha Chalamu Jesithe emani thaladura
@@ -14,85 +14,57 @@
 { Charanam : Pagavari bodhanavini
 { Pallavi: 
 
-D P M , G R S , R N D D P P S ,
-S , N S G R G , M , M , G R G M
-P , M- D - P- S N D P- S N D R' S' ,
-P D P- N , D , P M , G , R- G M P
+DPM, GRS, RN.D.D. P.P.S, | S,SN. GRG, | M,M, GRGM ||
+P,MD DPS^N DPS^N DR'S', | PDPN ,D,P | M,G, RGMP ||
 
 { Anupallavi: 
 
-S ,- D D P- N N D M P D N D P- M ,
-G R S- M G M- R G M P- P D M , , ,
-P D ,- D P M- M P ,- P M G R G M P
-M D , P S N D P S' N D R' S , , ,
-P D P S N S'- G' R' G' M' G' M' R' ,- P' M'
-R' , ,- R' S' N D D P- S' , N D N S' R
-R' S' , N D P- D M , G M R G M P D
-P S ,- P D P- N , D P M G R G M P
+S,DD PNND MPDN DPM, | GRSM GMRG | MPPD M,,, ||
+PD,D PMMP ,PMG RGMP | MD,P S^NDP | S'NDR' S,,, ||
+PDPS^ NS'G'R' GMGM R',PM | R',,R' S'R'DD | PS',N DPS'N ||
+R'S',N DPDM ,GMR GMPD | PS^,P DPN, | DPMG RGMP ||
 
 { Mukthayi Swaram: 
 
-D , P M ,- D P M G R ,- G , M P D
-M G , R S N- R S ,- R N D P D P S
-N R , S G R- P M , P G R G M P D
-P- N , D P M G R G M P D P , ,- M
-G R S , ,- G R G M P M- G M P D P
-S' , N- R' , S'- R' N D P- S' N R' S' G' R'
-M' M' , G' R' S'- N N , D P M G R , S
-S S' ,- R' N D D P ,- M G R ,- G M P
+D,PM ,DPM GR,G ,MPD | MG,R SN.RS | ,RN.D. P.D.P.S ||
+N.R,S GRPM ,PGR GMPD | PN,D PMGR | GMPD P,,M ||
+GRS, ,GRG MPMG MPDP S',NR' ,S'R'N | DPS'N R'S'G'R' ||
+M'M',G' R'S'NN ,DPM GR,S | PS',R' NDDP | ,MGR ,GMP ||
 
 {Charanam
 
-P , M , , , P , , , , , M P D ,
-P D N , D N D P M P G M R- G M ,
+P,M, ,,P, ,,,, MPD, | PDN, DNDP | MPGM RGM, ||
  
 { Chittai Swaras: 
 { (1)
 
-P , ,- M ,- D M , G R ,- S , N D ,
-P , ,- S , N R , S G , R ,- G , M
+P,,M ,DM, GR,S ,N.D., | P.,,S ,N.R, | SG,R ,G,M ||
 
-D P M , G R S , R N D D P P S ,
-S , N S G R G , M , M , G R G M
-P , M- D - P- S N D P- S N D R' S' ,
-P D P- N , D , P M , G , R- G M P
+DPM, GRS, RN.D.D. P.P.S, | S,SN. GRG, | M,M, GRGM ||
+P,MD DPS^N DPS^N DR'S', | PDPN ,D,P | M,G, RGMP ||
 
 {(2)
 
-P M D P ,- M G R S N R S ,- R N D
-P D P S ,- N R S G R G M P ,- M P
-D M ,- G R S- G R G M P M D P S N
-R' S' ,- N P D N , D P M- G , R G M
+PMDP ,MGR SN.RS ,RN.D. | P.D.P.S ,N.RS | GRGM P,MP ||
+DM,G RSGR GMPM DPS^N | R'S',N PDN, | DPMG ,RGM ||
 
-D P M , G R S , R N D D P P S ,
-S , N S G R G , M , M , G R G M
-P , M- D - P- S N D P- S N D R' S' ,
-P D P- N , D , P M , G , R- G M P
+DPM, GRS, RN.D.D. P.P.S, | S,SN. GRG, | M,M, GRGM ||
+P,MD DPS^N DPS^N DR'S', | PDPN ,D,P | M,G, RGMP ||
 
 {(3)
 
-M G M P D- M D P M G- R G M P- S P
-M G R- P M G R S N D P- R S N G R
-S M G R P M G D P- S N D R' S'- M' G'
-R'- S' R' N R' S'- P D M D P- G M- R G M
+MGMP DMDP MGRG MPSP | MGRP MGRS | N.D.P.R SN.GR ||
+SMGR PMGD PS^ND R'S'M'G' | R'S'R'N R'S'PD | MDPG MRGM ||
 
-D P M , G R S , R N D D P P S ,
-S , N S G R G , M , M , G R G M
-P , M- D - P- S N D P- S N D R' S' ,
-P D P- N , D , P M , G , R- G M P
+DPM, GRS, RN.D.D. P.P.S, | S,SN. GRG, | M,M, GRGM ||
+P,MD DPS^N DPS^N DR'S', | PDPN ,D,P | M,G, RGMP ||
 
 {(4)
 
-N , , , , , D P D M , P G R G M
-P , ,- M P D- M D P M G R G M P D
-N , D P ,- M P D P , M G ,- R P M
-G , R S ,- N D P S N G R G , , ,
-R S M G ,- M G R P M , P D D M G
-M P M P D P- S , N D , P S N R' S
-G' R' G' M' ,- G' R' S' R' N ,- D D P- S' N
-R' , S' N D P- P , M G R- S G R G M
+N,,, ,,DP DM,P GRGM | P,,M PDMD | PMGR GMPD ||
+N,DP ,MPD P,MG ,RPM | G,RS ,N.D.P. | SN.GR G,,, ||
+R^S^MG ,MGR PM,P DDMG | MPMP DPS^, | ND,P S^NR'S^ ||
+G'R'G'M' ,G'R'S' R'N,D DPS'N | R',S'N DPP, | MGRS GRGM ||
 
-D P M , G R S , R N D D P P S ,
-S , N S G R G , M , M , G R G M
-P , M- D - P- S N D P- S N D R' S' ,
-P D P- N , D , P M , G , R- G M P
+DPM, GRS, RN.D.D. P.P.S, | S,SN. GRG, | M,M, GRGM ||
+P,MD DPS^N DPS^N DR'S', | PDPN ,D,P | M,G, RGMP ||
