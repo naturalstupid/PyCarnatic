@@ -180,19 +180,23 @@ alankaara_varisai_from_algorithm(arrange_notes_to_speed_and_thaaLa=True, raaga_n
 <b>New to V0.7.4</b> 
  
 ```
-generate_kalpana_swarams(method="markov", corpus_files=None, raaga_name=None, thaaLa_name=None,
- jaathi_name=None, song_speed=3, save_to_file=None, starting_note='S', ending_note=None, 
- length=160, line_break_at=32, arrange_notes_to_thaaLa=True, jraaga_notation=True, 
- lesson_types_for_kalpana_swaram = ["JANTAI_VARISAI", "DHAATTU_VARISAI", "MELSTHAAYI_VARISAI", "KEEZHSTHAAYI_VARISAI", "ALANKAARA_VARISAI_FROM_BOOK"], perform_training=False)
+generate_kalpana_swarams(method="markov", corpus_files=None, raaga_name=None, thaaLa_name=None, jaathi_name=None, 
+                                          song_speed=3, save_to_file=None, \
+                                          starting_note='S',ending_note=None,length=160,line_break_at=32, \
+                                          arrange_notes_to_thaaLa=True,jraaga_notation=True,
+                                          lesson_types_for_kalpana_swaram = ["JANTAI_VARISAI", "DHAATTU_VARISAI", "MELSTHAAYI_VARISAI", 
+                                                                             "KEEZHSTHAAYI_VARISAI","ALANKAARA_VARISAI_FROM_BOOK"],
+                                          perform_training=False, width=1
+                                          ):
     """
             - generating kalpana swaram either from the corpus notation files
                 Or from music lessons for specified raaga and thaaLa.
-            @param method: method="deeplearn" will use deep learning to learn the notation(slower method)
-                   method="markov" will use markov chain random walk - default
+            @param method: method="deeplearn" will use deep learning to learn the notation - slower method
+                           method="markov" will use markov chain random walk - default
             @param corpus_files: List of notation file names to be used for learning 
                 If you specify corpus files you need not specify thaaLa and song speed arguments
-                Instead of corpus files you can generate from music lessons in which case you 
-                should specify raaga, thaaLam, jaathi and song speed arguments 
+                Instead of corpus files you can generate from music lessons in which case you should specify
+                raaga, thaaLam, jaathi and song speed arguments 
             @param    raaga_name    If not specified default raaga from settings will be used
             @param    thaaLa_name   If not specified default thaaLa from settings will be used
             @param    jaathi_name   If not specified default jaathi from settings will be used
@@ -202,23 +206,25 @@ generate_kalpana_swarams(method="markov", corpus_files=None, raaga_name=None, th
             @param    song_speed    Song Speed 1 .. 3 - default = 3
             @param    save_to_file - File name (if specified) to save the results to.
             @param    starting_note    Starting note - default = "S". 
-                      If you specify raaga_name the default will be first note of arogana 
+                      If you specify raaga_name the default will be first note of arogana
             @param    ending_note    ending note - default = None
-                      If you specify raaga_name the default will be last note of arogana 
+                      If you specify raaga_name the default will be last note of arogana
+                      If specified ending notes are not in corpus they are randomly chosen from corpus
             @param    length    number of notes to be generated - default = 160
                       Preferably be multiple of thaLa count (avarthana)
             @param    line_break_at    insert line break at - default at thaaLa end
-                      this is needed only for generating using corpus text files
+                      this is needed only for generating using corpus text files and
+                      this argument makes sense on if arrange_notes_to_thaaLa is set to False 
             @param    arrange_notes_to_thaaLa True/False - Default = True
             @param    jraaga_notation  True/False - default True
-            @param    lesson_types_for_kalpana_swaram list of lesson types that should be used 
-            			  to generate kalpana swarams
+            @param    lesson_types_for_kalpana_swaram list of lesson types that should be used to generate kalpana swarams
                       Default: ["JANTAI_VARISAI", "DHAATTU_VARISAI", "MELSTHAAYI_VARISAI", 
                                 "KEEZHSTHAAYI_VARISAI","ALANKAARA_VARISAI_FROM_BOOK"]
-            @param perform_training: True/False. 
-            			Force performing training even if model weights are found. 
-                    Default = False. Applicable only for method="deeplearn" 
+            @param perform_training: True/False. Force perfoming training even if model weights are found. 
+                    Default = False. Applicable only for method="deeplearn"
+            @param width: Number of adjacent notes to be used for prediction. Only applicable for markov model
             :return:    kalpana swaram for the specified raaga/thaaLa
+"""
 ```
 ## cparser
 ```
