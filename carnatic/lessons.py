@@ -289,7 +289,7 @@ def _is_valid_note(note, start_or_end, raaga_index, jraaga_notation,width=1):
             print("Supplied starting note: '"+str(note)+msg+"Starting note changed to:",aaroganam_orig[0:width])
             note = ' '.join(aaroganam[0:width])
         else:
-            print("Supplied ending note: '"+str(note)+msg+"Starting note changed to:",aaroganam_orig[-width:])
+            print("Supplied ending note: '"+str(note)+msg+"Ending note changed to:",aaroganam_orig[-width:])
             note = ' '.join(aaroganam[-width:])
     return note
         

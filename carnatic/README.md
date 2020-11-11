@@ -3,7 +3,7 @@
 <br>
 <br>This provides a python package to <br>
 	<li>Generate Music Lessons (SaraLi, Jantai, Dhaattu, Keezh/mEl sthaayi and Alankaaram) for about 400 raagas
-	<li> Generate kalpana swarams using either Markov or Deep Learning <b>(V0.7.52)</b>
+	<li> Generate kalpana swarams using either Markov or Deep Learning <b>(V0.7.5)</b>
 	<li>Defines a notation system for carnatic music notes
 		<li>- Will automatically use appropriate notes according to the melakartha
 		<li>- notation for micro tones and gliding
