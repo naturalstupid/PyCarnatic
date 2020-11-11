@@ -1,9 +1,9 @@
-# PyCarnatic / Carnatic Music Guru - V0.7.4
+# PyCarnatic / Carnatic Music Guru - V0.7.5
 ## This package was inspired from the Java Application: [JRaaga / Carnatic Music Guru](https://sourceforge.net/projects/carnaticmusicguru/)
 <br>
 <br>This provides a python package to <br>
 	<li>Generate Music Lessons (SaraLi, Jantai, Dhaattu, Keezh/mEl sthaayi and Alankaaram) for about 400 raagas
-	<li> Generate kalpana swarams using either Markov or Deep Learning <b>(V0.7.42)</b>
+	<li> Generate kalpana swarams using either Markov or Deep Learning <b>(V0.7.52)</b>
 	<li>Defines a notation system for carnatic music notes
 		<li>- Will automatically use appropriate notes according to the melakartha
 		<li>- notation for micro tones and gliding
@@ -16,7 +16,7 @@
 
 ### Release History 
 
-#### V0.7.4 
+#### V0.7.5 
 <li> A bug in raaga.get_previous_note fixed
 <li> cparser.parse_command() #S command will also set thaaLam speed to be the same
 <li> cparser._get_notes_from_file() added and used in cmarkov and cdeeplearn modules
@@ -67,7 +67,7 @@
 <li> Gliding notes:  M ! P - will glide down from M to P and sustain at P for its duration
 <li> Shaking notes:  Suffix tilde symbol to notes to shake the note. Example: S~ R2~ P^~ etc
 
-## Kalpana Swaram Generation (V0.7.4)  
+## Kalpana Swaram Generation (V0.7.5)  
 In this version, three new modules have been added namely, cmarkov, cmarkovn and cdeeplearn. 
 Both these modules have a function called generate_notes_from_corpus.
 These model functions are called by he lessons module function
@@ -177,7 +177,7 @@ alankaara_varisai_from_algorithm(arrange_notes_to_speed_and_thaaLa=True, raaga_n
     """
     
 ```
-<b>New to V0.7.4</b> 
+<b>New to V0.7.5</b> 
  
 ```
 generate_kalpana_swarams(method="markov", corpus_files=None, raaga_name=None, thaaLa_name=None, jaathi_name=None, 
