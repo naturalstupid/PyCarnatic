@@ -16,7 +16,7 @@
 
 name = "carnatic"
 
-version = "0.7.4"
+version = "0.7.5"
 
 author = "Sundar Sundaresan"
 
@@ -34,7 +34,8 @@ project_urls = {
     "Documentation": "https://github.com/naturalstupid/pycarnatic",
 }
 
-install_requires = ['itertools', "configparser", 'operator', 'collections', 'enum', 'csv', 'numpy', 'scamp', 'math', 're', 'regex', 'random',]
+#install_requires = ['itertools', "configparser", 'operator', 'collections', 'enum', 'csv', 'numpy', 'scamp', 'math', 're', 'regex', 'random',]
+install_requires = ['numpy', 'scamp', ]
 
 #extras_require = { }
 
