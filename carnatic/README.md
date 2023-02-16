@@ -1,4 +1,4 @@
-# PyCarnatic / Carnatic Music Guru - V0.7.6
+# PyCarnatic / Carnatic Music Guru - V1.3.0
 ## This package was inspired from the Java Application: [JRaaga / Carnatic Music Guru](https://sourceforge.net/projects/carnaticmusicguru/)
 <br>
 <br>This provides a python package to <br>
@@ -15,7 +15,10 @@
 	<li> 	-	PERCUSSION_INSTRUMENTS = ["Mridangam","EastWestMix"]
 
 ### Release History 
-
+#### V1.3.0 
+	See diff-with-0.7.5 folder for changes since V0.7.5
+	UI folder with PyQt UI files added.
+	
 #### V0.7.6 
 <li> Create JSON FILE from Aarogana and Avarogana of the raaga
 
