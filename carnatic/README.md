@@ -18,6 +18,10 @@
 #### V1.3.0 
 	See diff-with-0.7.5 folder for changes since V0.7.5
 	UI folder with PyQt UI files added.
+	Two Player SF2_LOADER and SCAMP are supported
+	SF2_LOADER can pause/resume the player but does not support gamaka notations
+	SCAMP Player supports gamaka notations - but does not support resume/pause player
+	Instrument Thavil Added. Instrument EastWestMix removed
 	
 #### V0.7.6 
 <li> Create JSON FILE from Aarogana and Avarogana of the raaga
@@ -49,16 +53,8 @@
 <li> 	#T4
 <li> #J - specify jaathi - values 1 to 5 (1-Thisra ... 7-Samkeerna). Example:
 <li> 	#J2
-<li> [[<number> ThaaLam Speed values 1 to 3. If number is missing, it will be considered as to Exclude Percussion from this point onwards until closing ]
-<li> If no number specified - no thaaLa played between [[...]]
-<li> [[3
-<li> S R G M 
-<li> ]]
-<li> [[
-<li> P D N S'
-<li> ]]
-<li> The notes S R G M will have percussion played along at thaaLam speed of 3 times
-<li> The notes P D N S' will NOT have percussion played. only instrument
+<li> #N - specify Nadai - values 1 to 7 (1-1st Kalai, 2-2nd Kalai, 3-Thisra, 4-Chathusra/3rd Speed, 5-Khanda, 6-Misra, 7-Samkeerna). Example:
+<li> 	#N4
 
 ### Carnatic Notes
 <li> Carnatic notes can be written as S R R1 R2 etc 
@@ -72,6 +68,7 @@
 <li> Gliding notes:  S / R - will glide from S to R and sustain at R for its duration
 <li> Gliding notes:  M ! P - will glide down from M to P and sustain at P for its duration
 <li> Shaking notes:  Suffix tilde symbol to notes to shake the note. Example: S~ R2~ P^~ etc
+<li> !!! NOTE: Gliding/Shaking notes will only work with SCAMP Player !!!
 
 ## Kalpana Swaram Generation (V0.7.5)  
 In this version, three new modules have been added namely, cmarkov, cmarkovn and cdeeplearn. 
