@@ -2,14 +2,14 @@
 { Exercise 5.1
 #D60
 
-#S1
+#N1
 Ta Ri Ki Ta Tha Ta Ri Ki Ta Thi Ta Ri Ki Ta Thom Ta Ri Ki Ta Nam
 
-#S2
+#N2
 Ta Ri Ki Ta Tha Ta Ri Ki Ta Thi Ta Ri Ki Ta Thom Ta Ri Ki Ta Nam
 Ta Ri Ki Ta Tha Ta Ri Ki Ta Thi Ta Ri Ki Ta Thom Ta Ri Ki Ta Nam
 
-#S3
+#N4
 Ta Ri Ki Ta Tha Ta Ri Ki Ta Thi Ta Ri Ki Ta Thom Ta Ri Ki Ta Nam
 Ta Ri Ki Ta Tha Ta Ri Ki Ta Thi Ta Ri Ki Ta Thom Ta Ri Ki Ta Nam
 Ta Ri Ki Ta Tha Ta Ri Ki Ta Thi Ta Ri Ki Ta Thom Ta Ri Ki Ta Nam
@@ -18,14 +18,14 @@ Ta Ri Ki Ta Tha Ta Ri Ki Ta Thi Ta Ri Ki Ta Thom Ta Ri Ki Ta Nam
 
 $;;
 { Exercise 5.2
-#S1
+#N1
 Ta Ri Ki Ta Tha Tha Ta Ri Ki Ta Thi Thi Ta Ri Ki Ta Thom Thom Ta Ri Ki Ta Nam Nam
 
-#S2
+#N2
 Ta Ri Ki Ta Tha Tha Ta Ri Ki Ta Thi Thi Ta Ri Ki Ta Thom Thom Ta Ri Ki Ta Nam Nam
 Ta Ri Ki Ta Tha Tha Ta Ri Ki Ta Thi Thi Ta Ri Ki Ta Thom Thom Ta Ri Ki Ta Nam Nam
 
-#S3
+#N4
 Ta Ri Ki Ta Tha Tha Ta Ri Ki Ta Thi Thi Ta Ri Ki Ta Thom Thom Ta Ri Ki Ta Nam Nam
 Ta Ri Ki Ta Tha Tha Ta Ri Ki Ta Thi Thi Ta Ri Ki Ta Thom Thom Ta Ri Ki Ta Nam Nam
 Ta Ri Ki Ta Tha Tha Ta Ri Ki Ta Thi Thi Ta Ri Ki Ta Thom Thom Ta Ri Ki Ta Nam Nam
@@ -33,14 +33,14 @@ Ta Ri Ki Ta Tha Tha Ta Ri Ki Ta Thi Thi Ta Ri Ki Ta Thom Thom Ta Ri Ki Ta Nam Na
 
 $;;
 { Exercise 5.3
-#S1
+#N1
 Ta Ri Ki Ta Tha Tha Tha Ta Ri Ki Ta Thi Thi Thi Ta Ri Ki Ta Thom Thom Thom Ta Ri Ki Ta Nam Nam Nam
 
-#S2
+#N2
 Ta Ri Ki Ta Tha Tha Tha Ta Ri Ki Ta Thi Thi Thi Ta Ri Ki Ta Thom Thom Thom Ta Ri Ki Ta Nam Nam Nam
 Ta Ri Ki Ta Tha Tha Tha Ta Ri Ki Ta Thi Thi Thi Ta Ri Ki Ta Thom Thom Thom Ta Ri Ki Ta Nam Nam Nam
 
-#S3
+#N4
 Ta Ri Ki Ta Tha Tha Tha Ta Ri Ki Ta Thi Thi Thi Ta Ri Ki Ta Thom Thom Thom Ta Ri Ki Ta Nam Nam Nam
 Ta Ri Ki Ta Tha Tha Tha Ta Ri Ki Ta Thi Thi Thi Ta Ri Ki Ta Thom Thom Thom Ta Ri Ki Ta Nam Nam Nam
 Ta Ri Ki Ta Tha Tha Tha Ta Ri Ki Ta Thi Thi Thi Ta Ri Ki Ta Thom Thom Thom Ta Ri Ki Ta Nam Nam Nam

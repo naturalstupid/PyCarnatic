@@ -48,8 +48,8 @@ class Song(object):
             @param scale_of_notes  0 = Western, 1 = 12 notes (Defau;t), 2= 16 notes and 3 = 22 notes
         """
         if scale_of_notes >= 0 and scale_of_notes <= 3:
-            settings._SCALE_OF_NOTES = scale_of_notes
-    def set_instrument_base_note(instrument_base_note):
+            settings.SCALE_OF_NOTES_INDEX = scale_of_notes
+    def set_instrument_base_note(self,instrument_base_note):
         """
             Sets the base note of the default instrumemt
             @param instrument_base_note - Piano Key - Example A#4
@@ -132,19 +132,6 @@ class Song(object):
             raise ValueError("Allowed speed range: 1..5")
         self._lines.append("#S"+str(speed))
         settings.PLAY_SPEED = speed
-    def set_thaaLam_speed(thaaLam_speed=1):
-        """
-            Set the thaaLam speed of the song.
-            ****** CAUTION ******
-            Speed is in addition to Nadai 
-            Values 1 to 3
-            Example: Speed =2, Chathusra Nadai => 8 beats per note or 
-            Speed = 3 No nadai is same as Chathusra Nadai  =< Both will have 4 notes per note
-            SO KNOW WHAT YOU ARE DOING BY SETTING NADAI AND SPEED
-            *********************
-            @param thaaLam_speed: thaaLam speed (also called kalai)
-         """
-        thaaLam.set_thaaLam_speed(thaaLam_speed)
     def save(self,output_file_name):
         """
             @param output_file_name:    Saves the song elements as as text file.

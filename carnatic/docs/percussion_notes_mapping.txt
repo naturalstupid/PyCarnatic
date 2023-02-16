@@ -1,0 +1,16 @@
+tha				0-48
+dhi				49
+thom			50
+num				51
+ki				52
+Ta				53
+ka				54
+Na				55
+chap			56
+dhin			57
+ta*thom			58
+num*thom		59
+chap*thom		60
+dhin*thom		61
+dhin*tha		62-127
+

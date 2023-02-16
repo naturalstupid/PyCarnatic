@@ -6,28 +6,28 @@
 import re
 
 from carnatic import settings, cparser
-
+_RAAGA_DICT = settings.RAAGA_DICT
 #settings.RAAGA_DICT = get_raaga_dictionary()
 def _get_raaga_attribute(field,raagam_index=None):
     if raagam_index==None:
         raagam_index=settings.RAAGA_INDEX
     result = []
-    if field in settings.RAAGA_DICT[0].keys():
-        result = settings.RAAGA_DICT[raagam_index][field]
+    if field in _RAAGA_DICT[0].keys():
+        result = _RAAGA_DICT[raagam_index][field]
         return result
     return ''    
 def _search_raaga_for_values(search_key, search_str,is_exact=False):
     if isinstance(search_str, int):
         search_str = str(search_str)
     matching_keys = []
-    for k,v in settings.RAAGA_DICT.items():
+    for k,v in _RAAGA_DICT.items():
         if is_exact:
-            if search_str.lower() == settings.RAAGA_DICT[k][search_key].lower():
-                name = settings.RAAGA_DICT[k]['Name']
+            if search_str.lower() == _RAAGA_DICT[k][search_key].lower():
+                name = _RAAGA_DICT[k]['Name']
                 matching_keys.append([k,name])
         else:
-            if search_str.lower() in settings.RAAGA_DICT[k][search_key].lower():
-                name = settings.RAAGA_DICT[k]['Name']
+            if search_str.lower() in _RAAGA_DICT[k][search_key].lower():
+                name = _RAAGA_DICT[k]['Name']
                 matching_keys.append([k,name])
     return matching_keys
 def get_previous_note(carnatic_note,note_step=1,raagam_index=None):
@@ -43,7 +43,7 @@ def get_previous_note(carnatic_note,note_step=1,raagam_index=None):
     result = None
     if raagam_index==None:
         raagam_index=settings.RAAGA_INDEX
-    aroganam = get_aroganam(raagam_index)
+    aroganam = get_aaroganam(raagam_index)
     aro_len = len(aroganam)
     aroganam_copy = [re.sub("\d","",a.upper()) for a in aroganam[:]]
     note_index = aroganam_copy.index(note.upper())
@@ -72,7 +72,7 @@ def get_next_note(carnatic_note,note_step=1,raagam_index=None):
     result = None
     if raagam_index==None:
         raagam_index=settings.RAAGA_INDEX
-    aroganam = get_aroganam(raagam_index)
+    aroganam = get_aaroganam(raagam_index)
     aroganam_copy = [re.sub("\d","",a.upper()) for a in aroganam[:]]
     note_index = aroganam_copy.index(note.upper())
     #print('get_next_note','note index in aroganam',note.upper(),carnatic_note, note_index,'oct_str',oct_str)
@@ -84,7 +84,7 @@ def get_next_note(carnatic_note,note_step=1,raagam_index=None):
             result = aroganam[note_index+note_step]+oct_str
             #print('next note 1',result)
     return result
-def get_aroganam(raagam_index=None):
+def get_aaroganam(raagam_index=None):
     """
         Get the aroganam for the specified raaga
         @param raagam_index: Index of raaga. See docs/help or get_raaaga_list for id and raaga_name
@@ -197,7 +197,7 @@ def get_parent_raaga(raagam_index=None):
 def get_raaga_list():
     """
         Get list of raaga names
-        @param raagam_index:ID of the raaga
+        V0.7.6 @param removed from comment
         @return: [raaga_names] 
     """
     return settings.RAAGA_NAMES
@@ -224,12 +224,13 @@ def set_default_raaga_id(raagam_index):
         @param raaga_id 
     """
     print("INFO:Setting raaga will change the melakartha to that of the raaga")
-    raaga_dict_length = len(settings.RAAGA_DICT)
+    raaga_dict_length = len(_RAAGA_DICT)
     if raagam_index >= raaga_dict_length:
         raise ValueError("Raaga ID should be in the range 0.."+str(raaga_dict_length))
     settings.RAAGA_INDEX = raagam_index
     melakartha_number = get_melakartha(raagam_index)
     settings.MELAKARTHA_INDEX = melakartha_number
+    print('raagam index',raagam_index,'melakartha number',melakartha_number)
 def get_melakartha(raagam_index=None):
     """
         get the meLakartha number of the specified raaga
@@ -239,27 +240,70 @@ def get_melakartha(raagam_index=None):
     if raagam_index==None:
         raagam_index=settings.RAAGA_INDEX
     return _get_raaga_attribute('mELakartha',raagam_index)
-def set_melakartha(melakartha_number):
+def set_melakartha(melakartha_number,change_raaga_index=False):
     """
         Set the default meLakartha
         @param meLakartha_number: 
     """
-    print("INFO:Setting melakartha will change the raaga to melakartha raaga")
+    if settings.MELAKARTHA_INDEX == melakartha_number:
+        return
     if melakartha_number < 1 or melakartha_number > 72:
         raise ValueError("Melakartha number should be in the range 1..72")
     settings.MELAKARTHA_INDEX = melakartha_number
-    settings.RAAGA_INDEX = settings.MELAKARTHA_DICT[melakartha_number-1][0]
+    if change_raaga_index:
+        settings.RAAGA_INDEX = settings.MELAKARTHA_DICT[melakartha_number-1][0]
+        print("INFO:Setting melakartha will change the raaga to melakartha raaga:",settings.RAAGA_NAMES[settings.RAAGA_INDEX])
+    else:
+        print("INFO:RAAGA_INDEX WAS NOT CHANGED",'change_raaga_index=',change_raaga_index)
+
 def get_melakartha_raagas():
     """
         Get list of melakartha raagas
         @return: [raaga_ids, raaga_names]
     """
     return settings.MELAKARTHA_DICT
-def __get_krithis(raagam_index=None):
-    """ TODO: Krithi support not implemented """
+def write_json_file_for_raaga(model_weights_folder=None, json_file=None,remove_digits_from_notes=True):
+    if model_weights_folder==None:
+        model_weights_folder = "../carnatic/model_weights/"
+    if json_file==None:
+        json_file = get_raaga_name()+"_corpus.json"
+    aroganam = get_aaroganam()[0:-2]
+    avaroganam = get_avaroganam()[1:]
+    if remove_digits_from_notes:
+        aroganam = re.sub("\\d",""," ".join(aroganam)).split()
+        avaroganam = re.sub("\\d",""," ".join(avaroganam)).split()
+    raaga_notes = aroganam + avaroganam
+    upper_notes = [note+"^" for note in raaga_notes]
+    lower_notes = [note+"." for note in raaga_notes]
+    space_notes = [",", ";"]
+    full_set_of_notes = sorted(list(set(raaga_notes+upper_notes+lower_notes+space_notes)))
+    """ Write the unique notes list to JSON FILE """
+    char_to_index = {ch: i for (i, ch) in enumerate(full_set_of_notes)}
+    #print("Number of unique characters in our whole tunes database = {}".format(len(char_to_index)),"\n",char_to_index) #87
+    import os, json
+    with open(os.path.join(model_weights_folder, json_file), mode = "w") as f:
+        json.dump(char_to_index, f)
+                     
+def get_krithis(raagam_index=None,has_mp3_link=True):
     if raagam_index==None:
         raagam_index=settings.RAAGA_INDEX
-    return _get_raaga_attribute("Krithi_IDs",raagam_index).split(";")
-
+    krithi_ids = [int(k) for k in _get_raaga_attribute("Krithi_IDs",raagam_index).split(";")]
+    k_dict = settings.KRITHI_DICT
+    if has_mp3_link:
+        krithi_ids = [int(k) for k in krithi_ids for _,_ in k_dict.items() if k_dict[int(k)]['MP3 Link'] != '']
+    return krithi_ids
+def get_raagas_that_have_krithis():
+    krithi_raaga_names = {}
+    raaga_names = settings.RAAGA_NAMES
+    #print('raaga names',raaga_names)
+    k_dict = settings.KRITHI_DICT
+    for k,_ in k_dict.items():
+        k_raaga = k_dict[k]['Raaga']
+        if k_raaga in raaga_names:
+            raagam_index = raaga_names.index(k_raaga)
+            #print('k_raaga',k_raaga,'found')
+            krithi_raaga_names[k_raaga] = raagam_index
+    return krithi_raaga_names
 if __name__ == '__main__':
     pass
+    

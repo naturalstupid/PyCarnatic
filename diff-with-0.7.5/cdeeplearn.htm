@@ -1,0 +1,947 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">D:\LaptopBackup\Local\Personal\PythonProjects\carnatic_music_backup\V0.7.5\carnatic\cdeeplearn.py</th>
+<th colspan="2" class="title" style="width:50.000000%">D:\LaptopBackup\Local\Personal\PythonProjects\carnatic_music\carnatic\cdeeplearn.py</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">, </span><span class="sf3b2">re</span><span class="sf11b2">, </span><span class="sf3b2">regex</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">, </span><span class="sf3b2">re</span><span class="sf11b2">, </span><span class="sf3b2">regex</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">json</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">json</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">numpy</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">np</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">numpy</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">np</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pandas</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pd</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pandas</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pd</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">keras</span><span class="sf11b2">.</span><span class="sf3b2">models</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Sequential</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">keras</span><span class="sf11b2">.</span><span class="sf3b2">models</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Sequential</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">keras</span><span class="sf11b2">.</span><span class="sf3b2">layers</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">LSTM</span><span class="sf11b2">, </span><span class="sf3b2">Dropout</span><span class="sf11b2">, </span><span class="sf3b2">TimeDistributed</span><span class="sf11b2">, </span><span class="sf3b2">Dense</span><span class="sf11b2">, </span><span class="sf3b2">Activation</span><span class="sf11b2">, </span><span class="sf3b2">Embedding</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">keras</span><span class="sf11b2">.</span><span class="sf3b2">layers</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">LSTM</span><span class="sf11b2">, </span><span class="sf3b2">Dropout</span><span class="sf11b2">, </span><span class="sf3b2">TimeDistributed</span><span class="sf11b2">, </span><span class="sf3b2">Dense</span><span class="sf11b2">, </span><span class="sf3b2">Activation</span><span class="sf11b2">, </span><span class="sf3b2">Embedding</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">carnatic</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">cparser</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">carnatic</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">cparser</span><span class="sf17b18">,settings</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf9b2">#charIndex_json = "char_to_index.json"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf9b2">#charIndex_json = "char_to_index.json"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">model_weights_directory</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">model_weights/'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">model_weights_directory</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b18">settings._APP_PATH + </span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b18">/</span><span style="color: #000000; background-color: #efcb05; ">model_weights/'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">BATCH_SIZE</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">16</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">BATCH_SIZE</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">16</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">SEQ</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">64</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">CHORD</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">3</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">EPOCHS</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">90</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">EPOCHS</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">90</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">''</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">''</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">JSON_FILE</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">''</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">JSON_FILE</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">''</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_parameters</span><span class="sf11b2">(</span><span class="sf3b2">batch_size</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">, </span><span class="sf3b2">number_of_epochs</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">,</span><span class="sf3b2">model_weights_fol<wbr>der</span><span class="sf11b2">= </span><span class="sf20b2">None</span><span class="sf11b2">,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_parameters</span><span class="sf11b2">(</span><span class="sf3b2">batch_size</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">, </span><span class="sf3b2">number_of_epochs</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">,</span><span class="sf3b2">model_weights_fol<wbr>der</span><span class="sf11b2">= </span><span class="sf20b2">None</span><span class="sf11b2">,</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">json_file</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">None</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">model_weights_file</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">None</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">json_file</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">None</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">model_weights_file</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">None</span><span class="sf17b18">,chord_length=No<wbr>ne</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">parameters</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">deep</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">learning</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">method</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">parameters</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">deep</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">learning</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">method</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">batch_size</span><span class="sf11b2">: </span><span class="sf3b2">Batch</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">size</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">training</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">=</span><span class="sf10b2">16</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">batch_size</span><span class="sf11b2">: </span><span class="sf3b2">Batch</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">size</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">training</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">=</span><span class="sf10b2">16</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">number_of_epochs</span><span class="sf11b2">: </span><span class="sf3b2">Default</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">90</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">number_of_epochs</span><span class="sf11b2">: </span><span class="sf3b2">Default</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">90</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model_weights_folder</span><span class="sf11b2">: </span><span class="sf3b2">Default</span><span class="sf11b2">: </span><span class="sf12b2">"model_weights/"</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model_weights_folder</span><span class="sf11b2">: </span><span class="sf3b2">Default</span><span class="sf11b2">: </span><span class="sf12b2">"model_weights/"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">json_file</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">File</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">containing</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">dictionary</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">of</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">unique</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notes</span><span style="color: #000000; background-color: #efcb05; ">. </span><span style="color: #000000; background-color: #efcb05; ">Default</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">"&lt;raagam_name&gt;</span><span class="sf17b16">_corpus|</span><span style="color: #000000; background-color: #efcb05; ">lessons.j<wbr>son"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">json_file</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">File</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">containing</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">dictionary</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">of</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">unique</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notes</span><span style="color: #000000; background-color: #efcb05; ">. </span><span style="color: #000000; background-color: #efcb05; ">Default</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">"&lt;raagam_name&gt;</span><span class="sf17b16">_</span><span style="color: #000000; background-color: #efcb05; ">lessons.json"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">model_weights_file</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">File</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">containing</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">trained</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">weights</span><span style="color: #000000; background-color: #efcb05; ">. </span><span style="color: #000000; background-color: #efcb05; ">Default</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">"&lt;raagam_name&gt;_corpus</span><span class="sf17b18">|lessons</span><span style="color: #000000; background-color: #efcb05; ">.h<wbr>5"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">model_weights_file</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">File</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">containing</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">trained</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">weights</span><span style="color: #000000; background-color: #efcb05; ">. </span><span style="color: #000000; background-color: #efcb05; ">Default</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">"&lt;raagam_name&gt;_corpus</span><span style="color: #000000; background-color: #efcb05; ">.h5"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">global</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">EPOCHS</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">model_weights_directory</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">JSON_FILE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">MODEL_WEIGHTS_FILE</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">global</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">EPOCHS</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">model_weights_directory</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">JSON_FILE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">MODEL_WEIGHTS_FILE</span><span class="sf17b18">,CHORD_LENGTH</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; if chord_length:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; CHORD_LENGTH = chord_length</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; print('CHORD_LENGTH set to:',CHORD_LENGTH)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">batch_size</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">batch_size</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">BATCH_SIZE</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">batch_size</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">BATCH_SIZE</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">batch_size</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'BATCH_SIZE set to:'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">number_of_epochs</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">number_of_epochs</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">EPOCHS</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">number_of_epochs</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">EPOCHS</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">number_of_epochs</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'EPOCHS set to:'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">EPOCHS</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model_weights_folder</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model_weights_folder</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model_weights_folder</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model_weights_folder</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'model_weights_directory set to:'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">model_weights_directory</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">json_file</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">json_file</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">JSON_FILE</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">json_file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">JSON_FILE</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">json_file</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'JSON_FILE</span><span class="sf17b16">=</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">JSON_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'JSON_FILE</span><span class="sf17b16">&nbsp;set to:</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">JSON_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model_weights_file</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model_weights_file</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model_weights_file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model_weights_file</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'MODEL_WEIGHTS_FILE</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">MODEL_WEIGHT<wbr>S_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'MODEL_WEIGHTS_FILE</span><span class="sf17b18">&nbsp;set to:</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">MODEL_WEIGHTS_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">def are_deeplearning_parameters_defined():</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; parameters_are_set = (CHORD_LENGTH &gt;0 ) and (BATCH_SIZE&gt;0) and (EPOCHS&gt;0) and (JSON_FILE != '') and (MODEL_WEIGHTS_FILE != '')</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; print("parameters_are_set to:",parameters_are_set)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; return parameters_are_set</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_read_batches</span><span class="sf11b2">(</span><span class="sf3b2">all_chars</span><span class="sf11b2">, </span><span class="sf3b2">unique_chars</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_read_batches</span><span class="sf11b2">(</span><span class="sf3b2">all_chars</span><span class="sf11b2">, </span><span class="sf3b2">unique_chars</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">length</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">all_chars</span><span class="sf11b2">.</span><span class="sf3b2">shape</span><span class="sf11b2">[</span><span class="sf10b2">0</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">length</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">all_chars</span><span class="sf11b2">.</span><span class="sf3b2">shape</span><span class="sf11b2">[</span><span class="sf10b2">0</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">batch_chars</span><span class="sf11b2">&nbsp;= </span><span class="sf21b2">int</span><span class="sf11b2">(</span><span class="sf3b2">length</span><span class="sf11b2">&nbsp;/ </span><span class="sf3b2">BATCH_SIZE</span><span class="sf11b2">) </span><span class="sf9b2">#155222/16 = 9701</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">batch_chars</span><span class="sf11b2">&nbsp;= </span><span class="sf21b2">int</span><span class="sf11b2">(</span><span class="sf3b2">length</span><span class="sf11b2">&nbsp;/ </span><span class="sf3b2">BATCH_SIZE</span><span class="sf11b2">) </span><span class="sf9b2">#155222/16 = 9701</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">start</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">range</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">batch_chars</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;- </span><span class="sf17b16">SEQ</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">64</span><span style="color: #000000; background-color: #efcb05; ">): &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#(0, 9637, 64) &nbsp;#it denotes number of batches. It runs everytime when</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">start</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">range</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">batch_chars</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;- </span><span class="sf17b16">CHORD</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">CHORD_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">): &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#(0, 9637, 64) &nbsp;#it denotes number of batches. It runs everytime when</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#new batch is created. We have a total of 151 batches.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#new batch is created. We have a total of 151 batches.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">X</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">np</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">zeros</span><span style="color: #000000; background-color: #efcb05; ">((</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">SEQ</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">)) &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#(16, 64)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">X</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">np</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">zeros</span><span style="color: #000000; background-color: #efcb05; ">((</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">CHORD</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">)) &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#(16, 64)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Y</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">np</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">zeros</span><span style="color: #000000; background-color: #efcb05; ">((</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">SEQ</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">unique_chars</span><span style="color: #000000; background-color: #efcb05; ">)) &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">#(16, 64, 87)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Y</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">np</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">zeros</span><span style="color: #000000; background-color: #efcb05; ">((</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">CHORD</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">unique_chars</span><span style="color: #000000; background-color: #efcb05; ">)) &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">#(16, 64, 87)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">batch_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">range</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">16</span><span style="color: #000000; background-color: #efcb05; ">): &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#it denotes each row in a batch. &nbsp;</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">batch_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">range</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">): &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#it denotes each row in a batch. &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">i</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">range</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">64</span><span style="color: #000000; background-color: #efcb05; ">): &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#it denotes each column in a batch. Each column represents each character means </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">i</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">range</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">CHORD_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">): &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#it denotes each column in a batch. Each column represents each character means </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#each time-step character in a sequence.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#each time-step character in a sequence.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">X</span><span class="sf11b2">[</span><span class="sf3b2">batch_index</span><span class="sf11b2">, </span><span class="sf3b2">i</span><span class="sf11b2">] = </span><span class="sf3b2">all_chars</span><span class="sf11b2">[</span><span class="sf3b2">batch_index</span><span class="sf11b2">&nbsp;* </span><span class="sf3b2">batch_chars</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">start</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">i</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">X</span><span class="sf11b2">[</span><span class="sf3b2">batch_index</span><span class="sf11b2">, </span><span class="sf3b2">i</span><span class="sf11b2">] = </span><span class="sf3b2">all_chars</span><span class="sf11b2">[</span><span class="sf3b2">batch_index</span><span class="sf11b2">&nbsp;* </span><span class="sf3b2">batch_chars</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">start</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">i</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Y</span><span class="sf11b2">[</span><span class="sf3b2">batch_index</span><span class="sf11b2">, </span><span class="sf3b2">i</span><span class="sf11b2">, </span><span class="sf3b2">all_chars</span><span class="sf11b2">[</span><span class="sf3b2">batch_index</span><span class="sf11b2">&nbsp;* </span><span class="sf3b2">batch_chars</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">start</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">i</span><span class="sf11b2">&nbsp;+ </span><span class="sf10b2">1</span><span class="sf11b2">]] = </span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf9b2">#here we have added '1' because the</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Y</span><span class="sf11b2">[</span><span class="sf3b2">batch_index</span><span class="sf11b2">, </span><span class="sf3b2">i</span><span class="sf11b2">, </span><span class="sf3b2">all_chars</span><span class="sf11b2">[</span><span class="sf3b2">batch_index</span><span class="sf11b2">&nbsp;* </span><span class="sf3b2">batch_chars</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">start</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">i</span><span class="sf11b2">&nbsp;+ </span><span class="sf10b2">1</span><span class="sf11b2">]] = </span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf9b2">#here we have added '1' because the</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#correct label will be the next character in the sequence. So, the next character will be denoted by</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#correct label will be the next character in the sequence. So, the next character will be denoted by</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#all_chars[batch_index * batch_chars + start + i] + 1. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#all_chars[batch_index * batch_chars + start + i] + 1. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">yield</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">X</span><span class="sf11b2">, </span><span class="sf3b2">Y</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">yield</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">X</span><span class="sf11b2">, </span><span class="sf3b2">Y</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">def</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">_get_model</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">batch_size</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">seq</span><span style="color: #000000; background-color: #efcb05; ">_length</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">unique_chars</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">def</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">_get_model</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">batch_size</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">seq</span><span class="sf17b18">uence</span><span style="color: #000000; background-color: #efcb05; ">_length</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">unique_chars</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">Sequential</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">Sequential</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">model</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">add</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">Embedding</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">input_dim</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">unique_chars</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">output_dim</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">512</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">batch_input_shape</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= (</span><span style="color: #000000; background-color: #efcb05; ">batch_size</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">seq</span><span style="color: #000000; background-color: #efcb05; ">_length</span><span style="color: #000000; background-color: #efcb05; ">), </span><span style="color: #000000; background-color: #efcb05; ">name</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">"embd_1"</span><span style="color: #000000; background-color: #efcb05; ">)) </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">model</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">add</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">Embedding</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">input_dim</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">unique_chars</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">output_dim</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">512</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">batch_input_shape</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= (</span><span style="color: #000000; background-color: #efcb05; ">batch_size</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">seq</span><span class="sf17b18">uence</span><span style="color: #000000; background-color: #efcb05; ">_length</span><span style="color: #000000; background-color: #efcb05; ">), </span><span style="color: #000000; background-color: #efcb05; ">name</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">"embd_1"</span><span style="color: #000000; background-color: #efcb05; ">)) </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">name</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"lstm_first"</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">name</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"lstm_first"</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">, </span><span class="sf3b2">name</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"drp_1"</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">, </span><span class="sf3b2">name</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"drp_1"</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">TimeDistributed</span><span class="sf11b2">(</span><span class="sf8b2">Dense</span><span class="sf11b2">(</span><span class="sf3b2">unique_<wbr>chars</span><span class="sf11b2">)))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">TimeDistributed</span><span class="sf11b2">(</span><span class="sf8b2">Dense</span><span class="sf11b2">(</span><span class="sf3b2">unique_<wbr>chars</span><span class="sf11b2">)))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Activation</span><span class="sf11b2">(</span><span class="sf12b2">"softmax"</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Activation</span><span class="sf11b2">(</span><span class="sf12b2">"softmax"</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#model.load_weights("model_weights/Weig<wbr>hts_80.h5", by_name = True)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#model.load_weights("model_weights/Weig<wbr>hts_80.h5", by_name = True)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_train_the_model</span><span class="sf11b2">(</span><span class="sf3b2">data</span><span class="sf11b2">, </span><span class="sf3b2">epochs</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_train_the_model</span><span class="sf11b2">(</span><span class="sf3b2">data</span><span class="sf11b2">, </span><span class="sf3b2">epochs</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">global</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">MODEL_WEIGHTS_FILE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">JSON_FILE</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">global</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">MODEL_WEIGHTS_FILE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">JSON_FILE</span><span class="sf17b18">,model_weights_directory</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">char_to_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">{</span><span style="color: #000000; background-color: #efcb05; ">ch</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">i</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;(</span><span style="color: #000000; background-color: #efcb05; ">i</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">ch</span><span style="color: #000000; background-color: #efcb05; ">) </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">enumerate</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">sorted</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">list</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">set</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">data</span><span style="color: #000000; background-color: #efcb05; ">))))}</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">if os.path.exists(os.path.join(model_weigh<wbr>ts_directory,JSON_FILE)):</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; print("Number</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">of unique characters in our whole tunes database </span><span style="color: #000000; background-color: #efcb05; ">= </span><span class="sf17b18">{}".format(len(char_to_index)),"\n",cha<wbr>r_to_index) #87</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; with open(os.path.join(model_weights_directo<wbr>ry, JSON_FILE)) as f:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; with open(</span><span style="color: #000000; background-color: #efcb05; ">os</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">path</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">join</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">model_weights_directo<wbr>ry</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">JSON_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">mode</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">"w"</span><span style="color: #000000; background-color: #efcb05; ">) </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">as</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">f</span><span style="color: #000000; background-color: #efcb05; ">:</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">char_to_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b18">json.load(f)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">json</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">dump</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">char_to_index</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">f</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; else: &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; char_to_index = </span><span style="color: #000000; background-color: #efcb05; ">{</span><span style="color: #000000; background-color: #efcb05; ">ch</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">i</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;(</span><span style="color: #000000; background-color: #efcb05; ">i</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">ch</span><span style="color: #000000; background-color: #efcb05; ">) </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">enumerate</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">sorted</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">list</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">set</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">data</span><span style="color: #000000; background-color: #efcb05; ">))))}</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; json_file</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">= </span><span style="color: #000000; background-color: #efcb05; ">os</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">path</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">join</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">model_weights_directory</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">JSON_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; print('json_file'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">json_file)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">open(json_file, </span><span style="color: #000000; background-color: #efcb05; ">mode</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">"w"</span><span style="color: #000000; background-color: #efcb05; ">) </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">as</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">f</span><span style="color: #000000; background-color: #efcb05; ">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">json</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">dump</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">char_to_index</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">f</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">"Number of unique characters in our whole tunes database = {}"</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">format</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">len</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">char_to_index</span><span style="color: #000000; background-color: #efcb05; ">)),</span><span style="color: #000000; background-color: #efcb05; ">"\n"</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">cha<wbr>r_to_index</span><span style="color: #000000; background-color: #efcb05; ">) </span><span style="color: #000000; background-color: #efcb05; ">#87</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">index_to_char</span><span class="sf11b2">&nbsp;= {</span><span class="sf3b2">i</span><span class="sf11b2">: </span><span class="sf3b2">ch</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">ch</span><span class="sf11b2">, </span><span class="sf3b2">i</span><span class="sf11b2">) </span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">char_to_index</span><span class="sf11b2">.</span><span class="sf8b2">items</span><span class="sf11b2">()}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">index_to_char</span><span class="sf11b2">&nbsp;= {</span><span class="sf3b2">i</span><span class="sf11b2">: </span><span class="sf3b2">ch</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">ch</span><span class="sf11b2">, </span><span class="sf3b2">i</span><span class="sf11b2">) </span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">char_to_index</span><span class="sf11b2">.</span><span class="sf8b2">items</span><span class="sf11b2">()}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">unique_chars</span><span class="sf11b2">&nbsp;= </span><span class="sf21b2">len</span><span class="sf11b2">(</span><span class="sf3b2">char_to_index</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">unique_chars</span><span class="sf11b2">&nbsp;= </span><span class="sf21b2">len</span><span class="sf11b2">(</span><span class="sf3b2">char_to_index</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">model</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">_get_model</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">SEQ</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">unique_chars</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">model</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">_get_model</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">CHORD</span><span style="color: #000000; background-color: #efcb05; ">_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">unique_chars</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">summary</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">summary</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">compile</span><span class="sf11b2">(</span><span class="sf3b2">loss</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"categorical_crossentropy"</span><span class="sf11b2">, </span><span class="sf3b2">optimizer</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"adam"</span><span class="sf11b2">, </span><span class="sf3b2">metrics</span><span class="sf11b2">&nbsp;= [</span><span class="sf12b2">"accuracy"</span><span class="sf11b2">])</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">compile</span><span class="sf11b2">(</span><span class="sf3b2">loss</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"categorical_crossentropy"</span><span class="sf11b2">, </span><span class="sf3b2">optimizer</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"adam"</span><span class="sf11b2">, </span><span class="sf3b2">metrics</span><span class="sf11b2">&nbsp;= [</span><span class="sf12b2">"accuracy"</span><span class="sf11b2">])</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">all_characters</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">np</span><span class="sf11b2">.</span><span class="sf8b2">asarray</span><span class="sf11b2">([</span><span class="sf3b2">char_to_index</span><span class="sf11b2">[</span><span class="sf3b2">c</span><span class="sf11b2">] </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">c</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">data</span><span class="sf11b2">], </span><span class="sf3b2">dtype</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">np</span><span class="sf11b2">.</span><span class="sf3b2">int32</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">all_characters</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">np</span><span class="sf11b2">.</span><span class="sf8b2">asarray</span><span class="sf11b2">([</span><span class="sf3b2">char_to_index</span><span class="sf11b2">[</span><span class="sf3b2">c</span><span class="sf11b2">] </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">c</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">data</span><span class="sf11b2">], </span><span class="sf3b2">dtype</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">np</span><span class="sf11b2">.</span><span class="sf3b2">int32</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Total number of characters = "</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">all_characters</span><span class="sf11b2">.</span><span class="sf3b2">shape</span><span class="sf11b2">[</span><span class="sf10b2">0</span><span class="sf11b2">])) </span><span class="sf9b2">#155222</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Total number of characters = "</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">all_characters</span><span class="sf11b2">.</span><span class="sf3b2">shape</span><span class="sf11b2">[</span><span class="sf10b2">0</span><span class="sf11b2">])) </span><span class="sf9b2">#155222</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">epoch_number</span><span class="sf11b2">, </span><span class="sf3b2">loss</span><span class="sf11b2">, </span><span class="sf3b2">accuracy</span><span class="sf11b2">&nbsp;= [], [], []</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">epoch_number</span><span class="sf11b2">, </span><span class="sf3b2">loss</span><span class="sf11b2">, </span><span class="sf3b2">accuracy</span><span class="sf11b2">&nbsp;= [], [], []</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">epoch</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">range</span><span class="sf11b2">(</span><span class="sf3b2">epochs</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">epoch</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">range</span><span class="sf11b2">(</span><span class="sf3b2">epochs</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Epoch {}/{}"</span><span class="sf11b2">.</span><span class="sf8b2">format</span><span class="sf11b2">(</span><span class="sf3b2">epoch</span><span class="sf11b2">+</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf3b2">epochs</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Epoch {}/{}"</span><span class="sf11b2">.</span><span class="sf8b2">format</span><span class="sf11b2">(</span><span class="sf3b2">epoch</span><span class="sf11b2">+</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf3b2">epochs</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">final_epoch_loss</span><span class="sf11b2">, </span><span class="sf3b2">final_epoch_accuracy</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">0</span><span class="sf11b2">, </span><span class="sf10b2">0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">final_epoch_loss</span><span class="sf11b2">, </span><span class="sf3b2">final_epoch_accuracy</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">0</span><span class="sf11b2">, </span><span class="sf10b2">0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">epoch_number</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">epoch</span><span class="sf11b2">+</span><span class="sf10b2">1</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">epoch_number</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">epoch</span><span class="sf11b2">+</span><span class="sf10b2">1</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">i</span><span class="sf11b2">, (</span><span class="sf3b2">x</span><span class="sf11b2">, </span><span class="sf3b2">y</span><span class="sf11b2">) </span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">enumerate</span><span class="sf11b2">(</span><span class="sf8b2">_read_batches</span><span class="sf11b2">(</span><span class="sf3b2">all_characters</span><span class="sf11b2">,<wbr> </span><span class="sf3b2">unique_chars</span><span class="sf11b2">)):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">i</span><span class="sf11b2">, (</span><span class="sf3b2">x</span><span class="sf11b2">, </span><span class="sf3b2">y</span><span class="sf11b2">) </span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">enumerate</span><span class="sf11b2">(</span><span class="sf8b2">_read_batches</span><span class="sf11b2">(</span><span class="sf3b2">all_characters</span><span class="sf11b2">,<wbr> </span><span class="sf3b2">unique_chars</span><span class="sf11b2">)):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">final_epoch_loss</span><span class="sf11b2">, </span><span class="sf3b2">final_epoch_accuracy</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">train_on_batch</span><span class="sf11b2">(</span><span class="sf3b2">x</span><span class="sf11b2">, </span><span class="sf3b2">y</span><span class="sf11b2">) </span><span class="sf9b2">#check documentation of train_on_batch here: https://keras.io/models/sequential/</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">final_epoch_loss</span><span class="sf11b2">, </span><span class="sf3b2">final_epoch_accuracy</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">train_on_batch</span><span class="sf11b2">(</span><span class="sf3b2">x</span><span class="sf11b2">, </span><span class="sf3b2">y</span><span class="sf11b2">) </span><span class="sf9b2">#check documentation of train_on_batch here: https://keras.io/models/sequential/</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Batch: {}, Loss: {}, Accuracy: {}"</span><span class="sf11b2">.</span><span class="sf8b2">format</span><span class="sf11b2">(</span><span class="sf3b2">i</span><span class="sf11b2">+</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf3b2">final_epoch_loss</span><span class="sf11b2">, </span><span class="sf3b2">final_epoch_accuracy</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Batch: {}, Loss: {}, Accuracy: {}"</span><span class="sf11b2">.</span><span class="sf8b2">format</span><span class="sf11b2">(</span><span class="sf3b2">i</span><span class="sf11b2">+</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf3b2">final_epoch_loss</span><span class="sf11b2">, </span><span class="sf3b2">final_epoch_accuracy</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#here, above we are reading the batches one-by-one and train our model on each batch one-by-one.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#here, above we are reading the batches one-by-one and train our model on each batch one-by-one.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">loss</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">final_epoch_loss</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">loss</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">final_epoch_loss</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">accuracy</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">final_epoch_accuracy</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">accuracy</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">final_epoch_accuracy</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">exists</span><span class="sf11b2">(</span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">)<wbr>:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">exists</span><span class="sf11b2">(</span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">)<wbr>:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf8b2">makedirs</span><span class="sf11b2">(</span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf8b2">makedirs</span><span class="sf11b2">(</span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">save_weights</span><span class="sf11b2">(</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">join</span><span class="sf11b2">(</span><span class="sf3b2">model_w<wbr>eights_directory</span><span class="sf11b2">, </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">save_weights</span><span class="sf11b2">(</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">join</span><span class="sf11b2">(</span><span class="sf3b2">model_w<wbr>eights_directory</span><span class="sf11b2">, </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">'Saved Weights at epoch {} to file {}'</span><span class="sf11b2">.</span><span class="sf8b2">format</span><span class="sf11b2">(</span><span class="sf3b2">epoch</span><span class="sf11b2">+</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">'Saved Weights at epoch {} to file {}'</span><span class="sf11b2">.</span><span class="sf8b2">format</span><span class="sf11b2">(</span><span class="sf3b2">epoch</span><span class="sf11b2">+</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#creating dataframe and record all the losses and accuracies at each epoch</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#creating dataframe and record all the losses and accuracies at each epoch</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">pd</span><span class="sf11b2">.</span><span class="sf8b2">DataFrame</span><span class="sf11b2">(</span><span class="sf3b2">columns</span><span class="sf11b2">&nbsp;= [</span><span class="sf12b2">"Epoch"</span><span class="sf11b2">, </span><span class="sf12b2">"Loss"</span><span class="sf11b2">, </span><span class="sf12b2">"Accuracy"</span><span class="sf11b2">])</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">pd</span><span class="sf11b2">.</span><span class="sf8b2">DataFrame</span><span class="sf11b2">(</span><span class="sf3b2">columns</span><span class="sf11b2">&nbsp;= [</span><span class="sf12b2">"Epoch"</span><span class="sf11b2">, </span><span class="sf12b2">"Loss"</span><span class="sf11b2">, </span><span class="sf12b2">"Accuracy"</span><span class="sf11b2">])</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">[</span><span class="sf12b2">"Epoch"</span><span class="sf11b2">] = </span><span class="sf3b2">epoch_number</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">[</span><span class="sf12b2">"Epoch"</span><span class="sf11b2">] = </span><span class="sf3b2">epoch_number</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">[</span><span class="sf12b2">"Loss"</span><span class="sf11b2">] = </span><span class="sf3b2">loss</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">[</span><span class="sf12b2">"Loss"</span><span class="sf11b2">] = </span><span class="sf3b2">loss</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">[</span><span class="sf12b2">"Accuracy"</span><span class="sf11b2">] = </span><span class="sf3b2">accuracy</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">[</span><span class="sf12b2">"Accuracy"</span><span class="sf11b2">] = </span><span class="sf3b2">accuracy</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">.</span><span class="sf8b2">to_csv</span><span class="sf11b2">(</span><span class="sf12b2">"log.txt"</span><span class="sf11b2">, </span><span class="sf3b2">index</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">False</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">log_frame</span><span class="sf11b2">.</span><span class="sf8b2">to_csv</span><span class="sf11b2">(</span><span class="sf12b2">"log.txt"</span><span class="sf11b2">, </span><span class="sf3b2">index</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">False</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_make_model</span><span class="sf11b2">(</span><span class="sf3b2">unique_chars</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_make_model</span><span class="sf11b2">(</span><span class="sf3b2">unique_chars</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">Sequential</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">Sequential</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Embedding</span><span class="sf11b2">(</span><span class="sf3b2">input_dim</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">unique_chars</span><span class="sf11b2">, </span><span class="sf3b2">output_dim</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">512</span><span class="sf11b2">, </span><span class="sf3b2">batch_input_shape</span><span class="sf11b2">&nbsp;= (</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf10b2">1</span><span class="sf11b2">))) </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Embedding</span><span class="sf11b2">(</span><span class="sf3b2">input_dim</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">unique_chars</span><span class="sf11b2">, </span><span class="sf3b2">output_dim</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">512</span><span class="sf11b2">, </span><span class="sf3b2">batch_input_shape</span><span class="sf11b2">&nbsp;= (</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf10b2">1</span><span class="sf11b2">))) </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">return_sequences</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">)) </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">LSTM</span><span class="sf11b2">(</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">stateful</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">True</span><span class="sf11b2">)) </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#remember, that here we haven't given return_sequences = True because here we will give only one character to generate the</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#remember, that here we haven't given return_sequences = True because here we will give only one character to generate the</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#sequence. In the end, we just have to get one output which is equivalent to getting output at the last time-stamp. So, here</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#sequence. In the end, we just have to get one output which is equivalent to getting output at the last time-stamp. So, here</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#in last layer there is no need of giving return sequences = True.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf9b2">#in last layer there is no need of giving return sequences = True.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Dropout</span><span class="sf11b2">(</span><span class="sf10b2">0.2</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">((</span><span class="sf8b2">Dense</span><span class="sf11b2">(</span><span class="sf3b2">unique_chars</span><span class="sf11b2">)))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">((</span><span class="sf8b2">Dense</span><span class="sf11b2">(</span><span class="sf3b2">unique_chars</span><span class="sf11b2">)))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Activation</span><span class="sf11b2">(</span><span class="sf12b2">"softmax"</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">add</span><span class="sf11b2">(</span><span class="sf8b2">Activation</span><span class="sf11b2">(</span><span class="sf12b2">"softmax"</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_generate_sequence</span><span class="sf11b2">(</span><span class="sf3b2">starting_note</span><span class="sf11b2">, </span><span class="sf3b2">ending_note</span><span class="sf11b2">, </span><span class="sf3b2">seq_length</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_generate_sequence</span><span class="sf11b2">(</span><span class="sf3b2">starting_note</span><span class="sf11b2">, </span><span class="sf3b2">ending_note</span><span class="sf11b2">, </span><span class="sf3b2">seq_length</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">, </span><span class="sf3b2">JSON_FILE</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">, </span><span class="sf3b2">JSON_FILE</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">'_generate_sequence'</span><span class="sf11b2">,</span><span class="sf12b2">'JSON_FILE'</span><span class="sf11b2">,<wbr></span><span class="sf3b2">JSON_FILE</span><span class="sf11b2">,</span><span class="sf12b2">'MODEL_WEIGHTS_FILE'</span><span class="sf11b2">,</span><span class="sf3b2">MODEL_WE<wbr>IGHTS_FILE</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">'_generate_sequence'</span><span class="sf11b2">,</span><span class="sf12b2">'JSON_FILE'</span><span class="sf11b2">,<wbr></span><span class="sf3b2">JSON_FILE</span><span class="sf11b2">,</span><span class="sf12b2">'MODEL_WEIGHTS_FILE'</span><span class="sf11b2">,</span><span class="sf3b2">MODEL_WE<wbr>IGHTS_FILE</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">with</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">open</span><span class="sf11b2">(</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">join</span><span class="sf11b2">(</span><span class="sf3b2">model_weights_directo<wbr>ry</span><span class="sf11b2">, </span><span class="sf3b2">JSON_FILE</span><span class="sf11b2">)) </span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">f</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">with</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">open</span><span class="sf11b2">(</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">join</span><span class="sf11b2">(</span><span class="sf3b2">model_weights_directo<wbr>ry</span><span class="sf11b2">, </span><span class="sf3b2">JSON_FILE</span><span class="sf11b2">)) </span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">f</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">char_to_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">json</span><span class="sf11b2">.</span><span class="sf8b2">load</span><span class="sf11b2">(</span><span class="sf3b2">f</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">char_to_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">json</span><span class="sf11b2">.</span><span class="sf8b2">load</span><span class="sf11b2">(</span><span class="sf3b2">f</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">index_to_char</span><span class="sf11b2">&nbsp;= {</span><span class="sf3b2">i</span><span class="sf11b2">:</span><span class="sf3b2">ch</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ch</span><span class="sf11b2">, </span><span class="sf3b2">i</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">char_to_index</span><span class="sf11b2">.</span><span class="sf8b2">items</span><span class="sf11b2">()}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">index_to_char</span><span class="sf11b2">&nbsp;= {</span><span class="sf3b2">i</span><span class="sf11b2">:</span><span class="sf3b2">ch</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ch</span><span class="sf11b2">, </span><span class="sf3b2">i</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">char_to_index</span><span class="sf11b2">.</span><span class="sf8b2">items</span><span class="sf11b2">()}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">initial_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">char_to_index</span><span class="sf11b2">[</span><span class="sf3b2">starting_note</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">initial_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">char_to_index</span><span class="sf11b2">[</span><span class="sf3b2">starting_note</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">ending_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">char_to_index</span><span class="sf11b2">[</span><span class="sf3b2">ending_note</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">ending_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">char_to_index</span><span class="sf11b2">[</span><span class="sf3b2">ending_note</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">unique_chars</span><span class="sf11b2">&nbsp;= </span><span class="sf21b2">len</span><span class="sf11b2">(</span><span class="sf3b2">index_to_char</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">unique_chars</span><span class="sf11b2">&nbsp;= </span><span class="sf21b2">len</span><span class="sf11b2">(</span><span class="sf3b2">index_to_char</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_make_model</span><span class="sf11b2">(</span><span class="sf3b2">unique_chars</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_make_model</span><span class="sf11b2">(</span><span class="sf3b2">unique_chars</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model_file</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model_file</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Reading model weights from file:"</span><span class="sf11b2">+</span><span class="sf3b2">model_file</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Reading model weights from file:"</span><span class="sf11b2">+</span><span class="sf3b2">model_file</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">load_weights</span><span class="sf11b2">(</span><span class="sf3b2">model_file</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">load_weights</span><span class="sf11b2">(</span><span class="sf3b2">model_file</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">sequence_index</span><span class="sf11b2">&nbsp;= [</span><span class="sf3b2">initial_index</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">sequence_index</span><span class="sf11b2">&nbsp;= [</span><span class="sf3b2">initial_index</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">_</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">range</span><span class="sf11b2">(</span><span class="sf3b2">seq_length</span><span class="sf11b2">-</span><span class="sf10b2">2</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">_</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">range</span><span class="sf11b2">(</span><span class="sf3b2">seq_length</span><span class="sf11b2">-</span><span class="sf10b2">2</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">batch</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">np</span><span class="sf11b2">.</span><span class="sf8b2">zeros</span><span class="sf11b2">((</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf10b2">1</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">batch</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">np</span><span class="sf11b2">.</span><span class="sf8b2">zeros</span><span class="sf11b2">((</span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf10b2">1</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">batch</span><span class="sf11b2">[</span><span class="sf10b2">0</span><span class="sf11b2">, </span><span class="sf10b2">0</span><span class="sf11b2">] = </span><span class="sf3b2">sequence_index</span><span class="sf11b2">[-</span><span class="sf10b2">1</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">batch</span><span class="sf11b2">[</span><span class="sf10b2">0</span><span class="sf11b2">, </span><span class="sf10b2">0</span><span class="sf11b2">] = </span><span class="sf3b2">sequence_index</span><span class="sf11b2">[-</span><span class="sf10b2">1</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">predicted_probs</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">predict_on_batch</span><span class="sf11b2">(</span><span class="sf3b2">batch</span><span class="sf11b2">).</span><span class="sf8b2">ravel</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">predicted_probs</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model</span><span class="sf11b2">.</span><span class="sf8b2">predict_on_batch</span><span class="sf11b2">(</span><span class="sf3b2">batch</span><span class="sf11b2">).</span><span class="sf8b2">ravel</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">sample</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">np</span><span class="sf11b2">.</span><span class="sf3b2">random</span><span class="sf11b2">.</span><span class="sf8b2">choice</span><span class="sf11b2">(</span><span class="sf21b2">range</span><span class="sf11b2">(</span><span class="sf3b2">unique_chars</span><span class="sf11b2">), </span><span class="sf3b2">size</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf3b2">p</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">predicted_probs</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">sample</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">np</span><span class="sf11b2">.</span><span class="sf3b2">random</span><span class="sf11b2">.</span><span class="sf8b2">choice</span><span class="sf11b2">(</span><span class="sf21b2">range</span><span class="sf11b2">(</span><span class="sf3b2">unique_chars</span><span class="sf11b2">), </span><span class="sf3b2">size</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf3b2">p</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">predicted_probs</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">sequence_index</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">sample</span><span class="sf11b2">[</span><span class="sf10b2">0</span><span class="sf11b2">])</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">sequence_index</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">sample</span><span class="sf11b2">[</span><span class="sf10b2">0</span><span class="sf11b2">])</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">sequence_index</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">ending_index</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">sequence_index</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">ending_index</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">seq</span><span class="sf11b2">&nbsp;= [</span><span class="sf3b2">index_to_char</span><span class="sf11b2">[</span><span class="sf3b2">c</span><span class="sf11b2">] </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">c</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">sequence_index</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">seq</span><span class="sf11b2">&nbsp;= [</span><span class="sf3b2">index_to_char</span><span class="sf11b2">[</span><span class="sf3b2">c</span><span class="sf11b2">] </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">c</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">sequence_index</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">seq</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">seq</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">generate_notes_from_corpus</span><span class="sf11b2">(</span><span class="sf3b2">corpus_files<wbr></span><span class="sf11b2">:</span><span class="sf3b2">list</span><span class="sf11b2">,</span><span class="sf3b2">starting_note</span><span class="sf11b2">:</span><span class="sf3b2">str</span><span class="sf11b2">, </span><span class="sf3b2">ending_note</span><span class="sf11b2">:</span><span class="sf3b2">str</span><span class="sf11b2">, </span><span class="sf3b2">length</span><span class="sf11b2">:</span><span class="sf21b2">int</span><span class="sf11b2">=</span><span class="sf10b2">32</span><span class="sf11b2">, </span><span class="sf3b2">save_to_file</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">,</span><span class="sf3b2">perform_training</span><span class="sf11b2">=</span><span class="sf20b2">Fals<wbr>e</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">generate_notes_from_corpus</span><span class="sf11b2">(</span><span class="sf3b2">corpus_files<wbr></span><span class="sf11b2">:</span><span class="sf3b2">list</span><span class="sf11b2">,</span><span class="sf3b2">starting_note</span><span class="sf11b2">:</span><span class="sf3b2">str</span><span class="sf11b2">, </span><span class="sf3b2">ending_note</span><span class="sf11b2">:</span><span class="sf3b2">str</span><span class="sf11b2">, </span><span class="sf3b2">length</span><span class="sf11b2">:</span><span class="sf21b2">int</span><span class="sf11b2">=</span><span class="sf10b2">32</span><span class="sf11b2">, </span><span class="sf3b2">save_to_file</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">,</span><span class="sf3b2">perform_training</span><span class="sf11b2">=</span><span class="sf20b2">Fals<wbr>e</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Generate</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">note</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">sequence</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">defined</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">length</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">corpus</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">text</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">files</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Generate</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">note</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">sequence</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">defined</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">length</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">corpus</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">text</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">files</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">corpus_files</span><span class="sf11b2">: </span><span class="sf3b2">List</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">corpus</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">paths</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">that</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">contain</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">sequence</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">corpus_files</span><span class="sf11b2">: </span><span class="sf3b2">List</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">corpus</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">paths</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">that</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">contain</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">sequence</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">starting_note</span><span class="sf11b2">: </span><span class="sf3b2">Starting</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">note</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">should</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">one</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">aarognam</span><span class="sf11b2">/</span><span class="sf3b2">avaroganam</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">)</span><span class="sf3b2">.</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Default</span><span class="sf11b2">=</span><span class="sf20b2">None</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">starting_note</span><span class="sf11b2">: </span><span class="sf3b2">Starting</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">note</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">should</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">one</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">aarognam</span><span class="sf11b2">/</span><span class="sf3b2">avaroganam</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">)</span><span class="sf3b2">.</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Default</span><span class="sf11b2">=</span><span class="sf20b2">None</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ending_note</span><span class="sf11b2">: </span><span class="sf3b2">Ending</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">note</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">should</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">one</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">aarognam</span><span class="sf11b2">/</span><span class="sf3b2">avaroganam</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">)</span><span class="sf3b2">.</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Default</span><span class="sf11b2">=</span><span class="sf20b2">None</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ending_note</span><span class="sf11b2">: </span><span class="sf3b2">Ending</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">note</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">should</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">one</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">aarognam</span><span class="sf11b2">/</span><span class="sf3b2">avaroganam</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">)</span><span class="sf3b2">.</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Default</span><span class="sf11b2">=</span><span class="sf20b2">None</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">length</span><span class="sf11b2">: </span><span class="sf3b2">desired</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">length</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">generated</span><span class="sf11b2">. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">length</span><span class="sf11b2">: </span><span class="sf3b2">desired</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">length</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">generated</span><span class="sf11b2">. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Note</span><span class="sf11b2">: </span><span class="sf3b2">Not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">always</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">exact</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">number</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">may</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">generated</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Note</span><span class="sf11b2">: </span><span class="sf3b2">Not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">always</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">exact</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">number</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">may</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">generated</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">save_to_file</span><span class="sf11b2">: </span><span class="sf3b2">File</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">which</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">generated</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">are</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">written</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">=</span><span class="sf20b2">None</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">save_to_file</span><span class="sf11b2">: </span><span class="sf3b2">File</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">which</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">generated</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">are</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">written</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">=</span><span class="sf20b2">None</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">perform_training</span><span class="sf11b2">: </span><span class="sf20b2">True</span><span class="sf11b2">/</span><span class="sf20b2">False</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">False</span><span class="sf11b2">. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">perform_training</span><span class="sf11b2">: </span><span class="sf20b2">True</span><span class="sf11b2">/</span><span class="sf20b2">False</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">&nbsp;= </span><span class="sf20b2">False</span><span class="sf11b2">. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">If</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">training</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">weights</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">are</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">generated</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">even</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">weight</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">is</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">found</span><span class="sf11b2">&nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">If</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">training</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">weights</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">are</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">generated</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">even</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">model</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">weight</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">is</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">found</span><span class="sf11b2">&nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">chord_length</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">Number</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">of</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">adjacent</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notes</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">be</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">used</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">prediction</span><span style="color: #000000; background-color: #efcb05; ">. </span><span style="color: #000000; background-color: #efcb05; ">Same</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">as</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">width</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">markov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">model</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">,</span><span class="sf3b2">JSON_FILE</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">,</span><span class="sf3b2">JSON_FILE</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">'generate_notes_from_corpus'</span><span class="sf11b2">,</span><span class="sf12b2">'JSO<wbr>N_FILE'</span><span class="sf11b2">,</span><span class="sf3b2">JSON_FILE</span><span class="sf11b2">,</span><span class="sf12b2">'MODEL_WEIGHTS_FILE'</span><span class="sf11b2">,<wbr></span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">'generate_notes_from_corpus'</span><span class="sf11b2">,</span><span class="sf12b2">'JSO<wbr>N_FILE'</span><span class="sf11b2">,</span><span class="sf3b2">JSON_FILE</span><span class="sf11b2">,</span><span class="sf12b2">'MODEL_WEIGHTS_FILE'</span><span class="sf11b2">,<wbr></span><span class="sf3b2">MODEL_WEIGHTS_FILE</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">"Batch Size = {} Chord length = {} Epochs = {}"</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">format</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">BATCH_SIZE</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">CHORD_LENGTH</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">EPOC<wbr>HS</span><span style="color: #000000; background-color: #efcb05; ">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model_file</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">model_file</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">model_weights_directory</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">MODEL_WEIGHTS_FILE</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">isfile</span><span class="sf11b2">(</span><span class="sf3b2">model_file</span><span class="sf11b2">) </span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">perform_training</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">isfile</span><span class="sf11b2">(</span><span class="sf3b2">model_file</span><span class="sf11b2">) </span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">perform_training</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">data</span><span class="sf11b2">&nbsp;= []</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">data</span><span class="sf11b2">&nbsp;= []</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations_file</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">corpus_files</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations_file</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">corpus_files</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">data</span><span class="sf11b2">&nbsp;+= </span><span class="sf3b2">cparser</span><span class="sf11b2">.</span><span class="sf8b2">_get_notes_from_file</span><span class="sf11b2">(</span><span class="sf3b2">notations_<wbr>file</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">data</span><span class="sf11b2">&nbsp;+= </span><span class="sf3b2">cparser</span><span class="sf11b2">.</span><span class="sf8b2">_get_notes_from_file</span><span class="sf11b2">(</span><span class="sf3b2">notations_<wbr>file</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf8b2">_train_the_model</span><span class="sf11b2">(</span><span class="sf3b2">data</span><span class="sf11b2">, </span><span class="sf3b2">epochs</span><span class="sf11b2">=</span><span class="sf3b2">EPOCHS</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf8b2">_train_the_model</span><span class="sf11b2">(</span><span class="sf3b2">data</span><span class="sf11b2">, </span><span class="sf3b2">epochs</span><span class="sf11b2">=</span><span class="sf3b2">EPOCHS</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_generate_sequence</span><span class="sf11b2">(</span><span class="sf3b2">starting_note</span><span class="sf11b2">, </span><span class="sf3b2">ending_note</span><span class="sf11b2">, </span><span class="sf3b2">length</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_generate_sequence</span><span class="sf11b2">(</span><span class="sf3b2">starting_note</span><span class="sf11b2">, </span><span class="sf3b2">ending_note</span><span class="sf11b2">, </span><span class="sf3b2">length</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">__name__</span><span class="sf11b2">&nbsp;== </span><span class="sf12b2">"__main__"</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">__name__</span><span class="sf11b2">&nbsp;== </span><span class="sf12b2">"__main__"</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">pass</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">pass</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

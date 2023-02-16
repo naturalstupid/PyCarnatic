@@ -16,7 +16,7 @@
 
 name = "carnatic"
 
-version = "0.7.5"
+version = "1.3.0"
 
 author = "Sundar Sundaresan"
 

@@ -1,4 +1,4 @@
-# PyCarnatic / Carnatic Music Guru - V0.7.5
+# PyCarnatic / Carnatic Music Guru - V0.7.6
 ## This package was inspired from the Java Application: [JRaaga / Carnatic Music Guru](https://sourceforge.net/projects/carnaticmusicguru/)
 <br>
 <br>This provides a python package to <br>
@@ -15,6 +15,9 @@
 	<li> 	-	PERCUSSION_INSTRUMENTS = ["Mridangam","EastWestMix"]
 
 ### Release History 
+
+#### V0.7.6 
+<li> Create JSON FILE from Aarogana and Avarogana of the raaga
 
 #### V0.7.5 
 <li> A bug in raaga.get_previous_note fixed

@@ -1,0 +1,63 @@
+{ Valachi Vacchi
+
+{ Ragam: NavaragamAlika 
+
+{ Talam: Adi 
+{ Composer: Patnam Subramania Iyer
+{ Talam: Adi
+#T4
+#J2
+#S3
+{ Pallavi : Valachi vacchi yunna naapai, chalamu seya meraa saami
+{ Anupallavi: Cheluvudaina Sree Venkatesa Kalasi melasi kougalimcha
+{ Charanam : Pada sarojamuna nammi
+{ Pallavi
+{Ragam: KedAram
+#M29
+{ Arohanam : S M1 G3 M1 N3 S^ Avarohanam: S^ N3 P M2 G3 R2 S
+#S3
+P.,N3., S,,, SN3.SR2 SSN3.N3. | SM1G3M1 PN3PP | M1M1G3R2 G3R2SN3. ||
+P.N3.SM1 G3M1PN3 PS^N3P ,M1G3R2 | S,,S^ N3PM1G3 | ,N3PM1 G3R2SN3. || 
+$$$$
+{ Anu Pallavi
+{ Ragam: Dheera ShankarAbharanam
+#M29
+{ Arohanam : S R2 G3 M1 P D3 N3 S^ Avarohanam: S^ N3 D2 P M1 G3 R2 S
+S,P, PM1G3R2 G3,M1, P,,, | G3M1PD2 D2PM1P | D2N3S^N3 (S^N3D2PM1G3R2S) || 
+S,P, P,(M1G3R2,) G3,M1, P,,, | G3M1PD2 D2PM1P | D2N3S^N3 S^,,, ||
+N3.S^G3^R2^ S^N3S^R2^ G3^,M1^G3^ R2^S^N3P | N3S^R2^S^ ,,M1P | D2P,M1 G3R2SN3. ||
+$$$$
+{ Mukthayi Swaram: 
+{ Ragam: MechakalyAni
+#M65
+{ Arohanam : S R2 G3 M2 P D2 N3 S^ Avarohanam: S^ N3 D2 P M2 G3 R2 S
+D2.N3.SR2 ,G3SR2 G3M2,D2 PM2G3R2 | N3.G3R2N3. R2N3.D2.N3. | SR2G3M2 P,,, || 
+D2M2G3R2 S,D2.N3. SR2,G3 ,M2PD2 | G3M2PD2 ,N3PD2 | M2PD2N3 S,,, ||
+N2D2PM1 ,G3R2G3 D2M1,G3 R2SN3.D2. | P.S,N2. R2SG3R2 | PM1D2P S^N2R2^S^ ||
+G3^R2^G3^M1^ G3^M1^R2^, S^N2R2^S^ R2^N2D2P | M1M1,G3 R2SS, | ,M1G3G3 R2R2SN3. ||
+$$$$
+{ Charanam 
+{ Ragam: Yadukula KAmbhoji
+P,D2, S^,S^S^ N2D2D2, N2D2P, ,,,, | M1PD2N2 N2D2PN2 | D2D2PD2 PM1GM1 ||
+$$$$
+{Chitta swaram
+{ Ragam: Yadukula KAmbhoji
+{1 
+P,,M1 ,,G3, ,,R2, G3,R2, | S,,P. ,,D2., | ,,S, ,R2,M1 ||
+$$$$
+{ Ragam: Bilahari
+{2 
+PD2PM1 G3R2G, D2PM1G3 R2SN3.D2. | P.D2.SR2 G3PM1G3 | R2SR2G3 P,,, | 
+PM1G3R2 ,G3PD2 S^,R2G3 PD2S^, | SR2G3P D2S^D2.S | R2G3P, M1G3R2G3 ||
+$$$$
+{ Ragam: Mohanam
+{3
+P,D2P G3R2G3, D2PG3R2, G3PG3R2 | S,G3R2 SR2S, | R2SD2.S R2G3PD2 ||
+S^D2PG3 R2SD2P G3R2SR2 G3PD2S^ | R2^G3^R2^S^ D2PD2S^ | D2PG3R2 SR2G3G3 ||
+$$$$
+{ Ragam: Shree
+P,,P M1R2G2, ,G2R2S N2.SG2R2 | S,,S N2.PN2., | ,S,R2 ,M1,M1 ||
+PM1R2G2 R2SN2.S R2M1PS RM1PN2 | PS^N2P ,M1R2G2 | R2SR2M1 PN2S^, ||
+PN2S^R2^ ,R2^N2S^ R2^G2^,G2^ R2^S^N2N2 | G2^R2^G2^S^ ,R2^N2S^ | R2^N2,S^ PN2S^R2^ ||
+N2G2^,G2^ R2^S^N2R2^ ,R2^S^N2 PD2N2P | ,M1R2G2 R2SG2^R2^ | S^N2PR2^ S^N2PM1 ||
+$$$$

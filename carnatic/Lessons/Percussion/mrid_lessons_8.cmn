@@ -3,17 +3,17 @@
 { 8-Akshara Purattal
 #D60
 
-#S1
+#N1
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi
 
-#S2
+#N2
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi
 
-#S3
+#N4
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka
@@ -27,12 +27,12 @@ $;;
 { Lesson 8.2
 { Akshara Purattal
 
-#S1
+#N1
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi
 Tha ka Thi ki Tha ri Ki ta
 
-#S2
+#N2
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi
 Tha ka Thi ki Tha ri Ki ta
@@ -40,7 +40,7 @@ Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta 
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi
 Tha ka Thi ki Tha ri Ki ta
 
-#S3
+#N4
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi
 Tha ka Thi ki Tha ri Ki ta
@@ -58,17 +58,17 @@ $;;
 { Lesson 8.3
 { Akshara Purattal
 
-#S1
+#N1
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha ka Thi ki Tha ri Ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi Tha ka Thi ki Tha ri Ki ta
 
-#S2
+#N2
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha ka Thi ki Tha ri Ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi Tha ka Thi ki Tha ri Ki ta
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha ka Thi ki Tha ri Ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi Tha ka Thi ki Tha ri Ki ta
 
-#S3
+#N4
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta
 Tha Chap Tha Tha ri ki ta Nam Thom Tha ri ki ta Tha ka Thi ki Tha ri Ki ta Tha Thi Tha , Tha dhi Tha thi Thom Tha , Tha dhi Tha ka Thi ki Tha ri Ki ta
 Tha Ki ta Ki ta Tha ka Thi Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta Thom Ki ta Ki ta Tha ka Nam Ki ta Ki ta Tha ka Tha ka Thi ki Tha ri Ki ta
@@ -83,7 +83,7 @@ $;;
 { Lesson 8.4
 
 { 16 - Akshara Purattal
-#S1
+#N1
 Tha Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta
 Thi Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta
 Thom Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta
@@ -94,7 +94,7 @@ Nam Thom Tha Ri Ki Ta, Tha Ka Thi Ki Tha Ri Ki Ta
 Tha Thi Tha ,  Tha Dhi, Tha Ka Thi Ki Tha Ri Ki Ta
 Tha thi Thom Tha ,  Tha Dhi, Tha Ka Thi Ki Tha Ri Ki Ta
 
-#S2
+#N2
 Tha Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta
 Thi Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta
 Thom Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta
@@ -115,7 +115,7 @@ Nam Thom Tha Ri Ki Ta, Tha Ka Thi Ki Tha Ri Ki Ta
 Tha Thi Tha ,  Tha Dhi, Tha Ka Thi Ki Tha Ri Ki Ta
 Tha thi Thom Tha ,  Tha Dhi, Tha Ka Thi Ki Tha Ri Ki Ta
 
-#S3
+#N4
 Tha Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta
 Thi Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta
 Thom Ki Ta Ki Ta Tha Ka, Tha Ka Thi Ki Tha Ri Ki Ta

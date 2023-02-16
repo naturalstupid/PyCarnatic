@@ -1,15 +1,15 @@
 #P2
 { Mridangam Lessons
 { Lesson 1.1
-#D60
-#S1
+#D72
+#N1
 Tha Thi Thom Nam
 
-#S2
+#N2
 Tha Thi Thom Nam
 Tha Thi Thom Nam
 
-#S3
+#N4
 Tha Thi Thom Nam
 Tha Thi Thom Nam
 Tha Thi Thom Nam
@@ -18,14 +18,14 @@ Tha Thi Thom Nam
 $;;
 
 { Lesson 1.2
-#S1
+#N1
 Tha tha Thi thi Thom thom Nam nam
 
-#S2
+#N2
 Tha tha Thi thi Thom thom Nam nam
 Tha tha Thi thi Thom thom Nam nam
 
-#S3
+#N4
 Tha tha Thi thi Thom thom Nam nam
 Tha tha Thi thi Thom thom Nam nam
 Tha tha Thi thi Thom thom Nam nam
@@ -34,14 +34,14 @@ Tha tha Thi thi Thom thom Nam nam
 $;;
 
 {Lesson 1.3
-#S1
+#N1
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 
-#S2
+#N2
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 
-#S3
+#N4
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
@@ -50,14 +50,14 @@ Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 $;;
 
 {Lesson 1.4
-#S1
+#N1
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 
-#S2
+#N2
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 
-#S3
+#N4
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
@@ -66,13 +66,13 @@ Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 $;;
 
 {1.5
-#S1
+#N1
 Tha Thi Thom Nam
 Tha tha Thi thi Thom thom Nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 
-#S2
+#N2
 Tha Thi Thom Nam
 Tha tha Thi thi Thom thom Nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
@@ -82,7 +82,7 @@ Tha tha Thi thi Thom thom Nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 
-#S3
+#N4
 Tha Thi Thom Nam
 Tha tha Thi thi Thom thom Nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
@@ -102,13 +102,13 @@ Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 
 $;;
 {Lesson 1.6
-#S1
+#N1
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha Thi thi Thom thom Nam nam
 Tha Thi Thom Nam
 
-#S2
+#N2
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha Thi thi Thom thom Nam nam
@@ -118,7 +118,7 @@ Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha Thi thi Thom thom Nam nam
 Tha Thi Thom Nam
 
-#S3
+#N4
 Tha tha tha tha Thi thi thi thi Thom thom thom thom Nam nam nam nam
 Tha tha tha Thi thi thi Thom thom thom Nam nam nam
 Tha tha Thi thi Thom thom Nam nam

@@ -1,0 +1,871 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">D:\LaptopBackup\Local\Personal\PythonProjects\carnatic_music_backup\V0.7.5\carnatic\song.py</th>
+<th colspan="2" class="title" style="width:50.000000%">D:\LaptopBackup\Local\Personal\PythonProjects\carnatic_music\carnatic\song.py</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Module</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Module</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">generating</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">through</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">programming</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">generating</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">through</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">programming</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">add</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">tempo</span><span class="sf11b2">, </span><span class="sf3b2">instrument</span><span class="sf11b2">, </span><span class="sf3b2">comment</span><span class="sf11b2">, </span><span class="sf3b2">notes</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">add</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">tempo</span><span class="sf11b2">, </span><span class="sf3b2">instrument</span><span class="sf11b2">, </span><span class="sf3b2">comment</span><span class="sf11b2">, </span><span class="sf3b2">notes</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">open</span><span class="sf11b2">&nbsp;/ </span><span class="sf3b2">save</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">open</span><span class="sf11b2">&nbsp;/ </span><span class="sf3b2">save</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">TODO</span><span class="sf11b2">: </span><span class="sf3b2">save</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pdf</span><span class="sf11b2">, </span><span class="sf3b2">staff</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Lilypond</span><span class="sf11b2">, </span><span class="sf3b2">save</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">wav</span><span class="sf11b2">/</span><span class="sf3b2">mp3</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">TODO</span><span class="sf11b2">: </span><span class="sf3b2">save</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pdf</span><span class="sf11b2">, </span><span class="sf3b2">staff</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Lilypond</span><span class="sf11b2">, </span><span class="sf3b2">save</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">wav</span><span class="sf11b2">/</span><span class="sf3b2">mp3</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">re</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">re</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">, </span><span class="sf3b2">raaga</span><span class="sf11b2">, </span><span class="sf3b2">thaaLa</span><span class="sf11b2">, </span><span class="sf3b2">cparser</span><span class="sf11b2">, </span><span class="sf3b2">cplayer</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">, </span><span class="sf3b2">raaga</span><span class="sf11b2">, </span><span class="sf3b2">thaaLa</span><span class="sf11b2">, </span><span class="sf3b2">cparser</span><span class="sf11b2">, </span><span class="sf3b2">cplayer</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">_temp_file</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_APP_PATH</span><span class="sf11b2">+</span><span class="sf12b2">"/tmp/notations.txt"<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">_temp_file</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_APP_PATH</span><span class="sf11b2">+</span><span class="sf12b2">"/tmp/notations.txt"<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">class</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">Song</span><span class="sf11b2">(</span><span class="sf3b2">object</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">class</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">Song</span><span class="sf11b2">(</span><span class="sf3b2">object</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Class</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Class</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Functions</span><span class="sf11b2">: </span><span class="sf3b2">read</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">a</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">, </span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">tempo</span><span class="sf11b2">, </span><span class="sf3b2">thaalam</span><span class="sf11b2">, </span><span class="sf3b2">raagam</span><span class="sf11b2">, </span><span class="sf3b2">speed</span><span class="sf11b2">. </span><span class="sf3b2">Add</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">comments</span><span class="sf11b2">, </span><span class="sf3b2">notes</span><span class="sf11b2">, </span><span class="sf3b2">instrument</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Functions</span><span class="sf11b2">: </span><span class="sf3b2">read</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">a</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">, </span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">tempo</span><span class="sf11b2">, </span><span class="sf3b2">thaalam</span><span class="sf11b2">, </span><span class="sf3b2">raagam</span><span class="sf11b2">, </span><span class="sf3b2">speed</span><span class="sf11b2">. </span><span class="sf3b2">Add</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">comments</span><span class="sf11b2">, </span><span class="sf3b2">notes</span><span class="sf11b2">, </span><span class="sf3b2">instrument</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">Save</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">, </span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">Save</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">, </span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">""" &nbsp; &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">""" &nbsp; &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">__init__</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">__init__</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">&nbsp;= []</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">&nbsp;= []</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_instruments</span><span class="sf11b2">&nbsp;= []</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_instruments</span><span class="sf11b2">&nbsp;= []</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">_temp_file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">_temp_file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">read</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">song_file_name</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">read</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">song_file_name</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Read</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">a</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Read</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">a</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song_file_name</span><span class="sf11b2">&nbsp; &nbsp; - </span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song_file_name</span><span class="sf11b2">&nbsp; &nbsp; - </span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">isfile</span><span class="sf11b2">(</span><span class="sf3b2">song_file_name</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">isfile</span><span class="sf11b2">(</span><span class="sf3b2">song_file_name</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">song_file_name</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">song_file_name</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">""" TODO: To read the file and get all the lines """</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">""" TODO: To read the file and get all the lines """</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">else</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">else</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">raise</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">ValueError</span><span class="sf11b2">(</span><span class="sf12b2">"File:"</span><span class="sf11b2">+</span><span class="sf3b2">song_file_name</span><span class="sf11b2">+</span><span class="sf12b2">" does not exist"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">raise</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">ValueError</span><span class="sf11b2">(</span><span class="sf12b2">"File:"</span><span class="sf11b2">+</span><span class="sf3b2">song_file_name</span><span class="sf11b2">+</span><span class="sf12b2">" does not exist"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">get_lines</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">get_lines</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf7b2">return</span><span class="sf11b2">: &nbsp; &nbsp;</span><span class="sf3b2">all</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">lines</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf7b2">return</span><span class="sf11b2">: &nbsp; &nbsp;</span><span class="sf3b2">all</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">lines</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_tempo</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">tempo</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_tempo</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">tempo</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Tempo</span><span class="sf11b2">. </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">tempo</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">. </span><span class="sf3b2">Value</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;- </span><span class="sf10b2">200</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">beats</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">per</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">minute</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">60</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Tempo</span><span class="sf11b2">. </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">tempo</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">. </span><span class="sf3b2">Value</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;- </span><span class="sf10b2">200</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">beats</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">per</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">minute</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">60</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">Tempo</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">tempo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">Tempo</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">tempo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#D"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">tempo</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#D"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">tempo</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_notation_type</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">scale_of_notes</span><span class="sf11b2">):<wbr></span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_notation_type</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">scale_of_notes</span><span class="sf11b2">):<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">svale</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Western</span><span class="sf11b2">, </span><span class="sf3b2">Carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scale</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">12</span><span class="sf11b2">, </span><span class="sf10b2">16</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">22</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">svale</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Western</span><span class="sf11b2">, </span><span class="sf3b2">Carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scale</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">12</span><span class="sf11b2">, </span><span class="sf10b2">16</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">22</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scale_of_notes</span><span class="sf11b2">&nbsp; </span><span class="sf10b2">0</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">Western</span><span class="sf11b2">, </span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">12</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">notes</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">Defau</span><span class="sf11b2">;</span><span class="sf3b2">t</span><span class="sf11b2">), </span><span class="sf10b2">2</span><span class="sf11b2">= </span><span class="sf10b2">16</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">3</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">22</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scale_of_notes</span><span class="sf11b2">&nbsp; </span><span class="sf10b2">0</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">Western</span><span class="sf11b2">, </span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">12</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">notes</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">Defau</span><span class="sf11b2">;</span><span class="sf3b2">t</span><span class="sf11b2">), </span><span class="sf10b2">2</span><span class="sf11b2">= </span><span class="sf10b2">16</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">3</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">22</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scale_of_notes</span><span class="sf11b2">&nbsp;&gt;= </span><span class="sf10b2">0</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scale_of_notes</span><span class="sf11b2">&nbsp;&lt;= </span><span class="sf10b2">3</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scale_of_notes</span><span class="sf11b2">&nbsp;&gt;= </span><span class="sf10b2">0</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scale_of_notes</span><span class="sf11b2">&nbsp;&lt;= </span><span class="sf10b2">3</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">_SCALE_OF_NOTES</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">scale_of_notes</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">SCALE_OF_NOTES_INDEX</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">scale_of_notes</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">def</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">set_instrument_base_note</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">instrument_bas<wbr>e_note</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">def</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">set_instrument_base_note</span><span style="color: #000000; background-color: #efcb05; ">(</span><span class="sf17b18">self,</span><span style="color: #000000; background-color: #efcb05; ">instrumen<wbr>t_base_note</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Sets</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">base</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">note</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">default</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrumemt</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Sets</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">base</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">note</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">default</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrumemt</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_base_note</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">Piano</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Key</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">Example</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">A</span><span class="sf9b2">#4</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_base_note</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">Piano</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Key</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">Example</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">A</span><span class="sf9b2">#4</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">instruent_octave</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_BASE_NOTES</span><span class="sf11b2">[</span><span class="sf3b2">settings<wbr></span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_INDEX</span><span class="sf11b2">][-</span><span class="sf10b2">1</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">instruent_octave</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_BASE_NOTES</span><span class="sf11b2">[</span><span class="sf3b2">settings<wbr></span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_INDEX</span><span class="sf11b2">][-</span><span class="sf10b2">1</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_BASE_NOTES</span><span class="sf11b2">[</span><span class="sf3b2">settings<wbr></span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_INDEX</span><span class="sf11b2">] = </span><span class="sf3b2">instrument_base_note</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">instruent_octave</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_BASE_NOTES</span><span class="sf11b2">[</span><span class="sf3b2">settings<wbr></span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_INDEX</span><span class="sf11b2">] = </span><span class="sf3b2">instrument_base_note</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">instruent_octave</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">add_comment</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">comment</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">add_comment</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">comment</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Add</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">comment</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">at</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">current</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">line</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Add</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">comment</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">at</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">current</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">line</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">comment</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">text</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">added</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">a</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">comment</span><span class="sf11b2">. </span><span class="sf3b2">Need</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">prefix</span><span class="sf11b2">&nbsp;</span><span class="sf12b2">"{"</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">comment</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">text</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">added</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">a</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">comment</span><span class="sf11b2">. </span><span class="sf3b2">Need</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">prefix</span><span class="sf11b2">&nbsp;</span><span class="sf12b2">"{"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"{"</span><span class="sf11b2">+</span><span class="sf3b2">comment</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"{"</span><span class="sf11b2">+</span><span class="sf3b2">comment</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">add_instrument</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">instrument</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">add_instrument</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">instrument</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Add</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">current</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">line</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Add</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">current</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">line</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Supported</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">are</span><span class="sf11b2">&nbsp;</span><span class="sf12b2">"Veena"</span><span class="sf11b2">,</span><span class="sf12b2">"Veena2"</span><span class="sf11b2">,</span><span class="sf12b2">"Flute"</span><span class="sf11b2">,</span><span class="sf12b2">"Sarod"</span><span class="sf11b2">, </span><span class="sf12b2">"Violin"</span><span class="sf11b2">,</span><span class="sf12b2">"Sitar"</span><span class="sf11b2">,</span><span class="sf12b2">"Shenai"</span><span class="sf11b2">,</span><span class="sf12b2">"Piano"</span><span class="sf11b2">,</span><span class="sf12b2">"Guit<wbr>ar"</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Supported</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">are</span><span class="sf11b2">&nbsp;</span><span class="sf12b2">"Veena"</span><span class="sf11b2">,</span><span class="sf12b2">"Veena2"</span><span class="sf11b2">,</span><span class="sf12b2">"Flute"</span><span class="sf11b2">,</span><span class="sf12b2">"Sarod"</span><span class="sf11b2">, </span><span class="sf12b2">"Violin"</span><span class="sf11b2">,</span><span class="sf12b2">"Sitar"</span><span class="sf11b2">,</span><span class="sf12b2">"Shenai"</span><span class="sf11b2">,</span><span class="sf12b2">"Piano"</span><span class="sf11b2">,</span><span class="sf12b2">"Guit<wbr>ar"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Always</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">use</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">cplayer</span><span class="sf11b2">.</span><span class="sf8b2">get_instrument_list</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">get</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">supported</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Always</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">use</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">cplayer</span><span class="sf11b2">.</span><span class="sf8b2">get_instrument_list</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">get</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">supported</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">available_instruments</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_CARNATIC_INSTRUMENTS</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_DEFAULT_INSTRUMENTS</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">available_instruments</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_CARNATIC_INSTRUMENTS</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_DEFAULT_INSTRUMENTS</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">instrument_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">available_instruments</span><span class="sf11b2">.</span><span class="sf8b2">index</span><span class="sf11b2">(</span><span class="sf3b2">instrument</span><span class="sf11b2">)<wbr></span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">instrument_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">available_instruments</span><span class="sf11b2">.</span><span class="sf8b2">index</span><span class="sf11b2">(</span><span class="sf3b2">instrument</span><span class="sf11b2">)<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#I"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">instrument_<wbr>index</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#I"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">instrument_<wbr>index</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_instruments</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">instrument</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_instruments</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">instrument</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_percussion_instrument</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">percussion_instrument</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_percussion_instrument</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">percussion_instrument</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion_instrument</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Supported</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">are</span><span class="sf11b2">&nbsp;</span><span class="sf12b2">"Mridangam"</span><span class="sf11b2">,</span><span class="sf12b2">"EastWestMix"</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion_instrument</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Supported</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">are</span><span class="sf11b2">&nbsp;</span><span class="sf12b2">"Mridangam"</span><span class="sf11b2">,</span><span class="sf12b2">"EastWestMix"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion_instrument</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_PERCUSSION_INSTRUMENTS</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion_instrument</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_PERCUSSION_INSTRUMENTS</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">CURRENT_PERCUSSION_INSTRUMENT</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">percussion_instrument</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">CURRENT_PERCUSSION_INSTRUMENT</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">percussion_instrument</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_melakartha</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">melakartha_number</span><span class="sf11b2">):<wbr></span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_melakartha</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">melakartha_number</span><span class="sf11b2">):<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakartha_number</span><span class="sf11b2">: </span><span class="sf3b2">Calls</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span><span class="sf11b2">.</span><span class="sf8b2">set_melakartha</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melkartha</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakartha_number</span><span class="sf11b2">: </span><span class="sf3b2">Calls</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span><span class="sf11b2">.</span><span class="sf8b2">set_melakartha</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melkartha</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Note</span><span class="sf11b2">: </span><span class="sf3b2">setting</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakaratha</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">will</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">also</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">change</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakartha</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Note</span><span class="sf11b2">: </span><span class="sf3b2">setting</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakaratha</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">will</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">also</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">change</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakartha</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">raaga</span><span class="sf11b2">.</span><span class="sf8b2">set_melakartha</span><span class="sf11b2">(</span><span class="sf3b2">melakartha_number</span><span class="sf11b2">)<wbr></span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">raaga</span><span class="sf11b2">.</span><span class="sf8b2">set_melakartha</span><span class="sf11b2">(</span><span class="sf3b2">melakartha_number</span><span class="sf11b2">)<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#M"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">melakartha_<wbr>number</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#M"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">melakartha_<wbr>number</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_raagam</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">raagam</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_raagam</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">raagam</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raagam</span><span class="sf11b2">: </span><span class="sf3b2">Calls</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span><span class="sf11b2">.</span><span class="sf8b2">set_raagam</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raagam</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raagam</span><span class="sf11b2">: </span><span class="sf3b2">Calls</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span><span class="sf11b2">.</span><span class="sf8b2">set_raagam</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raagam</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Note</span><span class="sf11b2">: </span><span class="sf3b2">setting</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raagam</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">will</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">also</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">change</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakartha</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakartha</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Note</span><span class="sf11b2">: </span><span class="sf3b2">setting</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raagam</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">will</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">also</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">change</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakartha</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">melakartha</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">raaga</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">raaga</span><span class="sf11b2">.</span><span class="sf8b2">set_raagam</span><span class="sf11b2">(</span><span class="sf3b2">raagam</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">raaga</span><span class="sf11b2">.</span><span class="sf8b2">set_raagam</span><span class="sf11b2">(</span><span class="sf3b2">raagam</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">thaaLam</span><span class="sf11b2">, </span><span class="sf3b2">jaathi</span><span class="sf11b2">,</span><span class="sf3b2">nadai</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">thaaLam</span><span class="sf11b2">, </span><span class="sf3b2">jaathi</span><span class="sf11b2">,</span><span class="sf3b2">nadai</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Calls</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Calls</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">: </span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">: </span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span><span class="sf11b2">: </span><span class="sf3b2">jaathi</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span><span class="sf11b2">: </span><span class="sf3b2">jaathi</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">nadai</span><span class="sf11b2">: </span><span class="sf3b2">nadai</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">no</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">nadai</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">nadai</span><span class="sf11b2">: </span><span class="sf3b2">nadai</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span><span class="sf11b2">. </span><span class="sf3b2">Default</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">no</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">nadai</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Also</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">see</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">indices</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Also</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">see</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">indices</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam</span><span class="sf11b2">, </span><span class="sf3b2">jaathi</span><span class="sf11b2">,</span><span class="sf3b2">nadai</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam</span><span class="sf11b2">, </span><span class="sf3b2">jaathi</span><span class="sf11b2">,</span><span class="sf3b2">nadai</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#T"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">TH<wbr>AALA_INDEX</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#T"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">TH<wbr>AALA_INDEX</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#J"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">JA<wbr>ATHI_INDEX</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#J"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">JA<wbr>ATHI_INDEX</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">thaaLam_index</span><span class="sf11b2">, </span><span class="sf3b2">jaathi_index</span><span class="sf11b2">,</span><span class="sf3b2">nadai_index</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">thaaLam_index</span><span class="sf11b2">, </span><span class="sf3b2">jaathi_index</span><span class="sf11b2">,</span><span class="sf3b2">nadai_index</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Calls</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Calls</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam_index</span><span class="sf11b2">: </span><span class="sf3b2">index</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">thaaLam</span><span class="sf11b2">&nbsp;(</span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">7</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam_index</span><span class="sf11b2">: </span><span class="sf3b2">index</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">thaaLam</span><span class="sf11b2">&nbsp;(</span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">7</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi_index</span><span class="sf11b2">: </span><span class="sf3b2">jaathi</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">index</span><span class="sf11b2">&nbsp;( </span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">5</span><span class="sf11b2">&nbsp;)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi_index</span><span class="sf11b2">: </span><span class="sf3b2">jaathi</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">index</span><span class="sf11b2">&nbsp;( </span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">5</span><span class="sf11b2">&nbsp;)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">nadai_index</span><span class="sf11b2">: </span><span class="sf10b2">0</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">5</span><span class="sf11b2">&nbsp;(</span><span class="sf10b2">0</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">means</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">No</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Nadai</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">nadai_index</span><span class="sf11b2">: </span><span class="sf10b2">0</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">5</span><span class="sf11b2">&nbsp;(</span><span class="sf10b2">0</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">means</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">No</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Nadai</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Also</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">see</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">names</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Also</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">see</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">() </span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">names</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">jaathi</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam_index</span><span class="sf11b2">,<wbr> </span><span class="sf3b2">jaathi_index</span><span class="sf11b2">,</span><span class="sf3b2">nadai_index</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam_index</span><span class="sf11b2">,<wbr> </span><span class="sf3b2">jaathi_index</span><span class="sf11b2">,</span><span class="sf3b2">nadai_index</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#T"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">TH<wbr>AALA_INDEX</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#T"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">TH<wbr>AALA_INDEX</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#J"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">JA<wbr>ATHI_INDEX</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#J"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">JA<wbr>ATHI_INDEX</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">add_notes</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">notes</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">add_notes</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">, </span><span class="sf3b2">notes</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Adds</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Adds</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">: </span><span class="sf3b2">following</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pattern</span><span class="sf11b2">. </span><span class="sf3b2">Acceptable</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Note</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Pattern</span><span class="sf11b2">: [</span><span class="sf3b2">SsPp</span><span class="sf11b2">|</span><span class="sf3b2">RrGgMmDdNn</span><span class="sf11b2">][</span><span class="sf10b2">1</span><span class="sf11b2">-</span><span class="sf10b2">4</span><span class="sf11b2">][</span><span class="sf3b2">.</span><span class="sf12b2">'^][~/!] *</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">: </span><span class="sf3b2">following</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pattern</span><span class="sf11b2">. </span><span class="sf3b2">Acceptable</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Note</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Pattern</span><span class="sf11b2">: [</span><span class="sf3b2">SsPp</span><span class="sf11b2">|</span><span class="sf3b2">RrGgMmDdNn</span><span class="sf11b2">][</span><span class="sf10b2">1</span><span class="sf11b2">-</span><span class="sf10b2">4</span><span class="sf11b2">][</span><span class="sf3b2">.</span><span class="sf12b2">'^][~/!] *</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">rx</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">compile</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_NOTES_PATTERN</span><span class="sf11b2">&nbsp;+ </span><span class="sf12b2">".*"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">rx</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">compile</span><span class="sf11b2">(</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_NOTES_PATTERN</span><span class="sf11b2">&nbsp;+ </span><span class="sf12b2">".*"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">rx</span><span class="sf11b2">.</span><span class="sf8b2">search</span><span class="sf11b2">(</span><span class="sf3b2">notes</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">rx</span><span class="sf11b2">.</span><span class="sf8b2">search</span><span class="sf11b2">(</span><span class="sf3b2">notes</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">raise</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">ValueError</span><span class="sf11b2">(</span><span class="sf3b2">notes</span><span class="sf11b2">,</span><span class="sf12b2">"does not meet pattern"</span><span class="sf11b2">,</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_NOTES_PATTERN</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">raise</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">ValueError</span><span class="sf11b2">(</span><span class="sf3b2">notes</span><span class="sf11b2">,</span><span class="sf12b2">"does not meet pattern"</span><span class="sf11b2">,</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_NOTES_PATTERN</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">notes</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf3b2">notes</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_speed</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">speed</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_speed</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">speed</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">speed</span><span class="sf11b2">: </span><span class="sf3b2">Speed</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Values</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">5</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">typicallt</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">only</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">3</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">speed</span><span class="sf11b2">: </span><span class="sf3b2">Speed</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Values</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">5</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">typicallt</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">only</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf10b2">3</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">""" </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">""" </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">speed</span><span class="sf11b2">&nbsp;&lt; </span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">speed</span><span class="sf11b2">&nbsp;&gt; </span><span class="sf10b2">5</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">speed</span><span class="sf11b2">&nbsp;&lt; </span><span class="sf10b2">1</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">speed</span><span class="sf11b2">&nbsp;&gt; </span><span class="sf10b2">5</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">raise</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">ValueError</span><span class="sf11b2">(</span><span class="sf12b2">"Allowed speed range: 1..5"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">raise</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">ValueError</span><span class="sf11b2">(</span><span class="sf12b2">"Allowed speed range: 1..5"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#S"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">speed</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"#S"</span><span class="sf11b2">+</span><span class="sf8b2">str</span><span class="sf11b2">(</span><span class="sf3b2">speed</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">PLAY_SPEED</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">speed</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">PLAY_SPEED</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">speed</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">def</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">set_thaaLam_speed</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">thaaLam_speed</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">"""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Set</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">thaaLam</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">speed</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">of</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">song</span><span style="color: #000000; background-color: #efcb05; ">.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ****** </span><span style="color: #000000; background-color: #efcb05; ">CAUTION</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;******</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Speed</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">is</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">addition</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">Nadai</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Values</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">3</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Example</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">Speed</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;=</span><span style="color: #000000; background-color: #efcb05; ">2</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">Chathusra</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">Nadai</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;=&gt; </span><span style="color: #000000; background-color: #efcb05; ">8</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">beats</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">per</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">note</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">or</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Speed</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">3</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">No</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">nadai</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">is</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">same</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">as</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">Chathusra</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">Nadai</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; =&lt; </span><span style="color: #000000; background-color: #efcb05; ">Both</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">will</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">have</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">4</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notes</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">per</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">note</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">SO</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">KNOW</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">WHAT</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">YOU</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">ARE</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">DOING</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">BY</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">SETTING</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">NADAI</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">AND</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">SPEED</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *********************</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">thaaLam_speed</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">thaaLam</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">speed</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;(</span><span style="color: #000000; background-color: #efcb05; ">also</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">called</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">kalai</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">"""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">thaaLam</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">set_thaaLam_speed</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">thaaLam_speed<wbr></span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">save</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">output_file_name</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">save</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">output_file_name</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">output_file_name</span><span class="sf11b2">: &nbsp; &nbsp;</span><span class="sf3b2">Saves</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">elements</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">text</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">output_file_name</span><span class="sf11b2">: &nbsp; &nbsp;</span><span class="sf3b2">Saves</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">song</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">elements</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">text</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">output_file_name</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">output_file_name</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Saving the song as"</span><span class="sf11b2">,</span><span class="sf3b2">output_file_name</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf12b2">"Saving the song as"</span><span class="sf11b2">,</span><span class="sf3b2">output_file_name</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">file_object</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">open</span><span class="sf11b2">(</span><span class="sf3b2">output_file_name</span><span class="sf11b2">,</span><span class="sf12b2">"w"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">file_object</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">open</span><span class="sf11b2">(</span><span class="sf3b2">output_file_name</span><span class="sf11b2">,</span><span class="sf12b2">"w"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">line</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">line</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_lines</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">file_object</span><span class="sf11b2">.</span><span class="sf8b2">write</span><span class="sf11b2">(</span><span class="sf3b2">line</span><span class="sf11b2">+</span><span class="sf12b2">"\n"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">file_object</span><span class="sf11b2">.</span><span class="sf8b2">write</span><span class="sf11b2">(</span><span class="sf3b2">line</span><span class="sf11b2">+</span><span class="sf12b2">"\n"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">file_object</span><span class="sf11b2">.</span><span class="sf8b2">close</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">file_object</span><span class="sf11b2">.</span><span class="sf8b2">close</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">play</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">instrument</span><span class="sf11b2">=</span><span class="sf12b2">"Flute"</span><span class="sf11b2">,</span><span class="sf3b2">include_pe<wbr>rcussion_layer</span><span class="sf11b2">=</span><span class="sf20b2">False</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">play</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">instrument</span><span class="sf11b2">=</span><span class="sf12b2">"Flute"</span><span class="sf11b2">,</span><span class="sf3b2">include_pe<wbr>rcussion_layer</span><span class="sf11b2">=</span><span class="sf20b2">False</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Plays</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">with</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">specified</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">with</span><span class="sf11b2">/</span><span class="sf3b2">wuthout</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussio</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Plays</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">with</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">specified</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">with</span><span class="sf11b2">/</span><span class="sf3b2">wuthout</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussio</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">: </span><span class="sf3b2">Specify</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">supported</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">: </span><span class="sf3b2">Specify</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">name</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">supported</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_layer</span><span class="sf11b2">:</span><span class="sf20b2">True</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">with</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">/</span><span class="sf3b2">Jaathi</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_layer</span><span class="sf11b2">:</span><span class="sf20b2">True</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">with</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">/</span><span class="sf3b2">Jaathi</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">&nbsp;== </span><span class="sf3b2">_temp_file</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">&nbsp;== </span><span class="sf3b2">_temp_file</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf8b2">save</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf8b2">save</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_file_name</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">cplayer</span><span class="sf11b2">.</span><span class="sf8b2">play_notations_from_file</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_<wbr>file_name</span><span class="sf11b2">,</span><span class="sf3b2">instrument</span><span class="sf11b2">=</span><span class="sf3b2">instrument</span><span class="sf11b2">,</span><span class="sf3b2">include<wbr>_percussion_layer</span><span class="sf11b2">=</span><span class="sf3b2">include_percussion_la<wbr>yer</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">cplayer</span><span class="sf11b2">.</span><span class="sf8b2">play_notations_from_file</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">.</span><span class="sf3b2">_<wbr>file_name</span><span class="sf11b2">,</span><span class="sf3b2">instrument</span><span class="sf11b2">=</span><span class="sf3b2">instrument</span><span class="sf11b2">,</span><span class="sf3b2">include<wbr>_percussion_layer</span><span class="sf11b2">=</span><span class="sf3b2">include_percussion_la<wbr>yer</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_overline</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">text</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_overline</span><span class="sf11b2">(</span><span class="sf3b2">self</span><span class="sf11b2">,</span><span class="sf3b2">text</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">SUB</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">str</span><span class="sf11b2">.</span><span class="sf8b2">maketrans</span><span class="sf11b2">(</span><span class="sf12b2">"0123456789"</span><span class="sf11b2">, </span><span class="sf12b2">"₀₁₂₃₄₅₆₇₈₉"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">SUB</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">str</span><span class="sf11b2">.</span><span class="sf8b2">maketrans</span><span class="sf11b2">(</span><span class="sf12b2">"0123456789"</span><span class="sf11b2">, </span><span class="sf12b2">"₀₁₂₃₄₅₆₇₈₉"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">SUP</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">str</span><span class="sf11b2">.</span><span class="sf8b2">maketrans</span><span class="sf11b2">(</span><span class="sf12b2">"0123456789"</span><span class="sf11b2">, </span><span class="sf12b2">"⁰¹²³⁴⁵⁶⁷⁸⁹"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">SUP</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">str</span><span class="sf11b2">.</span><span class="sf8b2">maketrans</span><span class="sf11b2">(</span><span class="sf12b2">"0123456789"</span><span class="sf11b2">, </span><span class="sf12b2">"⁰¹²³⁴⁵⁶⁷⁸⁹"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">unicode_overline</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">u</span><span class="sf11b2">'\</span><span class="sf3b2">u0305</span><span class="sf11b2">'</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">unicode_overline</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">u</span><span class="sf11b2">'\</span><span class="sf3b2">u0305</span><span class="sf11b2">'</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#result = ''.join([c &nbsp;if re.match("\s+",c) else c+unicode_overline+"\t" for c in text])</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">#result = ''.join([c &nbsp;if re.match("\s+",c) else c+unicode_overline+"\t" for c in text])</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">result</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">sub</span><span class="sf11b2">(</span><span class="sf3b2">r</span><span class="sf12b2">"([SsRrGgMmPpDdNn,;\(\)/!])([1-<wbr>4]?[\\.\\'^]?[&lt;~&gt;]?[1-5]?)"</span><span class="sf11b2">,</span><span class="sf3b2">r</span><span class="sf12b2">"\1"</span><span class="sf11b2">+</span><span class="sf3b2">unico<wbr>de_overline</span><span class="sf11b2">+</span><span class="sf3b2">r</span><span class="sf12b2">"\2"</span><span class="sf11b2">,</span><span class="sf3b2">text</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">result</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">sub</span><span class="sf11b2">(</span><span class="sf3b2">r</span><span class="sf12b2">"([SsRrGgMmPpDdNn,;\(\)/!])([1-<wbr>4]?[\\.\\'^]?[&lt;~&gt;]?[1-5]?)"</span><span class="sf11b2">,</span><span class="sf3b2">r</span><span class="sf12b2">"\1"</span><span class="sf11b2">+</span><span class="sf3b2">unico<wbr>de_overline</span><span class="sf11b2">+</span><span class="sf3b2">r</span><span class="sf12b2">"\2"</span><span class="sf11b2">,</span><span class="sf3b2">text</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">result</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">result</span><span class="sf11b2">.</span><span class="sf8b2">translate</span><span class="sf11b2">(</span><span class="sf3b2">SUB</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">result</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">result</span><span class="sf11b2">.</span><span class="sf8b2">translate</span><span class="sf11b2">(</span><span class="sf3b2">SUB</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">result</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">result</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">__name__</span><span class="sf11b2">&nbsp;== </span><span class="sf12b2">'__main__'</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">__name__</span><span class="sf11b2">&nbsp;== </span><span class="sf12b2">'__main__'</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">Song</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">Song</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">ss</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"SR1 &nbsp; &nbsp; G2M1 PD2 N3S^"</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">ss</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">"SR1 &nbsp; &nbsp; G2M1 PD2 N3S^"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">_overline</span><span class="sf11b2">(</span><span class="sf3b2">ss</span><span class="sf11b2">))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">print</span><span class="sf11b2">(</span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">_overline</span><span class="sf11b2">(</span><span class="sf3b2">ss</span><span class="sf11b2">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf20b2">exit</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf20b2">exit</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_melakartha</span><span class="sf11b2">(</span><span class="sf10b2">15</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_melakartha</span><span class="sf11b2">(</span><span class="sf10b2">15</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_tempo</span><span class="sf11b2">(</span><span class="sf10b2">60</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_tempo</span><span class="sf11b2">(</span><span class="sf10b2">60</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf12b2">"Thriputai ThaaLa"</span><span class="sf11b2">, </span><span class="sf12b2">"Chathusra Jaathi"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf12b2">"Thriputai ThaaLa"</span><span class="sf11b2">, </span><span class="sf12b2">"Chathusra Jaathi"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">add_instrument</span><span class="sf11b2">(</span><span class="sf12b2">"Veena2"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">add_instrument</span><span class="sf11b2">(</span><span class="sf12b2">"Veena2"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_speed</span><span class="sf11b2">(</span><span class="sf10b2">1</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_speed</span><span class="sf11b2">(</span><span class="sf10b2">1</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_notation_type</span><span class="sf11b2">(</span><span class="sf10b2">1</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">set_notation_type</span><span class="sf11b2">(</span><span class="sf10b2">1</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">add_comment</span><span class="sf11b2">(</span><span class="sf12b2">"This is a comment"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">add_comment</span><span class="sf11b2">(</span><span class="sf12b2">"This is a comment"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">add_notes</span><span class="sf11b2">(</span><span class="sf12b2">"S R G M P D N S'"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">add_notes</span><span class="sf11b2">(</span><span class="sf12b2">"S R G M P D N S'"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">play</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">play</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">save</span><span class="sf11b2">(</span><span class="sf12b2">"delme.txt"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">s</span><span class="sf11b2">.</span><span class="sf8b2">save</span><span class="sf11b2">(</span><span class="sf12b2">"delme.txt"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

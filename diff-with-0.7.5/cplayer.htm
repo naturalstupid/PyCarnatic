@@ -1,0 +1,875 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">D:\LaptopBackup\Local\Personal\PythonProjects\carnatic_music_backup\V0.7.5\carnatic\cplayer.py</th>
+<th colspan="2" class="title" style="width:50.000000%">D:\LaptopBackup\Local\Personal\PythonProjects\carnatic_music\carnatic\cplayer.py</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Module</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">Module</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">collecting</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">soundfont</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">default</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">midi</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">collecting</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">carnatic</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">soundfont</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">default</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">midi</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">playing</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">argument</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - </span><span class="sf3b2">playing</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">argument</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">function</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">will</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">play</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notations</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">returned</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">by</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">cparser</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">parse_</span><span style="color: #000000; background-color: #efcb05; ">file</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">function</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">will</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">play</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notations</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">returned</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">by</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">cparser</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">parse_</span><span class="sf17b18">notation_</span><span style="color: #000000; background-color: #efcb05; ">file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">play_file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">function</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">will</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">gather</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">a</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">abd</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">play</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">play_file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">function</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">will</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">gather</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">a</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">abd</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">play</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">regex</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">math</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">math</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">sys</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">warnings</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">warnings</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">scamp</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">*</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">scamp</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">Session, playback_settings</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">playback_settings</span><span class="sf11b2">.</span><span class="sf3b2">soundfont_search_path<wbr>s</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"Lib/"</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">playback_settings</span><span class="sf11b2">.</span><span class="sf3b2">soundfont_search_path<wbr>s</span><span class="sf11b2">.</span><span class="sf8b2">append</span><span class="sf11b2">(</span><span class="sf12b2">"Lib/"</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">playback_settings</span><span class="sf11b2">.</span><span class="sf8b2">make_persistent</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">playback_settings</span><span class="sf11b2">.</span><span class="sf8b2">make_persistent</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">carnatic</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b18">raaga, </span><span style="color: #000000; background-color: #efcb05; ">thaaLa</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">cparser</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">carnatic</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">thaaLa</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">cparser</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">player</span><span class="sf11b2">=</span><span class="sf20b2">None</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">player</span><span class="sf11b2">=</span><span class="sf20b2">None</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">available_instruments</span><span class="sf11b2">&nbsp;= {}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">available_instruments</span><span class="sf11b2">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">get_instrument_list</span><span class="sf11b2">(</span><span class="sf3b2">include_percussion_<wbr>instruments</span><span class="sf11b2">=</span><span class="sf20b2">False</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">get_instrument_list</span><span class="sf11b2">(</span><span class="sf3b2">include_percussion_<wbr>instruments</span><span class="sf11b2">=</span><span class="sf20b2">False</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Get</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Get</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_instruments</span><span class="sf11b2">: </span><span class="sf20b2">True</span><span class="sf11b2">&nbsp;/ </span><span class="sf20b2">False</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">whether</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_instruments</span><span class="sf11b2">: </span><span class="sf20b2">True</span><span class="sf11b2">&nbsp;/ </span><span class="sf20b2">False</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">whether</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf7b2">return</span><span class="sf11b2">: </span><span class="sf3b2">List</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf7b2">return</span><span class="sf11b2">: </span><span class="sf3b2">List</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">instrument_list</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_CARNATIC_INSTRUMENTS</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_DEFAULT_INSTRUMENTS</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">instrument_list</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_CARNATIC_INSTRUMENTS</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_DEFAULT_INSTRUMENTS</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_instruments</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_instruments</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">instrument_list</span><span class="sf11b2">&nbsp;+= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_PERCUSSION_INSTRUMENTS</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">instrument_list</span><span class="sf11b2">&nbsp;+= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_PERCUSSION_INSTRUMENTS</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">instrument_list</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;+= [</span><span style="color: #000000; background-color: #efcb05; ">'silent'</span><span style="color: #000000; background-color: #efcb05; ">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_INSTRUMENT_VOLUME_LEVELS</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">appe<wbr>nd</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_VOLUME</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_list</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_list</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_get_player</span><span class="sf11b2">():</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_get_player</span><span class="sf11b2">():</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">, </span><span class="sf3b2">player</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">, </span><span class="sf3b2">player</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span><span class="sf11b2">==</span><span class="sf20b2">None</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span><span class="sf11b2">==</span><span class="sf20b2">None</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'setting player and instruments'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">available_instruments</span><span class="sf11b2">.</span><span class="sf8b2">clear</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">available_instruments</span><span class="sf11b2">.</span><span class="sf8b2">clear</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">Session</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; "># load default_soundfont</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">Session</span><span style="color: #000000; background-color: #efcb05; ">(</span><span class="sf17b18">tempo=settings.TEMPO</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; "># load default_soundfont</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; inst_index = 0</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">inst</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_CARNATIC_INSTRUMENTS</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">inst</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_CARNATIC_INSTRUMENTS</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">available_instruments</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">new_part</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">soundfont</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">settings<wbr></span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_SOUND_FONT_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">available_instruments</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span class="sf17b18">_index</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">new_part</span><span style="color: #000000; background-color: #efcb05; ">(</span><span class="sf17b18">preset=</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span class="sf17b18">_index</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">sound<wbr>font</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_SOUND_FONT_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst_index += 1</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">inst</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_DEFAULT_INSTRUMENTS</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">inst</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_DEFAULT_INSTRUMENTS</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">available_instruments</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">new_part</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">soundfont</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"default<wbr>"</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">available_instruments</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span class="sf17b18">_index</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">new_part</span><span style="color: #000000; background-color: #efcb05; ">(</span><span class="sf17b18">preset=</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span class="sf17b18">_index</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">sound<wbr>font</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"default"</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b18">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst_index += 1</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">inst</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_PERCUSSION_INSTRUMENTS</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">inst</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">_PERCUSSION_INSTRUMENTS</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">available_instruments</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">new_part</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">soundfont</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">settings<wbr></span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_SOUND_FONT_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">available_instruments</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span class="sf17b18">_index</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">new_part</span><span style="color: #000000; background-color: #efcb05; ">(</span><span class="sf17b18">preset=</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span class="sf17b18">_index</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">sound<wbr>font</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_SOUND_FONT_FILE</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b18">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">#</span><span style="color: #000000; background-color: #efcb05; ">available_instruments[</span><span class="sf17b16">"silent"</span><span style="color: #000000; background-color: #efcb05; ">] = player.new_silent_part("silent")</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst_index += 1</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">available_instruments</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">inst_index</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">new_silent_part</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">"silent"</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_get_instrument</span><span class="sf11b2">(</span><span class="sf3b2">instrument_name</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">_get_instrument</span><span class="sf11b2">(</span><span class="sf3b2">instrument_name</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">,</span><span class="sf3b2">player</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">,</span><span class="sf3b2">player</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_get_player</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_get_player</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_name</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">get_instrument_list</span><span class="sf11b2">():</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_name</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">get_instrument_list</span><span class="sf11b2">():</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">[</span><span class="sf3b2">instrument_name</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">[</span><span class="sf3b2">instrument_name</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">None</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">return</span><span class="sf11b2">&nbsp;</span><span class="sf20b2">None</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">def</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">set_percussion_instrument</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">percussion_in<wbr>strument_name</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Set</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">default</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">percussion</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">instrument</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">percussion_instrument_name</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; ">Name</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">of</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">instrument</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_PERCUSSION_INSTRUMENTS</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">instruments</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_PERCUSSION_INSTRUMENTS</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">percussion_instrument_name</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">instruments</span><span style="color: #000000; background-color: #efcb05; ">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">CURRENT_PERCUSSION_INSTRUMENT</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">percussion_instrument_name</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_instrument</span><span class="sf11b2">(</span><span class="sf3b2">instrument_name</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">set_instrument</span><span class="sf11b2">(</span><span class="sf3b2">instrument_name</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">default</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">default</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_name</span><span class="sf11b2">: </span><span class="sf3b2">Name</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_name</span><span class="sf11b2">: </span><span class="sf3b2">Name</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">of</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">get_instrument_list</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">get_instrument_list</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_name</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument_name</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">inst_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">instruments</span><span class="sf11b2">.</span><span class="sf8b2">index</span><span class="sf11b2">(</span><span class="sf3b2">instrument_name</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">inst_index</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">instruments</span><span class="sf11b2">.</span><span class="sf8b2">index</span><span class="sf11b2">(</span><span class="sf3b2">instrument_name</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_INDEX</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">inst_index</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">INSTRUMENT_INDEX</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">inst_index</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">CURRENT_INSTRUMENT</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">instrument_name</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">CURRENT_INSTRUMENT</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">instrument_name</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">__play_notes</span><span class="sf11b2">(</span><span class="sf3b2">scamp_note_list</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">__play_notes</span><span class="sf11b2">(</span><span class="sf3b2">scamp_note_list</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">, </span><span class="sf3b2">player</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">available_instruments</span><span class="sf11b2">, </span><span class="sf3b2">player</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span><span class="sf11b2">==</span><span class="sf20b2">None</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span><span class="sf11b2">==</span><span class="sf20b2">None</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_get_player</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_get_player</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">.</span><span class="sf3b2">tempo</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">TEMPO</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">.</span><span class="sf3b2">tempo</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">TEMPO</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">item</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scamp_note_list</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">item</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">scamp_note_list</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">note</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">item</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">]</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">#</span><span style="color: #000000; background-color: #efcb05; ">note = item[0]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">instrument</span><span class="sf11b2">, </span><span class="sf3b2">pitch</span><span class="sf11b2">,</span><span class="sf3b2">durn</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">item</span><span class="sf11b2">[</span><span class="sf10b2">1</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">instrument</span><span class="sf11b2">, </span><span class="sf3b2">pitch</span><span class="sf11b2">,</span><span class="sf3b2">durn</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">item</span><span class="sf11b2">[</span><span class="sf10b2">1</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">#print(note,instrument,pitch,durn)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">inst</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">available_instruments</span><span class="sf11b2">[</span><span class="sf3b2">instrument</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">inst</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">available_instruments</span><span class="sf11b2">[</span><span class="sf3b2">instrument</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">#print(note,</span><span style="color: #000000; background-color: #efcb05; ">inst</span><span class="sf17b18">,instrument,pitch,durn)<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">inst</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">play_note</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">pitch</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">_INSTRUMENT_VOLUME_LEVELS[inst<wbr>rument]</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">durn</span><span style="color: #000000; background-color: #efcb05; ">) &nbsp; &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; inst</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">play_note</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">pitch</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">_VOLUME</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">durn</span><span style="color: #000000; background-color: #efcb05; ">) &nbsp; &nbsp;</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">def</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">play_carnatic_notes(carnatic_notes,inst<wbr>rument='Flute',include_percussion_layer<wbr>=False):</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; set_instrument(instrument)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">def</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">scamp_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">include_perc<wbr>ussion_layer</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">False</span><span style="color: #000000; background-color: #efcb05; ">):</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; scamp_note_list = cparser._get_note_frequency_duration(ca<wbr>rnatic_notes)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">scamp_note_list</span><span class="sf17b18">)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">def play_notes(scamp_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">include_perc<wbr>ussion_layer</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">False</span><span class="sf17b18">,solkattu_list=None</span><span style="color: #000000; background-color: #efcb05; ">):<wbr></span><span class="sf17b18">&nbsp;#, save_audio_file=None):</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">To</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">To</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">scamp_note_list</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">SCAMP</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notes</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">list</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;[ </span><span style="color: #000000; background-color: #efcb05; ">"Carnatic Note"</span><span style="color: #000000; background-color: #efcb05; ">, [</span><span style="color: #000000; background-color: #efcb05; ">"Instrument"</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">Volume_f</span><span style="color: #000000; background-color: #efcb05; ">loat</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">Duration_float</span><span style="color: #000000; background-color: #efcb05; ">], </span><span style="color: #000000; background-color: #efcb05; ">...</span><span style="color: #000000; background-color: #efcb05; ">]</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">scamp_note_list</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">SCAMP</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notes</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">list</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;[ </span><span style="color: #000000; background-color: #efcb05; ">"Carnatic Note"</span><span style="color: #000000; background-color: #efcb05; ">, [</span><span style="color: #000000; background-color: #efcb05; ">"Instrument"</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">Pitch_F</span><span style="color: #000000; background-color: #efcb05; ">loat</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">Duration_float</span><span style="color: #000000; background-color: #efcb05; ">], </span><span style="color: #000000; background-color: #efcb05; ">...</span><span style="color: #000000; background-color: #efcb05; ">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">can</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">obtained</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">cparser</span><span class="sf11b2">.</span><span class="sf3b2">parser_file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">function</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">can</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">obtained</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">cparser</span><span class="sf11b2">.</span><span class="sf3b2">parser_file</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">function</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_layer</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf20b2">True</span><span class="sf11b2">: </span><span class="sf3b2">Includes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">according</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ThaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Jaathi</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_layer</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf20b2">True</span><span class="sf11b2">: </span><span class="sf3b2">Includes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">according</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ThaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Jaathi</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">ThaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Jaathi</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">can</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam_Name</span><span class="sf11b2">, </span><span class="sf3b2">Jaathi_Name</span><span class="sf11b2">) </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">ThaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Jaathi</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">can</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam_Name</span><span class="sf11b2">, </span><span class="sf3b2">Jaathi_Name</span><span class="sf11b2">) </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam_index<wbr></span><span class="sf11b2">, </span><span class="sf3b2">jaathi_index</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">or</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLam</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam_index</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam_index<wbr></span><span class="sf11b2">, </span><span class="sf3b2">jaathi_index</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">global</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span><span class="sf11b2">==</span><span class="sf20b2">None</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">player</span><span class="sf11b2">==</span><span class="sf20b2">None</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_get_player</span><span class="sf11b2">()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">&nbsp;= </span><span class="sf8b2">_get_player</span><span class="sf11b2">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">.</span><span class="sf3b2">tempo</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">TEMPO</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">.</span><span class="sf3b2">tempo</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">settings</span><span class="sf11b2">.</span><span class="sf3b2">TEMPO</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">include_percussion_layer</span><span class="sf17b18">&nbsp;and settings.THAALAM_SPEED &gt; 0</span><span style="color: #000000; background-color: #efcb05; ">:</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">include_percussion_layer</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b16">V1</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">2</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; duration</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">= cparser.total_duration(scamp_note_list)<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">solkattu</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">solkattu_list</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b16">thaaLa_speed = ((2**(settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">THAALAM_SPEED-1)) - 1) </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">fork</span><span style="color: #000000; background-color: #efcb05; ">(</span><span class="sf17b18">__</span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">args</span><span style="color: #000000; background-color: #efcb05; ">=[</span><span style="color: #000000; background-color: #efcb05; ">scamp_no<wbr>te_list</span><span style="color: #000000; background-color: #efcb05; ">])</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; tab = thaaLa</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">total_beat_count()</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">avarthanam_count = math.ceil(duration/tab)#*settings.jaath<wbr>i_no[settings.NADAI_INDEX]) # multiply nadai_count since it is already accounted in duration</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; print('duration',duration,'tab',tab,'av<wbr>arthanam_count',avarthanam_count)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; if not settings.THAALA_PATTERNS:</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; settings.THAALA_PATTERNS = thaaLa.__get_thaaLa_patterns()</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; thaaLa_patterns = thaaLa.get_thaaLa_patterns_for_avarthan<wbr>am(avarthanam_count)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">solkattu</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">cparser.parse_solkattu(thaaLa_patterns)<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">thaaLa_duration = cparser.total_duration(solkattu)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; print("thaaLa duration",thaaLa_duration)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; #print('scamp_note_list',scamp_note_lis<wbr>t)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; #print('thaala_patterns',thaaLa_pattern<wbr>s,"\n",'thaaLa_duration',thaaLa_duratio<wbr>n,'\nsolkattu',solkattu)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; if duration != thaaLa_duration:</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnings.formatwarning = settings._custom_formatwarning</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnings.warn('WARNING: ThaaLa Duration does not match with song duration. Rhythm or Song may stop earlier')</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">fork</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">args</span><span style="color: #000000; background-color: #efcb05; ">=[</span><span style="color: #000000; background-color: #efcb05; ">scamp_note<wbr>_list</span><span style="color: #000000; background-color: #efcb05; ">])</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">.</span><span class="sf8b2">fork</span><span class="sf11b2">(</span><span class="sf3b2">__play_notes</span><span class="sf11b2">, </span><span class="sf3b2">args</span><span class="sf11b2">=[</span><span class="sf3b2">solkattu</span><span class="sf11b2">])</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">player</span><span class="sf11b2">.</span><span class="sf8b2">fork</span><span class="sf11b2">(</span><span class="sf3b2">__play_notes</span><span class="sf11b2">, </span><span class="sf3b2">args</span><span class="sf11b2">=[</span><span class="sf3b2">solkattu</span><span class="sf11b2">])</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">__play_notes</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">scamp_note_list</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">else:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">if include_percussion_layer:</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">__play_notes</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">scamp_note_list</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">wait_for_children_to_finish</span><span style="color: #000000; background-color: #efcb05; ">()</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">player</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">wait_for_children_to_finish</span><span style="color: #000000; background-color: #efcb05; ">()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">play_notations_from_file</span><span class="sf11b2">(</span><span class="sf3b2">notation_file</span><span class="sf11b2">,<wbr></span><span class="sf3b2">instrument</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">,</span><span class="sf3b2">include_percussion_laye<wbr>r</span><span class="sf11b2">=</span><span class="sf20b2">False</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">play_notations_from_file</span><span class="sf11b2">(</span><span class="sf3b2">notation_file</span><span class="sf11b2">,<wbr></span><span class="sf3b2">instrument</span><span class="sf11b2">=</span><span class="sf20b2">None</span><span class="sf11b2">,</span><span class="sf3b2">include_percussion_laye<wbr>r</span><span class="sf11b2">=</span><span class="sf20b2">False</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">To</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">To</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notes</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation_file</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">File</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">containing</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">commands</span><span class="sf11b2">, </span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">see</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">help</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation_file</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">File</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">containing</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">commands</span><span class="sf11b2">, </span><span class="sf3b2">notations</span><span class="sf11b2">&nbsp;- </span><span class="sf3b2">see</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">help</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">specified</span><span class="sf11b2">. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Play</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">specified</span><span class="sf11b2">. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Will</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">overwritten</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">by</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">specified</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation_file</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">Will</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">overwritten</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">by</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">instruments</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">specified</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">notation_file</span><span class="sf11b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_layer</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf20b2">True</span><span class="sf11b2">: </span><span class="sf3b2">Includes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">according</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ThaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Jaathi</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span class="sf3b2">param</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">include_percussion_layer</span><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf20b2">True</span><span class="sf11b2">: </span><span class="sf3b2">Includes</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Percussion</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">according</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">to</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">the</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ThaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Jaathi</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">ThaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Jaathi</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">can</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam_Name</span><span class="sf11b2">, </span><span class="sf3b2">Jaathi_Name</span><span class="sf11b2">) </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">ThaaLam</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">and</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Jaathi</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">can</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">be</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">set</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">using</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">thaaLa</span><span class="sf11b2">.</span><span class="sf8b2">set_thaaLam</span><span class="sf11b2">(</span><span class="sf3b2">thaaLam_Name</span><span class="sf11b2">, </span><span class="sf3b2">Jaathi_Name</span><span class="sf11b2">) </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;!= </span><span class="sf20b2">None</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;(</span><span class="sf3b2">instrument</span><span class="sf11b2">&nbsp;!= </span><span class="sf20b2">None</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf8b2">set_instrument</span><span class="sf11b2">(</span><span class="sf3b2">instrument</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf8b2">set_instrument</span><span class="sf11b2">(</span><span class="sf3b2">instrument</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">file_carnatic_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">_</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">cparser</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">parse_</span><span style="color: #000000; background-color: #efcb05; ">file</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">notation_file</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">file_carnatic_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">_</span><span class="sf17b18">,file_solkattu<wbr>_array</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">cparser</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">parse_</span><span class="sf17b18">notation_</span><span style="color: #000000; background-color: #efcb05; ">file</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">notation_fi<wbr>le</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">file_carnatic_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">incl<wbr>ude_percussion_layer</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">file_carnatic_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">incl<wbr>ude_percussion_layer</span><span class="sf17b18">,file_solkattu_arra<wbr>y</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">i</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">f</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">__name__ == '__main__':</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">de</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">f</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">play_solkattu_from_file(solkattu_file</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">p<wbr>ercussion_instrument</span><span style="color: #000000; background-color: #efcb05; ">=</span><span class="sf17b16">None</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">lesson_mode=</span><span style="color: #000000; background-color: #efcb05; ">F<wbr>alse</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b18">:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; """</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; lesson_file = "../Notes/PancharathnaKrithi-jagadhaand<wbr>hakaaraka.cmn"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; #lesson_file = "../test_notes.inp"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; scamp_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">_</span><span style="color: #000000; background-color: #efcb05; ">=</span><span class="sf17b16">&nbsp;cparser.parse_file(lesson_file)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; print(scamp_note_list)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; play_notes(scamp_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">False</span><span style="color: #000000; background-color: #efcb05; ">)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf12b2">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">To</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">play</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">solkattu</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notation</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">solkattu_file</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">File</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">containing</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">commands</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">notations</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;- </span><span style="color: #000000; background-color: #efcb05; ">see</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">help</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">percussion_instrument</span><span style="color: #000000; background-color: #efcb05; ">: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Play</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">using</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">percussion</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">instrument</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">specified</span><span style="color: #000000; background-color: #efcb05; ">. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Will</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">be</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">overwritten</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">by</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">instruments</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">specified</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">notation_file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; @</span><span style="color: #000000; background-color: #efcb05; ">param</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">lesson_mode</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">True</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">default</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">nadai</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">is</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">switched</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">off</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">play</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">thaaLa</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">lessons</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">file</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">old_nadai_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">NADAI_INDEX</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">lesson_mode</span><span style="color: #000000; background-color: #efcb05; ">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">NADAI_INDEX</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;(</span><span style="color: #000000; background-color: #efcb05; ">percussion_instrument</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;!= </span><span style="color: #000000; background-color: #efcb05; ">None</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">set_percussion_instrument</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">percussion_in<wbr>strument</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">file_carnatic_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">_</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">cparser</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">parse_solkattu_file</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">solkattu_fi<wbr>le</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">play_notes</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">file_carnatic_note_list</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">incl<wbr>ude_percussion_layer</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">False</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">NADAI_INDEX</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">old_nadai_index</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">__name__</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;== </span><span style="color: #000000; background-color: #efcb05; ">'__main__'</span><span style="color: #000000; background-color: #efcb05; ">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">#"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_PLAYER_TYPE</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">PLAYER_TYPE</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">SCAMP</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">inst_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">TEMPO</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">72</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">thaaLa_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">4</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">THAALA_INDEX</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">thaaLa_index</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">jaathi_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">2</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">JAATHI_INDEX</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">jaathi_index</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">nadai_index</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">3</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">NADAI_INDEX</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">nadai_index</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'thaala'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">THAALA_NAMES</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">th<wbr>aaLa_index</span><span style="color: #000000; background-color: #efcb05; ">).</span><span style="color: #000000; background-color: #efcb05; ">name</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'jaathi'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">JAATHI_NAMES</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">ja<wbr>athi_index</span><span style="color: #000000; background-color: #efcb05; ">).</span><span style="color: #000000; background-color: #efcb05; ">name</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'thaala'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">NADAI_NAMES</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">nad<wbr>ai_index</span><span style="color: #000000; background-color: #efcb05; ">).</span><span style="color: #000000; background-color: #efcb05; ">name</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'thaala positions'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">thaaLa</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">get_thaaLa_positions</span><span style="color: #000000; background-color: #efcb05; ">(<wbr></span><span style="color: #000000; background-color: #efcb05; ">thaaLa_index</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">jaathi_index</span><span style="color: #000000; background-color: #efcb05; ">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">tac</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">thaaLa</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">total_akshara_count</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">thaaLa_index<wbr></span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">jaathi_index</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">nadai_index</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'total_akshara_count'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">tac</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">#lesson_file = "Notes/PancharathnaKrithi-jagadhaandhak<wbr>aaraka.cmn"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">lesson_file</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">"../test_notes.inp"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">include_percussion_layer</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">True</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">INSTRUMENT_INDEX</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">inst_index</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">instrument</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_INSTRUMENT_LIST</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">inst_index</span><span style="color: #000000; background-color: #efcb05; ">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">CURRENT_INSTRUMENT</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">instrument</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">"PLAYER =&gt;"</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_PLAYER_TYPE</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">_PLAYER_TYPE</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;== </span><span style="color: #000000; background-color: #efcb05; ">settings</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">PLAYER_TYPE</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">SCAMP</span><span style="color: #000000; background-color: #efcb05; ">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">play_notations_from_file</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">lesson_file</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">in<wbr>strument</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">include_percussion_layer</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">inclu<wbr>de_percussion_layer</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">else</span><span style="color: #000000; background-color: #efcb05; ">: </span><span style="color: #000000; background-color: #efcb05; "># SF2_LOADER Option</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">carnatic</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">import</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">cmidi</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">cmidi</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">play_notes_from_file</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">lesson_file</span><span style="color: #000000; background-color: #efcb05; ">,<wbr></span><span style="color: #000000; background-color: #efcb05; ">include_percussion_layer</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">include_percus<wbr>sion_layer</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">#"""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

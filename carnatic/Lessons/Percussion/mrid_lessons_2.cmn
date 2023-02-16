@@ -1,14 +1,14 @@
 #P2
 { Exercise 2.1
 #D60
-#S1
+#N1
 Tha Ki Ta Thi Ki Ta Thom Ki Ta Nam Ki Ta
 
-#S2
+#N2
 Tha Ki Ta Thi Ki Ta Thom Ki Ta Nam Ki Ta
 Tha Ki Ta Thi Ki Ta Thom Ki Ta Nam Ki Ta
 
-#S3
+#N4
 Tha Ki Ta Thi Ki Ta Thom Ki Ta Nam Ki Ta
 Tha Ki Ta Thi Ki Ta Thom Ki Ta Nam Ki Ta
 Tha Ki Ta Thi Ki Ta Thom Ki Ta Nam Ki Ta
@@ -17,14 +17,14 @@ Tha Ki Ta Thi Ki Ta Thom Ki Ta Nam Ki Ta
 $;;
 
 { Exercise 2.2
-#S1
+#N1
 Tha Tha Ki Ta Thi Thi Ki Ta Thom Thom Ki Ta Nam Nam Ki Ta
 
-#S2
+#N2
 Tha Tha Ki Ta Thi Thi Ki Ta Thom Thom Ki Ta Nam Nam Ki Ta
 Tha Tha Ki Ta Thi Thi Ki Ta Thom Thom Ki Ta Nam Nam Ki Ta
 
-#S3
+#N4
 Tha Tha Ki Ta Thi Thi Ki Ta Thom Thom Ki Ta Nam Nam Ki Ta
 Tha Tha Ki Ta Thi Thi Ki Ta Thom Thom Ki Ta Nam Nam Ki Ta
 Tha Tha Ki Ta Thi Thi Ki Ta Thom Thom Ki Ta Nam Nam Ki Ta
@@ -32,14 +32,14 @@ Tha Tha Ki Ta Thi Thi Ki Ta Thom Thom Ki Ta Nam Nam Ki Ta
 
 $;;
 { Exercise 2.3
-#S1
+#N1
 Tha Tha Tha Ki Ta Thi Thi Thi Ki Ta Thom Thom Thom Ki Ta Nam Nam Nam Ki Ta
 
-#S2
+#N2
 Tha Tha Tha Ki Ta Thi Thi Thi Ki Ta Thom Thom Thom Ki Ta Nam Nam Nam Ki Ta
 Tha Tha Tha Ki Ta Thi Thi Thi Ki Ta Thom Thom Thom Ki Ta Nam Nam Nam Ki Ta
 
-#S3
+#N4
 Tha Tha Tha Ki Ta Thi Thi Thi Ki Ta Thom Thom Thom Ki Ta Nam Nam Nam Ki Ta
 Tha Tha Tha Ki Ta Thi Thi Thi Ki Ta Thom Thom Thom Ki Ta Nam Nam Nam Ki Ta
 Tha Tha Tha Ki Ta Thi Thi Thi Ki Ta Thom Thom Thom Ki Ta Nam Nam Nam Ki Ta

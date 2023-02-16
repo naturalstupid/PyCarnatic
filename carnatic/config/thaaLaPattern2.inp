@@ -7,13 +7,13 @@
 # To 2nd kalai or 3rd kala use paranthesis notations e.g. (tha ri ki ta) or ((tha ri ki ta))
 # pattern for 1 beat
 [Thaala Patterns]
-tha;thi;thom;num;ki;ta;ka;na;chap;dhin;ta*thom;num*thom;chap*thom;dhin*thom;dhin*tha;|
+1 = tha;thi;thom;num;ki;ta;ka;na;chap;dhin;ta*thom;num*thom;chap*thom;dhin*thom;dhin*tha;|
 
 # pattern for 2 beat combinations
-tha ka;tha ri;dhi mi;ki ta;tha ki;ta*thom num*thom;chap*thom dhin*thom;ta*thom chap*thom;ta*thom dhin*thom;( tha ka dhi mi );( dhi mi ki ta );( tha ka tha ri ); ( tha ri ki ta );( ta*thom num*thom );( chap*thom dhin*thom ta*thom chap*thom );|
+2 = tha ka;tha ri;dhi mi;ki ta;tha ki;ta*thom num*thom;chap*thom dhin*thom;ta*thom chap*thom;ta*thom dhin*thom;( tha ka dhi mi );( dhi mi ki ta );( tha ka tha ri ); ( tha ri ki ta );( ta*thom num*thom );( chap*thom dhin*thom ta*thom chap*thom );|
 
 # pattern for 3 beat combinations
-tha ki ta;tha ri gu;tha chap tha;tha chap*thom tha;tha num*thom tha; tha ta*thom tha;tha dhi mi;( tha ki ta tha ri gu );( tha chap*thom tha dhi mi ki );|
+3 = tha ki ta;tha ri gu;tha chap tha;tha chap*thom tha;tha num*thom tha; tha ta*thom tha;tha dhi mi;( tha ki ta tha ri gu );( tha chap*thom tha dhi mi ki );|
 
 # pattern for 4 beat combinations
-tha ri ki ta;tha ka jo nu; tha ka dhi mi; dhi mi ki ta;  tha dhim*thom num*thom ta; ki ta tha ka;tha dhin*thom num*thom ta;tha ta*thom chap*thom ta; ( tha ri ki ta tha ka jo nu );  ( tha ka dhi mi dhi mi ki ta ); ( dhi mi ki ta tha dhim*thom num*thom ta );( tha ka jo nu dhi mi ki ta ); ( ki ta tha ka tha dhin*thom num*thom ta ); ( tha ta*thom chap*thom ta tha dhim*thom num*thom ta );|
+4 = tha ri ki ta;tha ka jo nu; tha ka dhi mi; dhi mi ki ta;  tha dhin*thom num*thom ta; ki ta tha ka;tha dhin*thom num*thom ta;tha ta*thom chap*thom ta; ( tha ri ki ta tha ka jo nu );  ( tha ka dhi mi dhi mi ki ta ); ( dhi mi ki ta tha dhin*thom num*thom ta );( tha ka jo nu dhi mi ki ta ); ( ki ta tha ka tha dhin*thom num*thom ta ); ( tha ta*thom chap*thom ta tha dhin*thom num*thom ta );|

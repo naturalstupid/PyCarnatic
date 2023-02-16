@@ -1,0 +1,25 @@
+[build-system] 
+requires = ["setuptools>=61.0"] 
+build-backend = "setuptools.build_meta"
+
+[carnatic] 
+name = "Carnatic_RBDAD_JANSUN" 
+version = "1.2.1" 
+authors = [ 
+  { name="Sundar Sundaresan", email="Sundaram.Sundaresan@gmail.com" }, 
+] 
+description = "A Python package for generating Carnatic music lessons for about 400 raagas and 35 thaaLas, "\
+            "generating music according to the carnatic note notations in a file and supports " \
+              "carnatic insutrments such as Veena, Veena2, Flute, Violin etc, and " \
+              "adds percussion layer (Mridangam or EastWestMix) according to the specified thaaLa."
+readme = "README.md" 
+requires-python = ">=3.7" 
+classifiers = [ 
+    "Programming Language :: Python :: 3", 
+    "License :: OSI Approved :: MIT License", 
+    "Operating System :: OS Independent", 
+] 
+dependencies = ['numpy', 'scamp']
+[carnatic.urls] 
+"Homepage" = "https://github.com/naturalstupid/pycarnatic"
+"Bug Tracker" = "https://github.com/naturalstupid/pycarnatic/issues" 

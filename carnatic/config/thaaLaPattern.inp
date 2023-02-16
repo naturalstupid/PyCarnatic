@@ -4,13 +4,13 @@
 # Separate each pattern with ; and end it with |
 # The complete pattern should not be in multiple lines.
 # To add korvai (silence) include patterns with comma
-# To 2nd kalai or 3rd kala use paranthesis notations e.g. ( tha ri ki ta ) or ( ( tha ri ki ta ) )
+# To 2nd kalai or 3rd kala use paranthesis notations e.g. (tha ri ki ta) or ((tha ri ki ta))
 # pattern for 1 beat
 [Thaala Patterns]
 1 = tha;thi;thom;num;ki;ta;ka;na;chap;dhin;ta*thom;num*thom;chap*thom;dhin*thom;dhin*tha;|
 
 # pattern for 2 beat combinations
-2 = tha ka;tha ri;dhi mi;ki ta;tha ki;ta*thom num*thom;chap*thom dhin*thom;ta*thom chap*thom;ta*thom dhin*thom;( tha ka dhi mi );( dhi mi ki ta );( tha ka tha ri ); ( tha ri ki ta );ta*thom num*thom;( chap*thom dhin*thom ta*thom chap*thom );|
+2 = tha ka;tha ri;dhi mi;ki ta;tha ki;ta*thom num*thom;chap*thom dhin*thom;ta*thom chap*thom;ta*thom dhin*thom;( tha ka dhi mi );( dhi mi ki ta );( tha ka tha ri ); ( tha ri ki ta );( ta*thom num*thom );( chap*thom dhin*thom ta*thom chap*thom );|
 
 # pattern for 3 beat combinations
 3 = tha ki ta;tha ri gu;tha chap tha;tha chap*thom tha;tha num*thom tha; tha ta*thom tha;tha dhi mi;( tha ki ta tha ri gu );( tha chap*thom tha dhi mi ki );|

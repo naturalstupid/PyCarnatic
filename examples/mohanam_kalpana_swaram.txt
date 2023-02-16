@@ -1,0 +1,11 @@
+{Ragam: mohanam
+#D72 
+#S3
+#T5
+#J2
+#I0
+SRSR GRGP GRSR SD.SR |  GRGP GPDP |  DS^DG^ R^G^R^D PDS^D ,PGR ||
+  SRS, RGR, GRP, DDP, |  GRG, GP.P, |  DDS^R^ R^G^R^D PDS^D S^DGP ||
+  DPDD R^R^R^P GDPD PR^S^R^ |  S^PDS^ DS^DG |  PDPD RR^R^S^ ,PD, PDS^R^ ||
+  G^S^D.D S^DS^D S^DGP DPDP |  R^S^R^S^ PDS^D |  S^DGP DPDP R^S^R^S^ PDS^S^ ||
+  

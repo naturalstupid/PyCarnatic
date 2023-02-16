@@ -1,18 +1,22 @@
 [Application Details]
 APP_JAR_NAME=JRaaga.jar
-appVersion=2.1.3
-appVersionDate=16-JUL-2017
-appWebsite=https://CarnaticMusicGuru.sourceforge.net/
-appWhatIsNewURL=http://downloads.sourceforge.net/project/carnaticmusicguru/FOR_ADMIN/WhatIsNew.txt
-versionPatternStart = <LatestVersion>
-versionPatternEnd = </LatestVersion>
-historyPatternStart = <WhatIsNew>
-historyPatternEnd = </WhatIsNew>
-downloadLinkPatternStart=<DownloadURL>
-downloadLinkPatternEnd=</DownloadURL>
-KRITHI_URL=http://www.shivkumar.org/music/
+app_version=2.1.3
+app_version_date=16-JUL-2017
+app_website=https://CarnaticMusicGuru.sourceforge.net/
+app_whatisnew_url=http://downloads.sourceforge.net/project/carnaticmusicguru/FOR_ADMIN/WhatIsNew.txt
+version_pattern_start = <LatestVersion>
+version_pattern_end = </LatestVersion>
+history_pattern_start = <WhatIsNew>
+history_pattern_end = </WhatIsNew>
+download_link_pattern_tart=<DownloadURL>
+download_link_pattern_end=</DownloadURL>
+krithi_url=http://www.shivkumar.org/music/
+
 
 [Application Settings]
+# Player Type
+#1 => SCAMP Player 2 => SF2_LOADER
+player_type=2
 # Scale of Notes: 0=> Equal Tempered Notes (Western), 1=> Carnatic Scale of 12 Notes
 # 2=> Carnatic Scale of 16 Notes,  3=> Carnatic Scale of 22 Notes
 # Equaly Tempered notes: Geometric series of 12th root of 2 
@@ -22,32 +26,19 @@ scale_of_notes=2
 #en=English, es=Espianol (Spanish), de=Deutsch (German), fr=French
 language=en
 
-# Choose JRaaga Configuration
-# 1 = Lite Version - no Indian Instrument or Percussion soundbank supported
-# 0 = Full version - Include path of Indian Sound Font file name
-is_jraaga_lite=0
-
 # Specify Indian Sound Font file name in the LIB Folder
 #sound_font_file=file_name.sf2
-sound_font_file=SIWF8.sf2
+sound_font_file=SIWF10.sf2
 
 # Specify Raaga Selection:
-#1 = Load Only MeLakartha Raagas  2= Load All SampoorNa Raagas (Raagas with all 8 notes)
-#3 = Load all raagas that have at least 6 notes
-raaga_selection=3
-
-# Specify whether percussion should be played by default
-#1 = Include ThaaLa  0= Do not inlcude ThaaLa
-include_thaala=1
+#1 = Load only Krithi Raagas  2=Load only mELakatha Raagas  3= Load only SampoorNa Raagas (Raagas with all 8 notes)
+#4 = Load all raagas that have at least 6 notes  5=Load all raagas
+raaga_selection=2
 
 # Specify default duration of a note
-#0=full note, 1=1/2, 2=1/4, 3=1/8, 4=>1/16, 5=>1/32, 5=>1/64, 6=>1/128
-note_duration=2
+#1.0=full note, 0.5 = half note, 0.25 quarter note, 0.125=1/8th note
+note_duration=1.0
 
-# Specify Attack Decay Pattern
-#Format: a<xxx>d<yyy>: a120d30 means attack=120 and decay=30. Range: 0 to 127
-#Leave it empty if you do not want attack/decay
-attack_decay_pattern=a120d30
 
 # Specify default pitch
 # Possible values 0 => 0.5, 1 => 1.0, 2 => 1.5, 3 => 2.0, 4 => 2.5, 5 => 3.0, 6 => 4.0, 7 => 4.5, 8 => 5.0, 9 => 5.5, 10 => 6.0, 11 => 6.5
@@ -56,7 +47,7 @@ default_pitch=2.5
 # Specify Default Instrument Index
 #If soundfont loaded 0=Veena, 1=Veena-2, 2=Flute, 3=Sarod, 4=Violin, 5=Sitar, 6=Shenai, 7=Guitar, 8=Piano
 #Otherwise 0=Violin, 1=Sitar, 2=Shenai, 3=Guitar, 4=Piano
-default_instrument=1
+default_instrument=0
 
 # Specify Each Instrument Kattai 
 #(Values: 0 => 0.5, 1 => 1.0, 2 => 1.5, 3 => 2.0, 4 => 2.5, 5 => 3.0, 6 => 4.0, 7 => 4.5, 8 => 5.0, 9 => 5.5, 10 => 6.0, 11 => 6.5 )
@@ -85,9 +76,8 @@ instrument_volume_8=40
 instrument_volume_9=0
 
 # Specify Default Percussion Instrument Index
-#If soundfont loaded 0=Mridangam, 1=EastWestMix
-#Due to bad quality, Tabla removed from 2.0.1 onwards
-percussion_instrument=0
+#If soundfont loaded 0=Mridangam, 1=Thavil
+percussion_instrument=1
 
 percussion_volume_0=125
 percussion_volume_1=90
